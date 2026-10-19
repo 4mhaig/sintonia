@@ -2,6 +2,7 @@ import { useEffect, useState } from 'react'
 import type { Respuestas } from './logica/tipos'
 import { ELECCIONES } from './datos'
 import { Cabecera } from './componentes/Cabecera'
+import { Pie } from './componentes/Pie'
 import { Inicio } from './paginas/Inicio'
 import { Test } from './paginas/Test'
 import { Resultado } from './paginas/Resultado'
@@ -52,13 +53,7 @@ export function App() {
         {ruta === 'provincia' && <Provincia />}
         {ruta === 'metodologia' && <Metodologia />}
       </main>
-      <footer className="pie">
-        <p>
-          Sintonía es una ayuda para decidir tu voto: no es una encuesta ni una recomendación. No guarda tus respuestas: todo se calcula en tu dispositivo.{' '}
-          <a href="#/metodologia">Cómo funciona</a>
-        </p>
-        <p className="mono">Elecciones generales · 29 de noviembre de 2026</p>
-      </footer>
+      <Pie />
     </div>
   )
 }

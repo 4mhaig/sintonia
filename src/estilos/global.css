@@ -77,7 +77,8 @@ select, input[type='search'] {
 .nav a { padding: 0.5rem 0.75rem; border-radius: var(--radio); color: var(--texto); text-decoration: none; font-weight: 700; }
 .nav a[aria-current='page'] { background: var(--superficie-2); }
 
-.pie { padding: 3rem 0 2rem; color: var(--texto-2); font-size: 0.9rem; }
+.pie { margin-top: 3rem; padding: 2rem 0 2.5rem; border-top: 1px solid var(--borde); color: var(--texto-2); font-size: 0.95rem; }
+.pie strong { color: var(--texto); }
 
 .fila { display: flex; gap: 0.75rem; flex-wrap: wrap; }
 .rejilla { display: grid; gap: 0.75rem; grid-template-columns: repeat(auto-fit, minmax(min(100%, 12rem), 1fr)); }
@@ -109,8 +110,7 @@ select, input[type='search'] {
   .nav { order: 3; width: 100%; }
 }
 
-/* Portada: bloque informativo (no clicable) */
-.que-es { padding: 0.5rem 0; }
+/* Pie: qué es y qué no */
 .que-es h2 { font-size: 0.85rem; font-weight: 500; margin-bottom: 0.75rem; }
 .que-es ul { list-style: none; margin: 0; padding: 0; display: grid; gap: 0.9rem; max-width: var(--ancho-texto); }
 .que-es li { display: flex; gap: 0.75rem; align-items: flex-start; }
