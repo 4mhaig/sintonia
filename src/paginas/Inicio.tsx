@@ -20,14 +20,12 @@ export function Inicio() {
         <p className="cuenta-atras">
           {dias > 0 ? (
             <>
-              <span className="cuenta-atras-numero">{dias}</span>
-              <span>
-                {dias === 1 ? 'día' : 'días'} para las elecciones
-                <strong>Domingo 29 de noviembre</strong>
-              </span>
+              {dias === 1 ? 'Queda ' : 'Quedan '}
+              <strong className="cuenta-atras-numero">{dias} {dias === 1 ? 'día' : 'días'}</strong> para las elecciones del{' '}
+              <strong>domingo 29 de noviembre</strong>
             </>
           ) : (
-            <strong>Hoy se vota · Domingo 29 de noviembre</strong>
+            <>Hoy se vota: <strong>domingo 29 de noviembre</strong></>
           )}
         </p>
         <h1>¿Con quién sintonizas?</h1>
