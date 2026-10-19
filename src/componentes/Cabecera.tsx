@@ -13,6 +13,7 @@ const leerTamano = () => {
 
 export function Cabecera({ ruta }: { ruta: Ruta }) {
   const [tamano, setTamano] = useState(leerTamano)
+  const [abierto, setAbierto] = useState(false)
 
   useEffect(() => {
     document.documentElement.dataset.texto = tamano
@@ -37,19 +38,33 @@ export function Cabecera({ ruta }: { ruta: Ruta }) {
         {enlace('temas', 'Por temas')}
         {enlace('provincia', 'Mi provincia')}
       </nav>
-      <div className="fila" role="group" aria-label="Tamaño de la letra" style={{ gap: '0.25rem' }}>
-        {TAMANOS.map((t) => (
-          <button
-            key={t.id}
-            className="boton"
-            style={{ minHeight: 44, padding: '0 0.75em', fontSize: '0.95rem' }}
-            aria-pressed={tamano === t.id}
-            aria-label={t.nombre}
-            onClick={() => setTamano(t.id)}
-          >
-            {t.etiqueta}
-          </button>
-        ))}
+      {/* Discreto a propósito: un "Aa" pequeño que despliega las opciones */}
+      <div className="tamano-letra">
+        <button
+          className="tamano-letra-boton"
+          aria-expanded={abierto}
+          aria-label="Cambiar el tamaño de la letra"
+          title="Tamaño de la letra"
+          onClick={() => setAbierto((a) => !a)}
+        >
+          Aa
+        </button>
+        {abierto && (
+          <div className="tamano-letra-menu" role="group" aria-label="Tamaño de la letra">
+            {TAMANOS.map((t) => (
+              <button
+                key={t.id}
+                className="boton"
+                style={{ minHeight: 44, padding: '0 0.75em', fontSize: '0.95rem' }}
+                aria-pressed={tamano === t.id}
+                aria-label={t.nombre}
+                onClick={() => { setTamano(t.id); setAbierto(false) }}
+              >
+                {t.etiqueta}
+              </button>
+            ))}
+          </div>
+        )}
       </div>
     </header>
   )
