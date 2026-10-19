@@ -54,7 +54,7 @@ export function App() {
       </main>
       <footer className="pie">
         <p>
-          Sintonía no guarda tus respuestas: todo se calcula en tu dispositivo. No es una recomendación de voto.{' '}
+          Sintonía es una ayuda para decidir tu voto: no es una encuesta ni una recomendación. No guarda tus respuestas: todo se calcula en tu dispositivo.{' '}
           <a href="#/metodologia">Cómo funciona</a>
         </p>
         <p className="mono">Elecciones generales · 29 de noviembre de 2026</p>

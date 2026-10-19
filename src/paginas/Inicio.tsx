@@ -13,11 +13,20 @@ export function Inicio() {
       <section className="texto">
         <h1>¿Con quién sintonizas?</h1>
         <p style={{ fontSize: '1.2rem' }}>
-          Responde unas frases sobre lo que te importa y te enseñamos qué partido piensa más parecido a ti. Con las citas de sus programas, para que lo compruebes.
+          <strong>Para ayudarte a decidir tu voto si aún no lo tienes claro.</strong> Responde unas frases sobre lo que te importa y te enseñamos qué programa electoral se parece más a lo que piensas, con sus citas para que lo compruebes.
         </p>
         <p className="mono secundario">
           {dias > 0 ? `Quedan ${dias} días para las elecciones del 29 de noviembre` : 'Hoy se vota'}
         </p>
+      </section>
+
+      <section className="tarjeta" aria-labelledby="que-es">
+        <h2 id="que-es" style={{ fontSize: '1.2rem' }}>Qué es Sintonía y qué no</h2>
+        <ul style={{ margin: 0, paddingLeft: 0, listStyle: 'none' }} className="pila">
+          <li><strong>Es una ayuda para decidir.</strong> Compara lo que tú piensas con lo que dicen los programas de los partidos.</li>
+          <li><strong>No es una encuesta.</strong> No te preguntamos a quién vas a votar, no contamos votos y no hacemos predicciones.</li>
+          <li><strong>No es una recomendación.</strong> Te enseña parecidos y diferencias. La decisión es siempre tuya.</li>
+        </ul>
       </section>
 
       <section className="rejilla" aria-label="Por dónde empezar">

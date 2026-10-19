@@ -20,6 +20,9 @@ export function Provincia() {
       <p className="texto">
         Al Congreso no se vota en toda España a la vez: cada provincia elige sus propios diputados. Por eso tu voto no pesa igual en Madrid que en Soria.
       </p>
+      <p className="texto secundario">
+        Aquí puedes ver cómo funciona el reparto. No es una predicción de lo que va a pasar el 29 de noviembre.
+      </p>
 
       <label className="pila" style={{ display: 'block' }}>
         <span style={{ fontWeight: 700 }}>¿Dónde votas?</span>
@@ -53,11 +56,12 @@ export function Provincia() {
                 </li>
               ))}
             </ul>
-            {RESULTADOS_FICTICIOS && <p className="aviso" style={{ margin: 0 }}>Votos inventados para probar. Aquí irán los resultados reales de 2023.</p>}
+            {RESULTADOS_FICTICIOS && <p className="aviso" style={{ margin: 0 }}>Votos inventados para probar cómo funciona. No son una predicción.</p>}
           </section>
 
           <label className="pila" style={{ display: 'block' }}>
-            <span style={{ fontWeight: 700 }}>¿A quién piensas votar?</span>
+            <span style={{ fontWeight: 700 }}>Elige un partido para ver qué pasaría con un voto a él</span>
+            <span className="secundario" style={{ display: 'block', fontSize: '0.95rem' }}>No guardamos lo que elijas.</span>
             <select value={partidoId} onChange={(e) => setPartidoId(e.target.value)}>
               <option value="">Elige un partido</option>
               {PARTIDOS.map((p) => <option key={p.id} value={p.id}>{p.nombre}</option>)}

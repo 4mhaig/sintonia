@@ -1,11 +1,13 @@
 # Sintonía · ¿Con quién sintonizas?
 
-Herramienta web, gratuita y sin registro, para comparar los programas electorales de las **elecciones generales del 29 de noviembre de 2026** y descubrir qué partido se parece más a lo que piensas.
+Herramienta web, gratuita y sin registro, para **ayudarte a decidir tu voto si aún no lo tienes claro** en las elecciones generales del 29 de noviembre de 2026. Compara lo que piensas con los programas electorales de cada partido.
+
+**No es una encuesta:** no pregunta a quién vas a votar, no cuenta votos y no hace predicciones. **Tampoco es una recomendación:** enseña parecidos y diferencias con los programas, y la decisión es de cada persona.
 
 - **Test:** responde frases sobre los temas que te importan. La onda pasa de ruido a señal limpia mientras respondes.
 - **Resultado:** porcentaje de coincidencia con cada partido, con la cita del programa que lo justifica.
 - **Por temas:** qué propone cada partido sobre vivienda, sanidad, pensiones…
-- **Mi provincia:** cuántos escaños se reparten donde votas y qué pasa con tu voto si tu partido no llega.
+- **Mi provincia:** cuántos escaños se reparten donde votas y cómo funciona el reparto, para entender qué pasa con un voto si el partido no llega. No es una predicción.
 
 > **Estado:** prototipo. Los partidos y los votos que aparecen ahora son **ficticios** (Partido Alfa, Beta…). Se sustituirán por los reales cuando se proclamen las candidaturas y se publiquen los programas.
 

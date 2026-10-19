@@ -48,7 +48,7 @@ export function Resultado({ respuestas, importantes }: Props) {
             </h1>
             <p className="secundario">
               Coincides en un {mejor.porcentaje}% de las frases.
-              {importantes.length > 0 && ' Los temas que marcaste como importantes cuentan el doble.'} Esto no es una recomendación de voto: es una comparación con lo que dicen sus programas.
+              {importantes.length > 0 && ' Los temas que marcaste como importantes cuentan el doble.'} Esto no es una recomendación de voto: solo compara tus respuestas con lo que dicen los programas. La decisión es tuya.
             </p>
           </section>
 
