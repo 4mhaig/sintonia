@@ -1,0 +1,267 @@
+{
+  "fuente": "Real Decreto 806/2026, de 5 de octubre (BOE 6/10/2026). Igual que 2023 salvo Madrid (37→38) y Cádiz (9→8), según prensa. PENDIENTE: cotejar con el anexo del BOE.",
+  "verificado": false,
+  "umbral": 0.03,
+  "provincias": [
+    {
+      "id": "a-coruna",
+      "nombre": "A Coruña",
+      "escanos": 8
+    },
+    {
+      "id": "alava",
+      "nombre": "Álava",
+      "escanos": 4
+    },
+    {
+      "id": "albacete",
+      "nombre": "Albacete",
+      "escanos": 4
+    },
+    {
+      "id": "alicante",
+      "nombre": "Alicante",
+      "escanos": 12
+    },
+    {
+      "id": "almeria",
+      "nombre": "Almería",
+      "escanos": 6
+    },
+    {
+      "id": "asturias",
+      "nombre": "Asturias",
+      "escanos": 7
+    },
+    {
+      "id": "avila",
+      "nombre": "Ávila",
+      "escanos": 3
+    },
+    {
+      "id": "badajoz",
+      "nombre": "Badajoz",
+      "escanos": 5
+    },
+    {
+      "id": "barcelona",
+      "nombre": "Barcelona",
+      "escanos": 32
+    },
+    {
+      "id": "bizkaia",
+      "nombre": "Bizkaia",
+      "escanos": 8
+    },
+    {
+      "id": "burgos",
+      "nombre": "Burgos",
+      "escanos": 4
+    },
+    {
+      "id": "caceres",
+      "nombre": "Cáceres",
+      "escanos": 4
+    },
+    {
+      "id": "cadiz",
+      "nombre": "Cádiz",
+      "escanos": 8
+    },
+    {
+      "id": "cantabria",
+      "nombre": "Cantabria",
+      "escanos": 5
+    },
+    {
+      "id": "castellon",
+      "nombre": "Castellón",
+      "escanos": 5
+    },
+    {
+      "id": "ceuta",
+      "nombre": "Ceuta",
+      "escanos": 1
+    },
+    {
+      "id": "ciudad-real",
+      "nombre": "Ciudad Real",
+      "escanos": 5
+    },
+    {
+      "id": "cordoba",
+      "nombre": "Córdoba",
+      "escanos": 6
+    },
+    {
+      "id": "cuenca",
+      "nombre": "Cuenca",
+      "escanos": 3
+    },
+    {
+      "id": "gipuzkoa",
+      "nombre": "Gipuzkoa",
+      "escanos": 6
+    },
+    {
+      "id": "girona",
+      "nombre": "Girona",
+      "escanos": 6
+    },
+    {
+      "id": "granada",
+      "nombre": "Granada",
+      "escanos": 7
+    },
+    {
+      "id": "guadalajara",
+      "nombre": "Guadalajara",
+      "escanos": 3
+    },
+    {
+      "id": "huelva",
+      "nombre": "Huelva",
+      "escanos": 5
+    },
+    {
+      "id": "huesca",
+      "nombre": "Huesca",
+      "escanos": 3
+    },
+    {
+      "id": "baleares",
+      "nombre": "Illes Balears",
+      "escanos": 8
+    },
+    {
+      "id": "jaen",
+      "nombre": "Jaén",
+      "escanos": 5
+    },
+    {
+      "id": "la-rioja",
+      "nombre": "La Rioja",
+      "escanos": 4
+    },
+    {
+      "id": "las-palmas",
+      "nombre": "Las Palmas",
+      "escanos": 8
+    },
+    {
+      "id": "leon",
+      "nombre": "León",
+      "escanos": 4
+    },
+    {
+      "id": "lleida",
+      "nombre": "Lleida",
+      "escanos": 4
+    },
+    {
+      "id": "lugo",
+      "nombre": "Lugo",
+      "escanos": 4
+    },
+    {
+      "id": "madrid",
+      "nombre": "Madrid",
+      "escanos": 38
+    },
+    {
+      "id": "malaga",
+      "nombre": "Málaga",
+      "escanos": 11
+    },
+    {
+      "id": "melilla",
+      "nombre": "Melilla",
+      "escanos": 1
+    },
+    {
+      "id": "murcia",
+      "nombre": "Murcia",
+      "escanos": 10
+    },
+    {
+      "id": "navarra",
+      "nombre": "Navarra",
+      "escanos": 5
+    },
+    {
+      "id": "ourense",
+      "nombre": "Ourense",
+      "escanos": 4
+    },
+    {
+      "id": "palencia",
+      "nombre": "Palencia",
+      "escanos": 3
+    },
+    {
+      "id": "pontevedra",
+      "nombre": "Pontevedra",
+      "escanos": 7
+    },
+    {
+      "id": "salamanca",
+      "nombre": "Salamanca",
+      "escanos": 4
+    },
+    {
+      "id": "santa-cruz-de-tenerife",
+      "nombre": "Santa Cruz de Tenerife",
+      "escanos": 7
+    },
+    {
+      "id": "segovia",
+      "nombre": "Segovia",
+      "escanos": 3
+    },
+    {
+      "id": "sevilla",
+      "nombre": "Sevilla",
+      "escanos": 12
+    },
+    {
+      "id": "soria",
+      "nombre": "Soria",
+      "escanos": 2
+    },
+    {
+      "id": "tarragona",
+      "nombre": "Tarragona",
+      "escanos": 6
+    },
+    {
+      "id": "teruel",
+      "nombre": "Teruel",
+      "escanos": 3
+    },
+    {
+      "id": "toledo",
+      "nombre": "Toledo",
+      "escanos": 6
+    },
+    {
+      "id": "valencia",
+      "nombre": "Valencia",
+      "escanos": 16
+    },
+    {
+      "id": "valladolid",
+      "nombre": "Valladolid",
+      "escanos": 5
+    },
+    {
+      "id": "zamora",
+      "nombre": "Zamora",
+      "escanos": 3
+    },
+    {
+      "id": "zaragoza",
+      "nombre": "Zaragoza",
+      "escanos": 7
+    }
+  ]
+}

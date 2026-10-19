@@ -1,0 +1,22 @@
+[
+  { "id": "viv-1", "tema": "vivienda", "texto": "El Estado debería construir mucha más vivienda pública de alquiler.", "explicacion": "Pisos de propiedad pública que se alquilan por debajo del precio de mercado." },
+  { "id": "viv-2", "tema": "vivienda", "texto": "Debería poder limitarse el precio del alquiler en las zonas más caras.", "explicacion": "Poner un tope a lo que puede cobrar el propietario en barrios donde los precios suben mucho." },
+  { "id": "san-1", "tema": "sanidad", "texto": "Hay que subir el presupuesto de la sanidad pública aunque eso suponga recortar en otras partidas.", "explicacion": "Más dinero para médicos, hospitales y reducir listas de espera." },
+  { "id": "san-2", "tema": "sanidad", "texto": "La sanidad pública debería poder derivar más pacientes a clínicas privadas para reducir esperas.", "explicacion": "La seguridad social pagaría a centros privados para atender a sus pacientes." },
+  { "id": "emp-1", "tema": "empleo", "texto": "El salario mínimo debería seguir subiendo en los próximos años.", "explicacion": "El sueldo más bajo que se puede pagar legalmente por una jornada completa." },
+  { "id": "emp-2", "tema": "empleo", "texto": "La semana laboral debería reducirse a 37,5 horas o menos sin bajar el sueldo.", "explicacion": "Trabajar menos horas a la semana cobrando lo mismo." },
+  { "id": "imp-1", "tema": "impuestos", "texto": "Se deberían bajar los impuestos sobre la renta a las clases medias.", "explicacion": "El IRPF es el impuesto que se paga por lo que se gana trabajando." },
+  { "id": "imp-2", "tema": "impuestos", "texto": "Las grandes fortunas deberían pagar un impuesto específico.", "explicacion": "Un impuesto solo para quienes tienen un patrimonio muy alto." },
+  { "id": "pen-1", "tema": "pensiones", "texto": "Las pensiones deben subir siempre al menos lo mismo que los precios (IPC).", "explicacion": "Así los pensionistas no pierden poder de compra cuando todo sube." },
+  { "id": "pen-2", "tema": "pensiones", "texto": "Habría que retrasar la edad de jubilación para que el sistema sea sostenible.", "explicacion": "Jubilarse más tarde para que haya dinero para las pensiones futuras." },
+  { "id": "edu-1", "tema": "educacion", "texto": "La escuela de 0 a 3 años debería ser gratuita y universal.", "explicacion": "Guarderías públicas gratis para todas las familias." },
+  { "id": "edu-2", "tema": "educacion", "texto": "Los colegios concertados deberían recibir la misma financiación pública que los públicos.", "explicacion": "Los concertados son centros privados que reciben dinero público." },
+  { "id": "med-1", "tema": "medio-ambiente", "texto": "Las centrales nucleares deberían seguir funcionando más allá del calendario de cierre previsto.", "explicacion": "Ahora está previsto ir cerrándolas entre 2027 y 2035." },
+  { "id": "med-2", "tema": "medio-ambiente", "texto": "Hay que limitar más el uso del coche privado en el centro de las ciudades.", "explicacion": "Por ejemplo con zonas de bajas emisiones o menos aparcamiento." },
+  { "id": "inm-1", "tema": "inmigracion", "texto": "Habría que facilitar que las personas inmigrantes sin papeles que ya viven aquí puedan regularizarse.", "explicacion": "Darles permiso de residencia y trabajo legal." },
+  { "id": "inm-2", "tema": "inmigracion", "texto": "Habría que endurecer el control de la inmigración irregular.", "explicacion": "Más vigilancia de fronteras y más expulsiones." },
+  { "id": "ter-1", "tema": "territorio", "texto": "Las comunidades autónomas deberían tener más competencias y autogobierno.", "explicacion": "Que decidan más cosas las comunidades y menos el Gobierno central." },
+  { "id": "ter-2", "tema": "territorio", "texto": "Debería poder votarse en referéndum la independencia de una comunidad autónoma.", "explicacion": "Una votación en la que la población de esa comunidad decida si quiere separarse de España." },
+  { "id": "igu-1", "tema": "igualdad", "texto": "Hacen falta más medidas específicas contra la violencia de género.", "explicacion": "Leyes, juzgados y ayudas pensadas para la violencia contra las mujeres." },
+  { "id": "igu-2", "tema": "igualdad", "texto": "La eutanasia debe seguir siendo legal en España.", "explicacion": "Está regulada desde 2021 para personas con enfermedades graves e incurables." }
+]

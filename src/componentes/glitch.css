@@ -1,0 +1,59 @@
+.glitch-escena {
+  position: relative;
+  display: grid; place-items: center; gap: 0.75rem;
+  min-height: 12rem; padding: 1.5rem 1rem;
+  border-radius: var(--radio-grande);
+  background: var(--superficie-2);
+  overflow: hidden;
+}
+/* Líneas de barrido tipo pantalla */
+.glitch-escena::after {
+  content: ''; position: absolute; inset: 0; pointer-events: none;
+  background: repeating-linear-gradient(to bottom, transparent 0 3px, rgb(0 0 0 / 0.04) 3px 4px);
+}
+
+.glitch-siglas, .glitch-marca {
+  position: relative;
+  font-family: var(--mono); font-weight: 500;
+  font-size: clamp(2.5rem, 11vw, 4.5rem); line-height: 1;
+  letter-spacing: 0.04em;
+}
+.glitch-siglas { color: var(--color); }
+.glitch-marca { font-family: var(--fuente); font-weight: 700; letter-spacing: -0.01em; color: var(--texto); }
+
+/* Separación de canales: dos copias desplazadas que se recortan por franjas */
+.glitch-activo::before, .glitch-activo::after,
+.glitch-entra::before, .glitch-entra::after {
+  content: attr(data-texto); position: absolute; inset: 0;
+}
+.glitch-activo::before, .glitch-entra::before { color: #3fd6a6; animation: glitch-a 650ms steps(1) both; mix-blend-mode: multiply; }
+.glitch-activo::after, .glitch-entra::after { color: #d85a30; animation: glitch-b 650ms steps(1) both; mix-blend-mode: multiply; }
+.glitch-activo { animation: glitch-tiembla 650ms steps(1) both; }
+.glitch-entra::before, .glitch-entra::after { animation-iteration-count: 1; }
+
+@media (prefers-color-scheme: dark) {
+  .glitch-activo::before, .glitch-activo::after,
+  .glitch-entra::before, .glitch-entra::after { mix-blend-mode: screen; }
+}
+
+@keyframes glitch-a {
+  0%   { transform: translate(-4px, 0); clip-path: inset(10% 0 60% 0); }
+  20%  { transform: translate(3px, 0);  clip-path: inset(55% 0 20% 0); }
+  40%  { transform: translate(-2px, 0); clip-path: inset(30% 0 45% 0); }
+  60%  { transform: translate(0, 0);    clip-path: inset(100% 0 0 0); }
+  100% { transform: translate(0, 0);    clip-path: inset(100% 0 0 0); }
+}
+@keyframes glitch-b {
+  0%   { transform: translate(4px, 0);  clip-path: inset(65% 0 5% 0); }
+  25%  { transform: translate(-3px, 0); clip-path: inset(5% 0 70% 0); }
+  50%  { transform: translate(2px, 0);  clip-path: inset(40% 0 35% 0); }
+  70%  { transform: translate(0, 0);    clip-path: inset(100% 0 0 0); }
+  100% { transform: translate(0, 0);    clip-path: inset(100% 0 0 0); }
+}
+@keyframes glitch-tiembla {
+  0%  { transform: translate(2px, 0) skewX(-6deg); }
+  15% { transform: translate(-2px, 0); }
+  30% { transform: none; }
+}
+
+.glitch-dial { position: relative; z-index: 1; color: var(--texto-2); }

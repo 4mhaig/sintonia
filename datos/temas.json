@@ -1,0 +1,12 @@
+[
+  { "id": "vivienda", "nombre": "Vivienda", "icono": "home" },
+  { "id": "sanidad", "nombre": "Sanidad", "icono": "heart" },
+  { "id": "empleo", "nombre": "Empleo y salarios", "icono": "briefcase" },
+  { "id": "impuestos", "nombre": "Impuestos", "icono": "receipt" },
+  { "id": "pensiones", "nombre": "Pensiones", "icono": "clock" },
+  { "id": "educacion", "nombre": "Educación", "icono": "book" },
+  { "id": "medio-ambiente", "nombre": "Medio ambiente y energía", "icono": "leaf" },
+  { "id": "inmigracion", "nombre": "Inmigración", "icono": "world" },
+  { "id": "territorio", "nombre": "Modelo territorial", "icono": "map" },
+  { "id": "igualdad", "nombre": "Igualdad y derechos", "icono": "scale" }
+]

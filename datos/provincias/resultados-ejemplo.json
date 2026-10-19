@@ -1,0 +1,526 @@
+{
+ "ficticio": true,
+ "nota": "Votos inventados para probar el simulador. Sustituir por resultados reales del Ministerio del Interior (infoelectoral.interior.gob.es).",
+ "provincias": {
+  "a-coruna": {
+   "blancos": 2770,
+   "votos": {
+    "alfa": 112576,
+    "beta": 65355,
+    "gamma": 25889,
+    "delta": 53162,
+    "epsilon": 17286
+   }
+  },
+  "alava": {
+   "blancos": 1546,
+   "votos": {
+    "alfa": 51480,
+    "beta": 48144,
+    "gamma": 17724,
+    "delta": 26221,
+    "epsilon": 9500
+   }
+  },
+  "albacete": {
+   "blancos": 1784,
+   "votos": {
+    "alfa": 49262,
+    "beta": 52106,
+    "gamma": 28959,
+    "delta": 38351,
+    "epsilon": 7984
+   }
+  },
+  "alicante": {
+   "blancos": 5159,
+   "votos": {
+    "alfa": 150968,
+    "beta": 193487,
+    "gamma": 77221,
+    "delta": 57704,
+    "epsilon": 31313
+   }
+  },
+  "almeria": {
+   "blancos": 2755,
+   "votos": {
+    "alfa": 87404,
+    "beta": 79040,
+    "gamma": 32262,
+    "delta": 53858,
+    "epsilon": 20152
+   }
+  },
+  "asturias": {
+   "blancos": 2743,
+   "votos": {
+    "alfa": 79850,
+    "beta": 108981,
+    "gamma": 31848,
+    "delta": 35414,
+    "epsilon": 15415
+   }
+  },
+  "avila": {
+   "blancos": 1196,
+   "votos": {
+    "alfa": 29061,
+    "beta": 43799,
+    "gamma": 14545,
+    "delta": 21943,
+    "epsilon": 9055
+   }
+  },
+  "badajoz": {
+   "blancos": 1767,
+   "votos": {
+    "alfa": 50249,
+    "beta": 60057,
+    "gamma": 24721,
+    "delta": 30674,
+    "epsilon": 9259
+   }
+  },
+  "barcelona": {
+   "blancos": 14636,
+   "votos": {
+    "alfa": 345780,
+    "beta": 447261,
+    "gamma": 188016,
+    "delta": 324076,
+    "epsilon": 143861
+   }
+  },
+  "bizkaia": {
+   "blancos": 3274,
+   "votos": {
+    "alfa": 91675,
+    "beta": 108000,
+    "gamma": 41398,
+    "delta": 59516,
+    "epsilon": 23510
+   }
+  },
+  "burgos": {
+   "blancos": 1548,
+   "votos": {
+    "alfa": 48215,
+    "beta": 47894,
+    "gamma": 14795,
+    "delta": 33235,
+    "epsilon": 9088
+   }
+  },
+  "caceres": {
+   "blancos": 1807,
+   "votos": {
+    "alfa": 59844,
+    "beta": 55822,
+    "gamma": 21883,
+    "delta": 28917,
+    "epsilon": 12434
+   }
+  },
+  "cadiz": {
+   "blancos": 3689,
+   "votos": {
+    "alfa": 109025,
+    "beta": 129399,
+    "gamma": 38073,
+    "delta": 67788,
+    "epsilon": 20928
+   }
+  },
+  "cantabria": {
+   "blancos": 1933,
+   "votos": {
+    "alfa": 54523,
+    "beta": 68867,
+    "gamma": 31097,
+    "delta": 21936,
+    "epsilon": 14991
+   }
+  },
+  "castellon": {
+   "blancos": 1779,
+   "votos": {
+    "alfa": 58940,
+    "beta": 42968,
+    "gamma": 16872,
+    "delta": 47451,
+    "epsilon": 9884
+   }
+  },
+  "ceuta": {
+   "blancos": 424,
+   "votos": {
+    "alfa": 11141,
+    "beta": 14036,
+    "gamma": 6692,
+    "delta": 5899,
+    "epsilon": 4166
+   }
+  },
+  "ciudad-real": {
+   "blancos": 2272,
+   "votos": {
+    "alfa": 76228,
+    "beta": 70914,
+    "gamma": 30811,
+    "delta": 37447,
+    "epsilon": 9529
+   }
+  },
+  "cordoba": {
+   "blancos": 2085,
+   "votos": {
+    "alfa": 68813,
+    "beta": 53143,
+    "gamma": 20723,
+    "delta": 50249,
+    "epsilon": 13529
+   }
+  },
+  "cuenca": {
+   "blancos": 1311,
+   "votos": {
+    "alfa": 39767,
+    "beta": 43051,
+    "gamma": 12681,
+    "delta": 27930,
+    "epsilon": 6322
+   }
+  },
+  "gipuzkoa": {
+   "blancos": 2352,
+   "votos": {
+    "alfa": 103907,
+    "beta": 51217,
+    "gamma": 31325,
+    "delta": 25377,
+    "epsilon": 21018
+   }
+  },
+  "girona": {
+   "blancos": 2545,
+   "votos": {
+    "alfa": 108133,
+    "beta": 46535,
+    "gamma": 42682,
+    "delta": 32356,
+    "epsilon": 22230
+   }
+  },
+  "granada": {
+   "blancos": 2908,
+   "votos": {
+    "alfa": 116187,
+    "beta": 77101,
+    "gamma": 31629,
+    "delta": 41572,
+    "epsilon": 21368
+   }
+  },
+  "guadalajara": {
+   "blancos": 1058,
+   "votos": {
+    "alfa": 37175,
+    "beta": 33128,
+    "gamma": 14328,
+    "delta": 16287,
+    "epsilon": 3830
+   }
+  },
+  "huelva": {
+   "blancos": 1799,
+   "votos": {
+    "alfa": 72497,
+    "beta": 35707,
+    "gamma": 24982,
+    "delta": 38063,
+    "epsilon": 6837
+   }
+  },
+  "huesca": {
+   "blancos": 1363,
+   "votos": {
+    "alfa": 43814,
+    "beta": 44227,
+    "gamma": 18536,
+    "delta": 21968,
+    "epsilon": 6360
+   }
+  },
+  "baleares": {
+   "blancos": 3013,
+   "votos": {
+    "alfa": 104533,
+    "beta": 107768,
+    "gamma": 32493,
+    "delta": 37154,
+    "epsilon": 16340
+   }
+  },
+  "jaen": {
+   "blancos": 2273,
+   "votos": {
+    "alfa": 75642,
+    "beta": 59414,
+    "gamma": 31707,
+    "delta": 45771,
+    "epsilon": 12542
+   }
+  },
+  "la-rioja": {
+   "blancos": 1740,
+   "votos": {
+    "alfa": 53758,
+    "beta": 40586,
+    "gamma": 19467,
+    "delta": 42429,
+    "epsilon": 15990
+   }
+  },
+  "las-palmas": {
+   "blancos": 3389,
+   "votos": {
+    "alfa": 121467,
+    "beta": 116593,
+    "gamma": 28440,
+    "delta": 55718,
+    "epsilon": 13259
+   }
+  },
+  "leon": {
+   "blancos": 1628,
+   "votos": {
+    "alfa": 49588,
+    "beta": 53859,
+    "gamma": 25728,
+    "delta": 24924,
+    "epsilon": 7109
+   }
+  },
+  "lleida": {
+   "blancos": 1604,
+   "votos": {
+    "alfa": 39369,
+    "beta": 56659,
+    "gamma": 21861,
+    "delta": 30060,
+    "epsilon": 10801
+   }
+  },
+  "lugo": {
+   "blancos": 1755,
+   "votos": {
+    "alfa": 53089,
+    "beta": 66850,
+    "gamma": 14813,
+    "delta": 26695,
+    "epsilon": 12328
+   }
+  },
+  "madrid": {
+   "blancos": 14101,
+   "votos": {
+    "alfa": 537372,
+    "beta": 354438,
+    "gamma": 143848,
+    "delta": 274271,
+    "epsilon": 86040
+   }
+  },
+  "malaga": {
+   "blancos": 3910,
+   "votos": {
+    "alfa": 122097,
+    "beta": 117698,
+    "gamma": 53411,
+    "delta": 70983,
+    "epsilon": 22945
+   }
+  },
+  "melilla": {
+   "blancos": 463,
+   "votos": {
+    "alfa": 9257,
+    "beta": 16851,
+    "gamma": 6453,
+    "delta": 9388,
+    "epsilon": 3936
+   }
+  },
+  "murcia": {
+   "blancos": 3508,
+   "votos": {
+    "alfa": 118286,
+    "beta": 103460,
+    "gamma": 45834,
+    "delta": 59446,
+    "epsilon": 20280
+   }
+  },
+  "navarra": {
+   "blancos": 2101,
+   "votos": {
+    "alfa": 94792,
+    "beta": 49148,
+    "gamma": 19758,
+    "delta": 28389,
+    "epsilon": 15931
+   }
+  },
+  "ourense": {
+   "blancos": 1504,
+   "votos": {
+    "alfa": 41131,
+    "beta": 55497,
+    "gamma": 15992,
+    "delta": 25890,
+    "epsilon": 10395
+   }
+  },
+  "palencia": {
+   "blancos": 1184,
+   "votos": {
+    "alfa": 39176,
+    "beta": 25428,
+    "gamma": 13167,
+    "delta": 27901,
+    "epsilon": 11583
+   }
+  },
+  "pontevedra": {
+   "blancos": 2554,
+   "votos": {
+    "alfa": 106416,
+    "beta": 74614,
+    "gamma": 22157,
+    "delta": 32522,
+    "epsilon": 17181
+   }
+  },
+  "salamanca": {
+   "blancos": 1469,
+   "votos": {
+    "alfa": 36660,
+    "beta": 42259,
+    "gamma": 24731,
+    "delta": 30839,
+    "epsilon": 10896
+   }
+  },
+  "santa-cruz-de-tenerife": {
+   "blancos": 3274,
+   "votos": {
+    "alfa": 92551,
+    "beta": 121780,
+    "gamma": 47752,
+    "delta": 45110,
+    "epsilon": 16961
+   }
+  },
+  "segovia": {
+   "blancos": 1190,
+   "votos": {
+    "alfa": 27955,
+    "beta": 30523,
+    "gamma": 22250,
+    "delta": 27068,
+    "epsilon": 10061
+   }
+  },
+  "sevilla": {
+   "blancos": 4796,
+   "votos": {
+    "alfa": 157417,
+    "beta": 156764,
+    "gamma": 60849,
+    "delta": 73854,
+    "epsilon": 25936
+   }
+  },
+  "soria": {
+   "blancos": 778,
+   "votos": {
+    "alfa": 23344,
+    "beta": 23482,
+    "gamma": 10046,
+    "delta": 14176,
+    "epsilon": 5939
+   }
+  },
+  "tarragona": {
+   "blancos": 2565,
+   "votos": {
+    "alfa": 76096,
+    "beta": 75961,
+    "gamma": 35978,
+    "delta": 46817,
+    "epsilon": 19131
+   }
+  },
+  "teruel": {
+   "blancos": 1199,
+   "votos": {
+    "alfa": 34345,
+    "beta": 44239,
+    "gamma": 19158,
+    "delta": 16403,
+    "epsilon": 4604
+   }
+  },
+  "toledo": {
+   "blancos": 2329,
+   "votos": {
+    "alfa": 78333,
+    "beta": 65307,
+    "gamma": 28559,
+    "delta": 43634,
+    "epsilon": 14749
+   }
+  },
+  "valencia": {
+   "blancos": 5946,
+   "votos": {
+    "alfa": 146385,
+    "beta": 214097,
+    "gamma": 50611,
+    "delta": 131591,
+    "epsilon": 45928
+   }
+  },
+  "valladolid": {
+   "blancos": 2120,
+   "votos": {
+    "alfa": 71878,
+    "beta": 59026,
+    "gamma": 23470,
+    "delta": 42547,
+    "epsilon": 12919
+   }
+  },
+  "zamora": {
+   "blancos": 1359,
+   "votos": {
+    "alfa": 37799,
+    "beta": 49661,
+    "gamma": 17541,
+    "delta": 22618,
+    "epsilon": 6944
+   }
+  },
+  "zaragoza": {
+   "blancos": 2928,
+   "votos": {
+    "alfa": 70839,
+    "beta": 111077,
+    "gamma": 45388,
+    "delta": 41883,
+    "epsilon": 20684
+   }
+  }
+ }
+}

@@ -1,0 +1,131 @@
+{
+  "id": "epsilon",
+  "nombre": "Partido Épsilon",
+  "siglas": "EPS",
+  "color": "#378ADD",
+  "ficticio": true,
+  "programa_url": null,
+  "programa_publicado": null,
+  "posturas": [
+    {
+      "afirmacion": "viv-1",
+      "postura": 1,
+      "cita": "Texto de ejemplo. Aquí irá la cita literal del programa electoral de Partido Épsilon.",
+      "pagina": null
+    },
+    {
+      "afirmacion": "viv-2",
+      "postura": 0,
+      "cita": "Texto de ejemplo. Aquí irá la cita literal del programa electoral de Partido Épsilon.",
+      "pagina": null
+    },
+    {
+      "afirmacion": "san-1",
+      "postura": 1,
+      "cita": "Texto de ejemplo. Aquí irá la cita literal del programa electoral de Partido Épsilon.",
+      "pagina": null
+    },
+    {
+      "afirmacion": "san-2",
+      "postura": 0,
+      "cita": "Texto de ejemplo. Aquí irá la cita literal del programa electoral de Partido Épsilon.",
+      "pagina": null
+    },
+    {
+      "afirmacion": "emp-1",
+      "postura": 1,
+      "cita": "Texto de ejemplo. Aquí irá la cita literal del programa electoral de Partido Épsilon.",
+      "pagina": null
+    },
+    {
+      "afirmacion": "emp-2",
+      "postura": 0,
+      "cita": "Texto de ejemplo. Aquí irá la cita literal del programa electoral de Partido Épsilon.",
+      "pagina": null
+    },
+    {
+      "afirmacion": "imp-1",
+      "postura": 1,
+      "cita": "Texto de ejemplo. Aquí irá la cita literal del programa electoral de Partido Épsilon.",
+      "pagina": null
+    },
+    {
+      "afirmacion": "imp-2",
+      "postura": 0,
+      "cita": "Texto de ejemplo. Aquí irá la cita literal del programa electoral de Partido Épsilon.",
+      "pagina": null
+    },
+    {
+      "afirmacion": "pen-1",
+      "postura": 1,
+      "cita": "Texto de ejemplo. Aquí irá la cita literal del programa electoral de Partido Épsilon.",
+      "pagina": null
+    },
+    {
+      "afirmacion": "pen-2",
+      "postura": -1,
+      "cita": "Texto de ejemplo. Aquí irá la cita literal del programa electoral de Partido Épsilon.",
+      "pagina": null
+    },
+    {
+      "afirmacion": "edu-1",
+      "postura": 1,
+      "cita": "Texto de ejemplo. Aquí irá la cita literal del programa electoral de Partido Épsilon.",
+      "pagina": null
+    },
+    {
+      "afirmacion": "edu-2",
+      "postura": 0,
+      "cita": "Texto de ejemplo. Aquí irá la cita literal del programa electoral de Partido Épsilon.",
+      "pagina": null
+    },
+    {
+      "afirmacion": "med-1",
+      "postura": 0,
+      "cita": "Texto de ejemplo. Aquí irá la cita literal del programa electoral de Partido Épsilon.",
+      "pagina": null
+    },
+    {
+      "afirmacion": "med-2",
+      "postura": 1,
+      "cita": "Texto de ejemplo. Aquí irá la cita literal del programa electoral de Partido Épsilon.",
+      "pagina": null
+    },
+    {
+      "afirmacion": "inm-1",
+      "postura": 0,
+      "cita": "Texto de ejemplo. Aquí irá la cita literal del programa electoral de Partido Épsilon.",
+      "pagina": null
+    },
+    {
+      "afirmacion": "inm-2",
+      "postura": 0,
+      "cita": "Texto de ejemplo. Aquí irá la cita literal del programa electoral de Partido Épsilon.",
+      "pagina": null
+    },
+    {
+      "afirmacion": "ter-1",
+      "postura": 0,
+      "cita": "Texto de ejemplo. Aquí irá la cita literal del programa electoral de Partido Épsilon.",
+      "pagina": null
+    },
+    {
+      "afirmacion": "ter-2",
+      "postura": -1,
+      "cita": "Texto de ejemplo. Aquí irá la cita literal del programa electoral de Partido Épsilon.",
+      "pagina": null
+    },
+    {
+      "afirmacion": "igu-1",
+      "postura": 1,
+      "cita": "Texto de ejemplo. Aquí irá la cita literal del programa electoral de Partido Épsilon.",
+      "pagina": null
+    },
+    {
+      "afirmacion": "igu-2",
+      "postura": 1,
+      "cita": "Texto de ejemplo. Aquí irá la cita literal del programa electoral de Partido Épsilon.",
+      "pagina": null
+    }
+  ]
+}

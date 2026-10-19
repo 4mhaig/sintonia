@@ -1,0 +1,45 @@
+:root {
+  --fondo: #f6f7f4;
+  --superficie: #ffffff;
+  --superficie-2: #eceee8;
+  --texto: #10202a;
+  --texto-2: #46565f;
+  --borde: #d5d9d2;
+  --borde-fuerte: #9aa5a0;
+  --acento: #0b6e53;
+  --acento-texto: #ffffff;
+  --acento-suave: #dff3ea;
+  --senal: #1d9e75;
+  --ruido: #8a958f;
+  --aviso: #8a4b00;
+  --aviso-fondo: #fdf0dc;
+  --foco: #1f6fd1;
+
+  --fuente: 'Atkinson Hyperlegible', system-ui, sans-serif;
+  --mono: 'JetBrains Mono', ui-monospace, monospace;
+
+  --radio: 12px;
+  --radio-grande: 20px;
+  --alto-boton: 56px;
+  --ancho-texto: 40rem;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme='light']) {
+    --fondo: #0d1a20;
+    --superficie: #14252d;
+    --superficie-2: #1c323c;
+    --texto: #eef3f0;
+    --texto-2: #b2c0bb;
+    --borde: #2c444f;
+    --borde-fuerte: #557079;
+    --acento: #3fd6a6;
+    --acento-texto: #06261c;
+    --acento-suave: #123b31;
+    --senal: #3fd6a6;
+    --ruido: #6d817b;
+    --aviso: #ffc876;
+    --aviso-fondo: #3a2a10;
+    --foco: #8ab8ff;
+  }
+}

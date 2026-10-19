@@ -1,0 +1,9 @@
+{
+  "id": "generales-2026",
+  "nombre": "Elecciones generales",
+  "fecha": "2026-11-29",
+  "convocatoria": "Real Decreto 806/2026, de 5 de octubre (BOE 6/10/2026)",
+  "campana": { "inicio": "2026-11-13", "fin": "2026-11-27" },
+  "veda_encuestas": { "inicio": "2026-11-24", "fin": "2026-11-28", "nota": "LOREG art. 69.7: no se pueden publicar sondeos los 5 días anteriores a la votación." },
+  "datos_de_ejemplo": true
+}
