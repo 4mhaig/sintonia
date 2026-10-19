@@ -16,10 +16,10 @@ export function Inicio() {
             <>
               {dias === 1 ? 'Queda ' : 'Quedan '}
               <strong className="cuenta-atras-numero">{dias} {dias === 1 ? 'día' : 'días'}</strong> para las elecciones del{' '}
-              <strong>domingo 29 de noviembre</strong>
+              <strong>domingo 29 de noviembre de 2026</strong>
             </>
           ) : (
-            <>Hoy se vota: <strong>domingo 29 de noviembre</strong></>
+            <>Hoy se vota: <strong>domingo 29 de noviembre de 2026</strong></>
           )}
         </p>
         <h1>¿Con quién sintonizas?</h1>
