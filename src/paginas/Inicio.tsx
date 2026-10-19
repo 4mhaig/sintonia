@@ -17,8 +17,18 @@ export function Inicio() {
       <Glitch />
 
       <section className="texto">
-        <p className="mono secundario" style={{ marginBottom: '0.5rem' }}>
-          {dias > 0 ? `Quedan ${dias} días para las elecciones del 29 de noviembre` : 'Hoy se vota'}
+        <p className="cuenta-atras">
+          {dias > 0 ? (
+            <>
+              <span className="cuenta-atras-numero">{dias}</span>
+              <span>
+                {dias === 1 ? 'día' : 'días'} para las elecciones
+                <strong>Domingo 29 de noviembre</strong>
+              </span>
+            </>
+          ) : (
+            <strong>Hoy se vota · Domingo 29 de noviembre</strong>
+          )}
         </p>
         <h1>¿Con quién sintonizas?</h1>
         <p style={{ fontSize: '1.2rem' }}>
