@@ -24,6 +24,8 @@ export function App() {
   // Las respuestas solo viven en memoria: no se guardan ni se envían a ningún sitio
   const [respuestas, setRespuestas] = useState<Respuestas>({})
   const [importantes, setImportantes] = useState<string[]>([])
+  // Dónde vota la persona ('' = no lo sabe o no lo dice). Tampoco se guarda.
+  const [provincia, setProvincia] = useState('')
 
   useEffect(() => {
     const cambiar = () => { setRuta(leerRuta()); window.scrollTo(0, 0) }
@@ -45,12 +47,16 @@ export function App() {
         {ruta === 'inicio' && <Inicio />}
         {ruta === 'test' && (
           <Test
+            provincia={provincia}
+            alElegirProvincia={setProvincia}
             alTerminar={(r, imp) => { setRespuestas(r); setImportantes(imp); ir('resultado') }}
           />
         )}
-        {ruta === 'resultado' && (terminado ? <Resultado respuestas={respuestas} importantes={importantes} /> : <Inicio />)}
-        {ruta === 'temas' && <Temas />}
-        {ruta === 'provincia' && <Provincia />}
+        {ruta === 'resultado' && (terminado
+          ? <Resultado respuestas={respuestas} importantes={importantes} provincia={provincia} alElegirProvincia={setProvincia} />
+          : <Inicio />)}
+        {ruta === 'temas' && <Temas provincia={provincia} />}
+        {ruta === 'provincia' && <Provincia provincia={provincia} alElegirProvincia={setProvincia} />}
         {ruta === 'metodologia' && <Metodologia />}
       </main>
       <Pie />

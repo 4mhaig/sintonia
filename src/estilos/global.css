@@ -46,6 +46,8 @@ a { color: var(--acento); text-underline-offset: 3px; }
 .boton.principal:hover { filter: brightness(1.08); }
 .boton.fantasma { border-color: transparent; background: transparent; text-decoration: underline; text-underline-offset: 4px; }
 .boton[aria-pressed='true'] { background: var(--acento-suave); border-color: var(--acento); }
+.boton:disabled { opacity: 0.45; cursor: not-allowed; }
+.boton:disabled:hover { filter: none; border-color: inherit; }
 
 .tarjeta {
   background: var(--superficie); border: 1px solid var(--borde);
@@ -139,3 +141,11 @@ select, input[type='search'] {
 .cuenta-atras { margin: 0 0 0.5rem; color: var(--texto-2); }
 .cuenta-atras strong { color: var(--texto); }
 .cuenta-atras .cuenta-atras-numero { color: var(--acento); }
+
+/* Test: botones de la pregunta "¿Dónde votas?" */
+.acciones-inicio { display: flex; flex-wrap: wrap; align-items: center; gap: 0.5rem 1.5rem; }
+.acciones-inicio .fantasma { padding: 0; text-align: left; }
+@media (max-width: 40rem) {
+  .acciones-inicio { flex-direction: column; align-items: stretch; }
+  .acciones-inicio .fantasma { align-self: flex-start; }
+}

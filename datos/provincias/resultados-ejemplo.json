@@ -8,8 +8,7 @@
     "alfa": 112576,
     "beta": 65355,
     "gamma": 25889,
-    "delta": 53162,
-    "epsilon": 17286
+    "delta": 53162
    }
   },
   "alava": {
@@ -18,8 +17,7 @@
     "alfa": 51480,
     "beta": 48144,
     "gamma": 17724,
-    "delta": 26221,
-    "epsilon": 9500
+    "delta": 26221
    }
   },
   "albacete": {
@@ -28,8 +26,7 @@
     "alfa": 49262,
     "beta": 52106,
     "gamma": 28959,
-    "delta": 38351,
-    "epsilon": 7984
+    "delta": 38351
    }
   },
   "alicante": {
@@ -38,8 +35,7 @@
     "alfa": 150968,
     "beta": 193487,
     "gamma": 77221,
-    "delta": 57704,
-    "epsilon": 31313
+    "delta": 57704
    }
   },
   "almeria": {
@@ -58,8 +54,7 @@
     "alfa": 79850,
     "beta": 108981,
     "gamma": 31848,
-    "delta": 35414,
-    "epsilon": 15415
+    "delta": 35414
    }
   },
   "avila": {
@@ -68,8 +63,7 @@
     "alfa": 29061,
     "beta": 43799,
     "gamma": 14545,
-    "delta": 21943,
-    "epsilon": 9055
+    "delta": 21943
    }
   },
   "badajoz": {
@@ -78,8 +72,7 @@
     "alfa": 50249,
     "beta": 60057,
     "gamma": 24721,
-    "delta": 30674,
-    "epsilon": 9259
+    "delta": 30674
    }
   },
   "barcelona": {
@@ -88,8 +81,7 @@
     "alfa": 345780,
     "beta": 447261,
     "gamma": 188016,
-    "delta": 324076,
-    "epsilon": 143861
+    "delta": 324076
    }
   },
   "bizkaia": {
@@ -98,8 +90,7 @@
     "alfa": 91675,
     "beta": 108000,
     "gamma": 41398,
-    "delta": 59516,
-    "epsilon": 23510
+    "delta": 59516
    }
   },
   "burgos": {
@@ -108,8 +99,7 @@
     "alfa": 48215,
     "beta": 47894,
     "gamma": 14795,
-    "delta": 33235,
-    "epsilon": 9088
+    "delta": 33235
    }
   },
   "caceres": {
@@ -118,8 +108,7 @@
     "alfa": 59844,
     "beta": 55822,
     "gamma": 21883,
-    "delta": 28917,
-    "epsilon": 12434
+    "delta": 28917
    }
   },
   "cadiz": {
@@ -138,8 +127,7 @@
     "alfa": 54523,
     "beta": 68867,
     "gamma": 31097,
-    "delta": 21936,
-    "epsilon": 14991
+    "delta": 21936
    }
   },
   "castellon": {
@@ -148,8 +136,7 @@
     "alfa": 58940,
     "beta": 42968,
     "gamma": 16872,
-    "delta": 47451,
-    "epsilon": 9884
+    "delta": 47451
    }
   },
   "ceuta": {
@@ -158,8 +145,7 @@
     "alfa": 11141,
     "beta": 14036,
     "gamma": 6692,
-    "delta": 5899,
-    "epsilon": 4166
+    "delta": 5899
    }
   },
   "ciudad-real": {
@@ -168,8 +154,7 @@
     "alfa": 76228,
     "beta": 70914,
     "gamma": 30811,
-    "delta": 37447,
-    "epsilon": 9529
+    "delta": 37447
    }
   },
   "cordoba": {
@@ -188,8 +173,7 @@
     "alfa": 39767,
     "beta": 43051,
     "gamma": 12681,
-    "delta": 27930,
-    "epsilon": 6322
+    "delta": 27930
    }
   },
   "gipuzkoa": {
@@ -198,8 +182,7 @@
     "alfa": 103907,
     "beta": 51217,
     "gamma": 31325,
-    "delta": 25377,
-    "epsilon": 21018
+    "delta": 25377
    }
   },
   "girona": {
@@ -208,8 +191,7 @@
     "alfa": 108133,
     "beta": 46535,
     "gamma": 42682,
-    "delta": 32356,
-    "epsilon": 22230
+    "delta": 32356
    }
   },
   "granada": {
@@ -228,8 +210,7 @@
     "alfa": 37175,
     "beta": 33128,
     "gamma": 14328,
-    "delta": 16287,
-    "epsilon": 3830
+    "delta": 16287
    }
   },
   "huelva": {
@@ -248,8 +229,7 @@
     "alfa": 43814,
     "beta": 44227,
     "gamma": 18536,
-    "delta": 21968,
-    "epsilon": 6360
+    "delta": 21968
    }
   },
   "baleares": {
@@ -258,8 +238,7 @@
     "alfa": 104533,
     "beta": 107768,
     "gamma": 32493,
-    "delta": 37154,
-    "epsilon": 16340
+    "delta": 37154
    }
   },
   "jaen": {
@@ -278,8 +257,7 @@
     "alfa": 53758,
     "beta": 40586,
     "gamma": 19467,
-    "delta": 42429,
-    "epsilon": 15990
+    "delta": 42429
    }
   },
   "las-palmas": {
@@ -288,8 +266,7 @@
     "alfa": 121467,
     "beta": 116593,
     "gamma": 28440,
-    "delta": 55718,
-    "epsilon": 13259
+    "delta": 55718
    }
   },
   "leon": {
@@ -298,8 +275,7 @@
     "alfa": 49588,
     "beta": 53859,
     "gamma": 25728,
-    "delta": 24924,
-    "epsilon": 7109
+    "delta": 24924
    }
   },
   "lleida": {
@@ -308,8 +284,7 @@
     "alfa": 39369,
     "beta": 56659,
     "gamma": 21861,
-    "delta": 30060,
-    "epsilon": 10801
+    "delta": 30060
    }
   },
   "lugo": {
@@ -318,8 +293,7 @@
     "alfa": 53089,
     "beta": 66850,
     "gamma": 14813,
-    "delta": 26695,
-    "epsilon": 12328
+    "delta": 26695
    }
   },
   "madrid": {
@@ -328,8 +302,7 @@
     "alfa": 537372,
     "beta": 354438,
     "gamma": 143848,
-    "delta": 274271,
-    "epsilon": 86040
+    "delta": 274271
    }
   },
   "malaga": {
@@ -348,8 +321,7 @@
     "alfa": 9257,
     "beta": 16851,
     "gamma": 6453,
-    "delta": 9388,
-    "epsilon": 3936
+    "delta": 9388
    }
   },
   "murcia": {
@@ -358,8 +330,7 @@
     "alfa": 118286,
     "beta": 103460,
     "gamma": 45834,
-    "delta": 59446,
-    "epsilon": 20280
+    "delta": 59446
    }
   },
   "navarra": {
@@ -368,8 +339,7 @@
     "alfa": 94792,
     "beta": 49148,
     "gamma": 19758,
-    "delta": 28389,
-    "epsilon": 15931
+    "delta": 28389
    }
   },
   "ourense": {
@@ -378,8 +348,7 @@
     "alfa": 41131,
     "beta": 55497,
     "gamma": 15992,
-    "delta": 25890,
-    "epsilon": 10395
+    "delta": 25890
    }
   },
   "palencia": {
@@ -388,8 +357,7 @@
     "alfa": 39176,
     "beta": 25428,
     "gamma": 13167,
-    "delta": 27901,
-    "epsilon": 11583
+    "delta": 27901
    }
   },
   "pontevedra": {
@@ -398,8 +366,7 @@
     "alfa": 106416,
     "beta": 74614,
     "gamma": 22157,
-    "delta": 32522,
-    "epsilon": 17181
+    "delta": 32522
    }
   },
   "salamanca": {
@@ -408,8 +375,7 @@
     "alfa": 36660,
     "beta": 42259,
     "gamma": 24731,
-    "delta": 30839,
-    "epsilon": 10896
+    "delta": 30839
    }
   },
   "santa-cruz-de-tenerife": {
@@ -418,8 +384,7 @@
     "alfa": 92551,
     "beta": 121780,
     "gamma": 47752,
-    "delta": 45110,
-    "epsilon": 16961
+    "delta": 45110
    }
   },
   "segovia": {
@@ -428,8 +393,7 @@
     "alfa": 27955,
     "beta": 30523,
     "gamma": 22250,
-    "delta": 27068,
-    "epsilon": 10061
+    "delta": 27068
    }
   },
   "sevilla": {
@@ -448,8 +412,7 @@
     "alfa": 23344,
     "beta": 23482,
     "gamma": 10046,
-    "delta": 14176,
-    "epsilon": 5939
+    "delta": 14176
    }
   },
   "tarragona": {
@@ -458,8 +421,7 @@
     "alfa": 76096,
     "beta": 75961,
     "gamma": 35978,
-    "delta": 46817,
-    "epsilon": 19131
+    "delta": 46817
    }
   },
   "teruel": {
@@ -468,8 +430,7 @@
     "alfa": 34345,
     "beta": 44239,
     "gamma": 19158,
-    "delta": 16403,
-    "epsilon": 4604
+    "delta": 16403
    }
   },
   "toledo": {
@@ -478,8 +439,7 @@
     "alfa": 78333,
     "beta": 65307,
     "gamma": 28559,
-    "delta": 43634,
-    "epsilon": 14749
+    "delta": 43634
    }
   },
   "valencia": {
@@ -488,8 +448,7 @@
     "alfa": 146385,
     "beta": 214097,
     "gamma": 50611,
-    "delta": 131591,
-    "epsilon": 45928
+    "delta": 131591
    }
   },
   "valladolid": {
@@ -498,8 +457,7 @@
     "alfa": 71878,
     "beta": 59026,
     "gamma": 23470,
-    "delta": 42547,
-    "epsilon": 12919
+    "delta": 42547
    }
   },
   "zamora": {
@@ -508,8 +466,7 @@
     "alfa": 37799,
     "beta": 49661,
     "gamma": 17541,
-    "delta": 22618,
-    "epsilon": 6944
+    "delta": 22618
    }
   },
   "zaragoza": {
@@ -518,8 +475,7 @@
     "alfa": 70839,
     "beta": 111077,
     "gamma": 45388,
-    "delta": 41883,
-    "epsilon": 20684
+    "delta": 41883
    }
   }
  }

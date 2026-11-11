@@ -28,6 +28,10 @@ export interface Partido {
   ficticio: boolean
   programa_url: string | null
   programa_publicado: string | null
+  /** Solo para partidos que no se presentan en toda España, p. ej. "Andalucía" */
+  ambito?: string
+  /** Provincias donde se presenta. Si falta, se presenta en todas. */
+  provincias?: string[]
   posturas: PosturaPartido[]
 }
 

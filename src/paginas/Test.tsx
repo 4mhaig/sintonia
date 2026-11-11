@@ -1,9 +1,12 @@
 import { useState } from 'react'
 import type { Postura, Respuestas } from '../logica/tipos'
-import { AFIRMACIONES, TEMAS, temaPorId } from '../datos'
+import { AFIRMACIONES, TEMAS, partidosEn, temaPorId } from '../datos'
 import { Onda } from '../componentes/Onda'
+import { SelectorProvincia } from '../componentes/SelectorProvincia'
 
 interface Props {
+  provincia: string
+  alElegirProvincia: (id: string) => void
   alTerminar: (respuestas: Respuestas, importantes: string[]) => void
 }
 
@@ -14,17 +17,27 @@ const OPCIONES: { valor: Postura; texto: string }[] = [
 ]
 const MAX_IMPORTANTES = 3
 
-export function Test({ alTerminar }: Props) {
-  const [paso, setPaso] = useState(0)
+export function Test({ provincia, alElegirProvincia, alTerminar }: Props) {
+  // Paso -1: "¿Dónde votas?" antes de la primera frase
+  const [paso, setPaso] = useState(-1)
+  const [eleccion, setEleccion] = useState(provincia)
   const [respuestas, setRespuestas] = useState<Respuestas>({})
   const [importantes, setImportantes] = useState<string[]>([])
   const [verExplicacion, setVerExplicacion] = useState(false)
 
   const total = AFIRMACIONES.length
   const enTemas = paso >= total
-  const senal = Math.round((Math.min(paso, total) / total) * 100)
+  const antes = paso < 0
+  const avance = Math.max(0, Math.min(paso, total))
+  const senal = Math.round((avance / total) * 100)
   // El ruido nunca llega a cero dentro del test: la claridad total es el resultado
-  const ruido = 1 - (Math.min(paso, total) / total) * 0.8
+  const ruido = 1 - (avance / total) * 0.8
+
+  const empezar = (id: string) => {
+    alElegirProvincia(id)
+    setPaso(0)
+  }
+  const enPapeleta = eleccion ? partidosEn(eleccion).length : 0
 
   const responder = (valor: Postura) => {
     const a = AFIRMACIONES[paso]
@@ -43,14 +56,36 @@ export function Test({ alTerminar }: Props) {
       <div>
         <div style={{ display: 'flex', justifyContent: 'space-between', gap: '1rem' }}>
           <span className="mono secundario">señal {senal}% · {senal < 50 ? 'mucho ruido' : 'sintonizando'}</span>
-          <span className="mono secundario">{enTemas ? 'último paso' : `${paso + 1} de ${total}`}</span>
+          <span className="mono secundario">{antes ? `0 de ${total}` : enTemas ? 'último paso' : `${paso + 1} de ${total}`}</span>
         </div>
         <div className="tarjeta" style={{ padding: 0, marginTop: 8, overflow: 'hidden' }}>
           <Onda ruido={ruido} />
         </div>
       </div>
 
-      {!enTemas ? (
+      {antes ? (
+        <section className="pila">
+          <h1 style={{ fontSize: 'clamp(1.5rem, 4.5vw, 2rem)' }}>Antes de empezar: ¿dónde votas?</h1>
+          <p className="texto">
+            En cada provincia la papeleta es distinta: hay partidos que solo se presentan en algunas. Así te comparamos con los que de verdad puedes votar.
+          </p>
+          <SelectorProvincia valor={eleccion} alCambiar={setEleccion} etiqueta="Provincia donde votas" />
+          {eleccion && (
+            <p className="secundario" aria-live="polite" style={{ margin: 0 }}>
+              En tu provincia te compararemos con {enPapeleta} {enPapeleta === 1 ? 'partido' : 'partidos'}.
+            </p>
+          )}
+          <p className="secundario" style={{ margin: 0, fontSize: '0.95rem' }}>No guardamos tu provincia, igual que tus respuestas.</p>
+          <div className="acciones-inicio">
+            <button className="boton principal" disabled={!eleccion} onClick={() => empezar(eleccion)}>
+              Empezar el test
+            </button>
+            <button className="boton fantasma" onClick={() => empezar('')}>
+              Todavía no lo sé: ver todos los partidos
+            </button>
+          </div>
+        </section>
+      ) : !enTemas ? (
         <section aria-live="polite" className="pila">
           <span className="chip">{temaPorId(AFIRMACIONES[paso].tema)?.nombre}</span>
           <h1 style={{ fontSize: 'clamp(1.5rem, 4.5vw, 2rem)' }}>{AFIRMACIONES[paso].texto}</h1>
@@ -68,7 +103,7 @@ export function Test({ alTerminar }: Props) {
             ))}
           </div>
           <div className="fila" style={{ justifyContent: 'space-between' }}>
-            <button className="boton fantasma" disabled={paso === 0} onClick={() => setPaso((p) => p - 1)} style={{ visibility: paso === 0 ? 'hidden' : 'visible' }}>
+            <button className="boton fantasma" onClick={() => setPaso((p) => p - 1)}>
               ← Anterior
             </button>
             <button className="boton fantasma" onClick={() => responder(null)}>Saltar esta frase</button>

@@ -1,6 +1,6 @@
 import { useMemo, useState } from 'react'
 import type { Postura } from '../logica/tipos'
-import { AFIRMACIONES, PARTIDOS, TEMAS } from '../datos'
+import { AFIRMACIONES, PARTIDOS, TEMAS, partidosEn, provinciaPorId } from '../datos'
 
 const ETIQUETA: Record<string, { texto: string; color: string }> = {
   '1': { texto: 'A favor', color: 'var(--acento)' },
@@ -12,22 +12,38 @@ const etiqueta = (p: Postura) => ETIQUETA[String(p)]
 
 const normalizar = (s: string) => s.toLowerCase().normalize('NFD').replace(/\p{Diacritic}/gu, '')
 
-export function Temas() {
+export function Temas({ provincia }: { provincia: string }) {
   const [tema, setTema] = useState(TEMAS[0].id)
   const [busqueda, setBusqueda] = useState('')
+  const [soloPapeleta, setSoloPapeleta] = useState(true)
+  const nombreProvincia = provinciaPorId(provincia)?.nombre
+  const filtrando = Boolean(provincia) && soloPapeleta
+  const partidos = filtrando ? partidosEn(provincia) : PARTIDOS
+  const ocultos = PARTIDOS.length - partidosEn(provincia).length
 
   const frases = useMemo(() => {
     const q = normalizar(busqueda.trim())
     if (!q) return AFIRMACIONES.filter((a) => a.tema === tema)
     return AFIRMACIONES.filter((a) =>
       normalizar(`${a.texto} ${a.explicacion}`).includes(q) ||
-      PARTIDOS.some((p) => normalizar(p.posturas.find((x) => x.afirmacion === a.id)?.cita ?? '').includes(q)),
+      partidos.some((p) => normalizar(p.posturas.find((x) => x.afirmacion === a.id)?.cita ?? '').includes(q)),
     )
-  }, [tema, busqueda])
+  }, [tema, busqueda, partidos])
 
   return (
     <div className="pila">
       <h1>Qué propone cada partido</h1>
+
+      {nombreProvincia && ocultos > 0 && (
+        <p style={{ margin: 0 }}>
+          {filtrando
+            ? <>Ves los partidos que se presentan en <strong>{nombreProvincia}</strong>.</>
+            : <>Ves <strong>todos los partidos</strong>, también los que no se presentan en {nombreProvincia}.</>}{' '}
+          <button className="boton fantasma" style={{ padding: 0, minHeight: 44 }} onClick={() => setSoloPapeleta((v) => !v)}>
+            {filtrando ? 'Ver todos' : `Ver solo los de ${nombreProvincia}`}
+          </button>
+        </p>
+      )}
 
       <label className="pila" style={{ display: 'block' }}>
         <span style={{ fontWeight: 700 }}>Buscar una palabra</span>
@@ -52,7 +68,7 @@ export function Temas() {
             <h2 style={{ fontSize: '1.25rem' }}>{a.texto}</h2>
             <p className="secundario" style={{ margin: 0 }}>{a.explicacion}</p>
           </div>
-          {PARTIDOS.map((p) => {
+          {partidos.map((p) => {
             const postura = p.posturas.find((x) => x.afirmacion === a.id)
             const e = etiqueta(postura?.postura ?? null)
             return (
@@ -61,6 +77,7 @@ export function Temas() {
                   <strong style={{ display: 'inline-flex', alignItems: 'center', gap: '0.5rem' }}>
                     <span aria-hidden="true" style={{ width: 12, height: 12, borderRadius: 6, background: p.color }} />
                     {p.nombre}
+                    {p.ambito && <span className="secundario" style={{ fontWeight: 400, fontSize: '0.9rem' }}>· solo en {p.ambito}</span>}
                   </strong>
                   <span style={{ color: e.color, fontWeight: 700 }}>{e.texto}</span>
                 </div>

@@ -69,3 +69,21 @@ describe('afinidad', () => {
     expect(r[0].pocoFiable).toBe(true)
   })
 })
+
+import { partidosEn, presentaEn, PARTIDOS } from '../datos'
+
+describe('papeleta por provincia', () => {
+  it('un partido sin lista de provincias se presenta en todas', () => {
+    const estatal = PARTIDOS.find((p) => !p.provincias)!
+    expect(presentaEn(estatal, 'soria')).toBe(true)
+  })
+  it('un partido regional solo aparece en sus provincias', () => {
+    const regional = PARTIDOS.find((p) => p.provincias)!
+    const suya = regional.provincias![0]
+    expect(partidosEn(suya)).toContain(regional)
+    expect(partidosEn('soria')).not.toContain(regional)
+  })
+  it('sin provincia se ven todos', () => {
+    expect(partidosEn('')).toHaveLength(PARTIDOS.length)
+  })
+})

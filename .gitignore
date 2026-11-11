@@ -2,3 +2,6 @@ node_modules
 dist
 .DS_Store
 *.local
+
+# Borradores de partidos reales: no se publican hasta que haya programas de la mayoría
+datos/borradores/

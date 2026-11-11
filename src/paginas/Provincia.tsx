@@ -1,17 +1,18 @@
 import { useMemo, useState } from 'react'
 import { repartir, votosParaOtroEscano } from '../logica/dhondt'
-import { PARTIDOS, PROVINCIAS, RESULTADOS, RESULTADOS_FICTICIOS, UMBRAL, partidoPorId } from '../datos'
+import { PROVINCIAS, RESULTADOS, RESULTADOS_FICTICIOS, UMBRAL, partidoPorId, partidosEn } from '../datos'
 import { Hemiciclo } from '../componentes/Hemiciclo'
+import { SelectorProvincia } from '../componentes/SelectorProvincia'
 
 const n = (x: number) => x.toLocaleString('es-ES')
 const pct = (x: number) => (x * 100).toLocaleString('es-ES', { maximumFractionDigits: 1 })
 
-export function Provincia() {
-  const [provinciaId, setProvinciaId] = useState('')
+export function Provincia({ provincia: provinciaId, alElegirProvincia }: { provincia: string; alElegirProvincia: (id: string) => void }) {
   const [partidoId, setPartidoId] = useState('')
 
   const provincia = PROVINCIAS.find((p) => p.id === provinciaId)
   const datos = provincia ? RESULTADOS[provincia.id] : undefined
+  const papeleta = useMemo(() => partidosEn(provinciaId), [provinciaId])
   const reparto = useMemo(() => (provincia && datos ? repartir(datos, provincia.escanos, UMBRAL) : null), [provincia, datos])
 
   return (
@@ -24,13 +25,7 @@ export function Provincia() {
         Aquí puedes ver cómo funciona el reparto. No es una predicción de lo que va a pasar el 29 de noviembre.
       </p>
 
-      <label className="pila" style={{ display: 'block' }}>
-        <span style={{ fontWeight: 700 }}>¿Dónde votas?</span>
-        <select value={provinciaId} onChange={(e) => { setProvinciaId(e.target.value); setPartidoId('') }}>
-          <option value="">Elige tu provincia</option>
-          {PROVINCIAS.map((p) => <option key={p.id} value={p.id}>{p.nombre}</option>)}
-        </select>
-      </label>
+      <SelectorProvincia valor={provinciaId} alCambiar={(id) => { alElegirProvincia(id); setPartidoId('') }} />
 
       {provincia && reparto && datos && (
         <>
@@ -39,9 +34,9 @@ export function Provincia() {
               <span className="mono secundario">{provincia.nombre} elige</span>
               <h2 style={{ fontSize: '2rem', margin: 0 }}>{provincia.escanos} {provincia.escanos === 1 ? 'diputado' : 'diputados'}</h2>
             </div>
-            <Hemiciclo key={provincia.id} escanos={reparto.escanos} partidos={PARTIDOS} />
+            <Hemiciclo key={provincia.id} escanos={reparto.escanos} partidos={papeleta} />
             <ul style={{ listStyle: 'none', padding: 0, margin: 0 }} className="pila">
-              {[...PARTIDOS].sort((a, b) => datos.votos[b.id] - datos.votos[a.id]).map((p) => (
+              {[...papeleta].sort((a, b) => datos.votos[b.id] - datos.votos[a.id]).map((p) => (
                 <li key={p.id} style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', gap: '0.75rem', marginTop: '0.5rem' }}>
                   <span style={{ display: 'inline-flex', alignItems: 'center', gap: '0.6rem', minWidth: 0 }}>
                     <span aria-hidden="true" style={{ flexShrink: 0, width: 14, height: 14, borderRadius: 7, background: p.color }} />
@@ -64,7 +59,7 @@ export function Provincia() {
             <span className="secundario" style={{ display: 'block', fontSize: '0.95rem' }}>No guardamos lo que elijas.</span>
             <select value={partidoId} onChange={(e) => setPartidoId(e.target.value)}>
               <option value="">Elige un partido</option>
-              {PARTIDOS.map((p) => <option key={p.id} value={p.id}>{p.nombre}</option>)}
+              {papeleta.map((p) => <option key={p.id} value={p.id}>{p.nombre}</option>)}
             </select>
           </label>
 

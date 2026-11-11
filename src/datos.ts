@@ -28,4 +28,13 @@ export const RESULTADOS = resultadosEjemplo.provincias as Record<string, Resulta
 export const RESULTADOS_FICTICIOS = resultadosEjemplo.ficticio
 
 export const partidoPorId = (id: string) => PARTIDOS.find((p) => p.id === id)
+export const provinciaPorId = (id: string) => PROVINCIAS.find((p) => p.id === id)
+
+/** ¿Está este partido en la papeleta de esa provincia? */
+export const presentaEn = (partido: Partido, provinciaId: string) =>
+  !partido.provincias || partido.provincias.includes(provinciaId)
+
+/** Partidos de la papeleta de una provincia; sin provincia, todos */
+export const partidosEn = (provinciaId: string) =>
+  provinciaId ? PARTIDOS.filter((p) => presentaEn(p, provinciaId)) : PARTIDOS
 export const temaPorId = (id: string) => TEMAS.find((t) => t.id === id)

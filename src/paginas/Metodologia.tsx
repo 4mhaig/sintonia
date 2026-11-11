@@ -11,12 +11,13 @@ export function Metodologia() {
 
       <h2>Tu resultado</h2>
       <p>Por cada frase que respondes, sumas 2 puntos con un partido si pensáis lo mismo, 1 si uno de los dos es neutral y 0 si pensáis lo contrario. Los temas que marcas como importantes cuentan el doble. Las frases que te saltas, o de las que un partido no habla, no cuentan.</p>
+      <p>Si nos dices dónde votas, te comparamos solo con los partidos que se presentan en tu provincia, porque son los que vas a encontrar en tu papeleta. Puedes ver también el resto, o no decirnos la provincia.</p>
 
       <h2>Neutralidad</h2>
       <p>Los partidos aparecen en orden aleatorio en cada visita. En la portada, todos salen el mismo tiempo. El código y los datos son públicos para que cualquiera pueda revisarlos.</p>
 
       <h2>Privacidad</h2>
-      <p>Tus respuestas no salen de tu dispositivo: no las guardamos ni las enviamos a ningún sitio. Si cierras la página, se borran.</p>
+      <p>Tus respuestas y tu provincia no salen de tu dispositivo: no las guardamos ni las enviamos a ningún sitio. Si cierras la página, se borran.</p>
 
       <h2>Encuestas</h2>
       <p>Entre el 24 y el 28 de noviembre la ley prohíbe publicar sondeos. Sintonía no hace ni publica encuestas, y el simulador por provincia no usa sondeos.</p>

@@ -7,6 +7,7 @@
 3. Cambia `"ficticio": true` por `"ficticio": false`.
 4. En `posturas`, para cada frase pon `postura` (1, 0, -1 o null), la `cita` literal y la `pagina`.
 5. Guarda el PDF del programa en `programas-pdf/`.
+6. Si el partido **no se presenta en toda España**, añade `"ambito"` (por ejemplo `"Andalucía"`) y `"provincias"` con los identificadores de `provincias/escanos.json` donde se presenta. Compruébalo con las candidaturas proclamadas en el BOE. Sin `provincias`, se entiende que se presenta en todas.
 
 Cuando haya algún partido real, borra los ficticios y pon `"datos_de_ejemplo": false` en `elecciones.json`.
 

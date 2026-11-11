@@ -6,6 +6,17 @@
   "ficticio": true,
   "programa_url": null,
   "programa_publicado": null,
+  "ambito": "Andalucía",
+  "provincias": [
+    "almeria",
+    "cadiz",
+    "cordoba",
+    "granada",
+    "huelva",
+    "jaen",
+    "malaga",
+    "sevilla"
+  ],
   "posturas": [
     {
       "afirmacion": "viv-1",
