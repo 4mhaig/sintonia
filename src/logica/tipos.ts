@@ -17,6 +17,8 @@ export interface PosturaPartido {
   afirmacion: string
   postura: Postura
   cita: string
+  /** Traducción al castellano si la cita está en otra lengua */
+  traduccion?: string | null
   pagina: number | null
 }
 
@@ -27,7 +29,13 @@ export interface Partido {
   color: string
   ficticio: boolean
   programa_url: string | null
+  /** Fecha en que el partido publicó su programa; null si aún no lo ha hecho */
   programa_publicado: string | null
+  /** Fecha en que lo añadimos a Sintonía */
+  programa_anadido?: string | null
+  programa_titulo?: string
+  /** Código de la lengua del programa si no es castellano: ca, gl, eu */
+  programa_idioma?: string
   /** Solo para partidos que no se presentan en toda España, p. ej. "Andalucía" */
   ambito?: string
   /** Provincias donde se presenta. Si falta, se presenta en todas. */

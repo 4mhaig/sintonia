@@ -1,0 +1,46 @@
+{
+  "nota": "Partidos inventados solo para explicar el reparto de escaños. No representan a ningún partido real.",
+  "partidos": [
+    {
+      "id": "alfa",
+      "nombre": "Partido Alfa",
+      "siglas": "ALF",
+      "color": "#1D9E75"
+    },
+    {
+      "id": "beta",
+      "nombre": "Partido Beta",
+      "siglas": "BET",
+      "color": "#BA7517"
+    },
+    {
+      "id": "delta",
+      "nombre": "Partido Delta",
+      "siglas": "DEL",
+      "color": "#D4537E"
+    },
+    {
+      "id": "epsilon",
+      "nombre": "Partido Épsilon",
+      "siglas": "EPS",
+      "color": "#378ADD",
+      "provincias": [
+        "almeria",
+        "cadiz",
+        "cordoba",
+        "granada",
+        "huelva",
+        "jaen",
+        "malaga",
+        "sevilla"
+      ],
+      "ambito": "Andalucía"
+    },
+    {
+      "id": "gamma",
+      "nombre": "Partido Gamma",
+      "siglas": "GAM",
+      "color": "#7F77DD"
+    }
+  ]
+}

@@ -1,6 +1,6 @@
 import { useMemo, useState } from 'react'
 import { repartir, votosParaOtroEscano } from '../logica/dhondt'
-import { PROVINCIAS, RESULTADOS, RESULTADOS_FICTICIOS, UMBRAL, partidoPorId, partidosEn } from '../datos'
+import { PROVINCIAS, RESULTADOS, RESULTADOS_FICTICIOS, UMBRAL, simuladorEn, simuladorPorId } from '../datos'
 import { Hemiciclo } from '../componentes/Hemiciclo'
 import { SelectorProvincia } from '../componentes/SelectorProvincia'
 
@@ -12,7 +12,7 @@ export function Provincia({ provincia: provinciaId, alElegirProvincia }: { provi
 
   const provincia = PROVINCIAS.find((p) => p.id === provinciaId)
   const datos = provincia ? RESULTADOS[provincia.id] : undefined
-  const papeleta = useMemo(() => partidosEn(provinciaId), [provinciaId])
+  const papeleta = useMemo(() => simuladorEn(provinciaId), [provinciaId])
   const reparto = useMemo(() => (provincia && datos ? repartir(datos, provincia.escanos, UMBRAL) : null), [provincia, datos])
 
   return (
@@ -84,11 +84,11 @@ function QuePasaConMiVoto({ partidoId, provinciaId }: { partidoId: string; provi
   const provincia = PROVINCIAS.find((p) => p.id === provinciaId)!
   const datos = RESULTADOS[provinciaId]
   const reparto = repartir(datos, provincia.escanos, UMBRAL)
-  const partido = partidoPorId(partidoId)!
+  const partido = simuladorPorId(partidoId)!
   const votos = datos.votos[partidoId]
   const escanos = reparto.escanos[partidoId]
   const faltan = votosParaOtroEscano(datos, provincia.escanos, partidoId, UMBRAL)
-  const ultimo = reparto.ultimoEscano ? partidoPorId(reparto.ultimoEscano)?.nombre : null
+  const ultimo = reparto.ultimoEscano ? simuladorPorId(reparto.ultimoEscano)?.nombre : null
   const fuera = reparto.fueraDelUmbral.includes(partidoId)
 
   return (

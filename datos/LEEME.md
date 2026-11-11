@@ -13,7 +13,7 @@ Cuando haya algún partido real, borra los ficticios y pon `"datos_de_ejemplo": 
 
 ## Resultados por provincia
 
-`provincias/resultados-ejemplo.json` tiene votos inventados. Para los reales de 2023 crea `provincias/resultados-2023.json` con el mismo formato:
+El simulador de escaños usa sus propios partidos inventados (`simulador/partidos-ejemplo.json`) y votos inventados (`simulador/resultados-ejemplo.json`), separados de los partidos reales. Para usar resultados reales de 2023 habría que crear `provincias/resultados-2023.json` con este formato:
 
 ```json
 {

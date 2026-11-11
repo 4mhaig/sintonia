@@ -2,7 +2,8 @@ import { useEffect, useMemo, useState } from 'react'
 import type { Respuestas } from '../logica/tipos'
 import { calcularAfinidad } from '../logica/afinidad'
 import type { Afinidad } from '../logica/afinidad'
-import { AFIRMACIONES, PARTIDOS, partidoPorId, partidosEn, presentaEn, provinciaPorId } from '../datos'
+import { AFIRMACIONES, PARTIDOS, partidoPorId, partidosEn, presentaEn, provinciaPorId, tienePrograma } from '../datos'
+import { Cita } from '../componentes/Cita'
 import { Onda } from '../componentes/Onda'
 import { Dial } from '../componentes/Dial'
 import { SelectorProvincia } from '../componentes/SelectorProvincia'
@@ -18,11 +19,13 @@ interface Props {
 const textoPorId = (id: string) => AFIRMACIONES.find((a) => a.id === id)?.texto ?? id
 
 export function Resultado({ respuestas, importantes, provincia, alElegirProvincia }: Props) {
-  const papeleta = useMemo(() => partidosEn(provincia), [provincia])
+  const papeleta = useMemo(() => partidosEn(provincia).filter(tienePrograma), [provincia])
+  // Partidos de tu papeleta que aún no han publicado programa: no se pueden comparar
+  const sinPrograma = useMemo(() => partidosEn(provincia).filter((p) => !tienePrograma(p)), [provincia])
   const afinidades = useMemo(() => calcularAfinidad(papeleta, AFIRMACIONES, respuestas, importantes), [papeleta, respuestas, importantes])
   // Partidos que no se presentan en tu provincia: solo si se piden
   const otras = useMemo(
-    () => provincia ? calcularAfinidad(PARTIDOS.filter((p) => !presentaEn(p, provincia)), AFIRMACIONES, respuestas, importantes) : [],
+    () => provincia ? calcularAfinidad(PARTIDOS.filter((p) => tienePrograma(p) && !presentaEn(p, provincia)), AFIRMACIONES, respuestas, importantes) : [],
     [provincia, respuestas, importantes],
   )
   const [verOtros, setVerOtros] = useState(false)
@@ -51,6 +54,13 @@ export function Resultado({ respuestas, importantes, provincia, alElegirProvinci
 
       {listo && (
         <>
+          {sinPrograma.length > 0 && (
+            <p className="aviso" role="note" style={{ margin: 0 }}>
+              <strong>Aún no han publicado su programa:</strong> {sinPrograma.map((p) => p.nombre).join(', ')}.
+              {' '}No podemos compararte con {sinPrograma.length === 1 ? 'él' : 'ellos'} todavía, así que tu resultado puede cambiar cuando {sinPrograma.length === 1 ? 'lo haga' : 'lo hagan'}.
+            </p>
+          )}
+
           <Dial partidos={papeleta} elegido={mejor.partido} />
 
           <section aria-live="polite">
@@ -89,6 +99,18 @@ export function Resultado({ respuestas, importantes, provincia, alElegirProvinci
               <TarjetaPartido key={a.partido} afinidad={a} orden={i} abierto={abierto} alAbrir={setAbierto} />
             ))}
           </section>
+
+          {sinPrograma.length > 0 && (
+            <section className="pila" aria-label="Partidos sin programa todavía">
+              <h2 style={{ fontSize: '1.15rem', margin: '0.5rem 0 0' }}>También en tu papeleta, sin programa todavía</h2>
+              {sinPrograma.map((p) => (
+                <div key={p.id} className="tarjeta sin-programa">
+                  <h3>{p.nombre}</h3>
+                  <p className="secundario" style={{ margin: '0.25rem 0 0' }}>Programa aún no publicado. Lo añadiremos en cuanto salga.</p>
+                </div>
+              ))}
+            </section>
+          )}
 
           {otras.length > 0 && (
             <section className="pila" aria-label="Partidos que no se presentan en tu provincia">
@@ -167,11 +189,7 @@ function Lista({ titulo, ids, partido }: { titulo: string; ids: string[]; partid
           return (
             <li key={id} style={{ marginBottom: '0.5rem' }}>
               {textoPorId(id)}
-              {cita?.cita && (
-                <blockquote className="secundario" style={{ margin: '0.25rem 0 0', fontSize: '0.95rem' }}>
-                  «{cita.cita}»{cita.pagina ? ` (pág. ${cita.pagina})` : ''}
-                </blockquote>
-              )}
+              {cita && <Cita postura={cita} partido={p} />}
             </li>
           )
         })}

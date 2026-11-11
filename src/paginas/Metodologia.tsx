@@ -1,3 +1,33 @@
+import { PARTIDOS, tienePrograma } from '../datos'
+
+const fecha = (iso?: string | null) =>
+  iso ? new Date(`${iso}T12:00:00`).toLocaleDateString('es-ES', { day: 'numeric', month: 'short' }) : '—'
+
+/** Tabla pública: qué programa usamos de cada partido y cuándo lo añadimos */
+function EstadoProgramas() {
+  const reales = [...PARTIDOS].filter((p) => !p.ficticio).sort((a, b) => a.nombre.localeCompare(b.nombre, 'es'))
+  if (!reales.length) {
+    return <p>Los partidos reales se añadirán el 13 de noviembre, al empezar la campaña, con los programas que se hayan publicado para entonces. Los demás se irán añadiendo en un máximo de 48 horas desde que se publiquen.</p>
+  }
+  return (
+    <ul className="lista-programas">
+      {reales.map((p) => (
+        <li key={p.id}>
+          <strong>{p.nombre}</strong>
+          {tienePrograma(p) && p.programa_url ? (
+            <span>
+              <a href={p.programa_url} target="_blank" rel="noopener noreferrer">{p.programa_titulo ?? 'Programa (PDF)'}</a>
+              <span className="secundario"> · publicado el {fecha(p.programa_publicado)} · añadido el {fecha(p.programa_anadido)}</span>
+            </span>
+          ) : (
+            <span className="secundario">Programa aún no publicado</span>
+          )}
+        </li>
+      ))}
+    </ul>
+  )
+}
+
 export function Metodologia() {
   return (
     <article className="texto pila">
@@ -12,6 +42,13 @@ export function Metodologia() {
       <h2>Tu resultado</h2>
       <p>Por cada frase que respondes, sumas 2 puntos con un partido si pensáis lo mismo, 1 si uno de los dos es neutral y 0 si pensáis lo contrario. Los temas que marcas como importantes cuentan el doble. Las frases que te saltas, o de las que un partido no habla, no cuentan.</p>
       <p>Si nos dices dónde votas, te comparamos solo con los partidos que se presentan en tu provincia, porque son los que vas a encontrar en tu papeleta. Puedes ver también el resto, o no decirnos la provincia.</p>
+
+      <h2>Qué partidos aparecen</h2>
+      <p>Los que tienen hoy al menos un diputado en el Congreso o un eurodiputado, en las provincias donde presentan candidatura según el BOE. Es un criterio fijado de antemano, igual para todos.</p>
+      <p>Si un partido aún no ha publicado su programa, aparece como «Programa aún no publicado» y no se compara con tus respuestas: no le atribuimos posturas que no ha escrito. Cuando lo publica, lo añadimos en un máximo de 48 horas con el mismo método.</p>
+
+      <h2>Programas que usamos</h2>
+      <EstadoProgramas />
 
       <h2>Neutralidad</h2>
       <p>Los partidos aparecen en orden aleatorio en cada visita. En la portada, todos salen el mismo tiempo. El código y los datos son públicos para que cualquiera pueda revisarlos.</p>

@@ -1,6 +1,7 @@
 import { useMemo, useState } from 'react'
 import type { Postura } from '../logica/tipos'
-import { AFIRMACIONES, PARTIDOS, TEMAS, partidosEn, provinciaPorId } from '../datos'
+import { AFIRMACIONES, PARTIDOS, TEMAS, partidosEn, provinciaPorId, tienePrograma } from '../datos'
+import { Cita } from '../componentes/Cita'
 
 const ETIQUETA: Record<string, { texto: string; color: string }> = {
   '1': { texto: 'A favor', color: 'var(--acento)' },
@@ -26,7 +27,7 @@ export function Temas({ provincia }: { provincia: string }) {
     if (!q) return AFIRMACIONES.filter((a) => a.tema === tema)
     return AFIRMACIONES.filter((a) =>
       normalizar(`${a.texto} ${a.explicacion}`).includes(q) ||
-      partidos.some((p) => normalizar(p.posturas.find((x) => x.afirmacion === a.id)?.cita ?? '').includes(q)),
+      partidos.some((p) => normalizar(`${p.posturas.find((x) => x.afirmacion === a.id)?.cita ?? ''} ${p.posturas.find((x) => x.afirmacion === a.id)?.traduccion ?? ''}`).includes(q)),
     )
   }, [tema, busqueda, partidos])
 
@@ -70,7 +71,8 @@ export function Temas({ provincia }: { provincia: string }) {
           </div>
           {partidos.map((p) => {
             const postura = p.posturas.find((x) => x.afirmacion === a.id)
-            const e = etiqueta(postura?.postura ?? null)
+            const pendiente = !tienePrograma(p)
+            const e = pendiente ? { texto: 'Programa aún no publicado', color: 'var(--texto-2)' } : etiqueta(postura?.postura ?? null)
             return (
               <div key={p.id} style={{ borderTop: '1px solid var(--borde)', paddingTop: '0.75rem' }}>
                 <div style={{ display: 'flex', justifyContent: 'space-between', gap: '1rem', flexWrap: 'wrap' }}>
@@ -79,13 +81,9 @@ export function Temas({ provincia }: { provincia: string }) {
                     {p.nombre}
                     {p.ambito && <span className="secundario" style={{ fontWeight: 400, fontSize: '0.9rem' }}>· solo en {p.ambito}</span>}
                   </strong>
-                  <span style={{ color: e.color, fontWeight: 700 }}>{e.texto}</span>
+                  <span style={{ color: e.color, fontWeight: pendiente ? 400 : 700, fontStyle: pendiente ? 'italic' : 'normal' }}>{e.texto}</span>
                 </div>
-                {postura?.cita && postura.postura !== null && (
-                  <p className="secundario" style={{ margin: '0.25rem 0 0', fontSize: '0.95rem' }}>
-                    «{postura.cita}»{postura.pagina ? ` (pág. ${postura.pagina})` : ''}
-                  </p>
-                )}
+                {postura && postura.postura !== null && <Cita postura={postura} partido={p} />}
               </div>
             )
           })}

@@ -2,7 +2,8 @@ import elecciones from '../datos/elecciones.json'
 import temas from '../datos/temas.json'
 import afirmaciones from '../datos/afirmaciones.json'
 import escanos from '../datos/provincias/escanos.json'
-import resultadosEjemplo from '../datos/provincias/resultados-ejemplo.json'
+import resultadosEjemplo from '../datos/simulador/resultados-ejemplo.json'
+import partidosEjemplo from '../datos/simulador/partidos-ejemplo.json'
 import type { Afirmacion, Partido, Provincia, ResultadoProvincia, Tema } from './logica/tipos'
 
 const archivosPartidos = import.meta.glob<Partido>('../datos/partidos/*.json', { eager: true, import: 'default' })
@@ -27,6 +28,13 @@ export const UMBRAL = escanos.umbral
 export const RESULTADOS = resultadosEjemplo.provincias as Record<string, ResultadoProvincia>
 export const RESULTADOS_FICTICIOS = resultadosEjemplo.ficticio
 
+/** Partidos inventados del simulador de escaños: siempre los mismos, separados de los partidos reales */
+export type PartidoSimulador = Pick<Partido, 'id' | 'nombre' | 'siglas' | 'color' | 'ambito' | 'provincias'>
+export const PARTIDOS_SIMULADOR = mezclar(partidosEjemplo.partidos as PartidoSimulador[])
+export const simuladorEn = (provinciaId: string) =>
+  PARTIDOS_SIMULADOR.filter((p) => !p.provincias || p.provincias.includes(provinciaId))
+export const simuladorPorId = (id: string) => PARTIDOS_SIMULADOR.find((p) => p.id === id)
+
 export const partidoPorId = (id: string) => PARTIDOS.find((p) => p.id === id)
 export const provinciaPorId = (id: string) => PROVINCIAS.find((p) => p.id === id)
 
@@ -37,4 +45,10 @@ export const presentaEn = (partido: Partido, provinciaId: string) =>
 /** Partidos de la papeleta de una provincia; sin provincia, todos */
 export const partidosEn = (provinciaId: string) =>
   provinciaId ? PARTIDOS.filter((p) => presentaEn(p, provinciaId)) : PARTIDOS
+
+/** Un partido real sin programa publicado no se puede comparar: no tiene posturas */
+export const tienePrograma = (p: Partido) => p.ficticio || p.programa_publicado !== null
+
+const LENGUAS: Record<string, string> = { ca: 'catalán', gl: 'gallego', eu: 'euskera', va: 'valenciano' }
+export const nombreLengua = (codigo?: string) => (codigo ? LENGUAS[codigo] ?? codigo : null)
 export const temaPorId = (id: string) => TEMAS.find((t) => t.id === id)

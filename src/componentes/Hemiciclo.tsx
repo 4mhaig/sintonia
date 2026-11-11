@@ -1,8 +1,10 @@
 import type { Partido } from '../logica/tipos'
 
+type ParaHemiciclo = Pick<Partido, 'id' | 'color' | 'nombre'>
+
 interface Props {
   escanos: Record<string, number>
-  partidos: Partido[]
+  partidos: ParaHemiciclo[]
 }
 
 /** Escaños de una provincia dibujados como un pequeño hemiciclo. */

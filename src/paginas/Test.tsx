@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import type { Postura, Respuestas } from '../logica/tipos'
-import { AFIRMACIONES, TEMAS, partidosEn, temaPorId } from '../datos'
+import { AFIRMACIONES, TEMAS, partidosEn, temaPorId, tienePrograma } from '../datos'
 import { Onda } from '../componentes/Onda'
 import { SelectorProvincia } from '../componentes/SelectorProvincia'
 
@@ -37,7 +37,8 @@ export function Test({ provincia, alElegirProvincia, alTerminar }: Props) {
     alElegirProvincia(id)
     setPaso(0)
   }
-  const enPapeleta = eleccion ? partidosEn(eleccion).length : 0
+  const enPapeleta = eleccion ? partidosEn(eleccion).filter(tienePrograma).length : 0
+  const sinProgramaAun = eleccion ? partidosEn(eleccion).filter((p) => !tienePrograma(p)).length : 0
 
   const responder = (valor: Postura) => {
     const a = AFIRMACIONES[paso]
@@ -73,6 +74,8 @@ export function Test({ provincia, alElegirProvincia, alTerminar }: Props) {
           {eleccion && (
             <p className="secundario" aria-live="polite" style={{ margin: 0 }}>
               En tu provincia te compararemos con {enPapeleta} {enPapeleta === 1 ? 'partido' : 'partidos'}.
+              {sinProgramaAun === 1 && ' Otro aún no ha publicado su programa.'}
+              {sinProgramaAun > 1 && ` Otros ${sinProgramaAun} aún no han publicado su programa.`}
             </p>
           )}
           <div className="acciones-inicio">
