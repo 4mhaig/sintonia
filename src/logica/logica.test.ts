@@ -87,3 +87,30 @@ describe('papeleta por provincia', () => {
     expect(partidosEn('')).toHaveLength(PARTIDOS.length)
   })
 })
+
+import { provinciaEn, type MapaProvincias } from './ubicacion'
+import mapaJson from '../../datos/provincias/mapa.json'
+
+describe('provincia a partir de la ubicación', () => {
+  const mapa = mapaJson.provincias as MapaProvincias
+  const casos: [string, number, number, string | null][] = [
+    ['Puerta del Sol', 40.4168, -3.7038, 'madrid'],
+    ['Sevilla', 37.3891, -5.9845, 'sevilla'],
+    ['Bilbao', 43.263, -2.935, 'bizkaia'],
+    ['Vitoria', 42.8467, -2.6716, 'alava'],
+    ['Soria', 41.7666, -2.4790, 'soria'],
+    ['Palma', 39.5696, 2.6502, 'baleares'],
+    ['Las Palmas de Gran Canaria', 28.1235, -15.4363, 'las-palmas'],
+    ['Santa Cruz de Tenerife', 28.4636, -16.2518, 'santa-cruz-de-tenerife'],
+    ['Ceuta', 35.8894, -5.3213, 'ceuta'],
+    ['Melilla', 35.2923, -2.9381, 'melilla'],
+    ['Playa de la Barceloneta', 41.3784, 2.1925, 'barcelona'],
+    ['Playa de La Concha', 43.3172, -1.9862, 'gipuzkoa'],
+    ['Treviño (enclave de Burgos en Álava)', 42.7360, -2.7490, 'burgos'],
+    ['París', 48.8566, 2.3522, null],
+    ['Lisboa', 38.7223, -9.1393, null],
+  ]
+  for (const [nombre, lat, lon, esperado] of casos) {
+    it(nombre, () => expect(provinciaEn(lat, lon, mapa)).toBe(esperado))
+  }
+})

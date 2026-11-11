@@ -25,7 +25,7 @@ export function Provincia({ provincia: provinciaId, alElegirProvincia }: { provi
         Aquí puedes ver cómo funciona el reparto. No es una predicción de lo que va a pasar el 29 de noviembre.
       </p>
 
-      <SelectorProvincia valor={provinciaId} alCambiar={(id) => { alElegirProvincia(id); setPartidoId('') }} />
+      <SelectorProvincia valor={provinciaId} alCambiar={(id) => { alElegirProvincia(id); setPartidoId('') }} conUbicacion />
 
       {provincia && reparto && datos && (
         <>

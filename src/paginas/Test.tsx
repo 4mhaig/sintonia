@@ -69,13 +69,12 @@ export function Test({ provincia, alElegirProvincia, alTerminar }: Props) {
           <p className="texto">
             En cada provincia la papeleta es distinta: hay partidos que solo se presentan en algunas. Así te comparamos con los que de verdad puedes votar.
           </p>
-          <SelectorProvincia valor={eleccion} alCambiar={setEleccion} etiqueta="Provincia donde votas" />
+          <SelectorProvincia valor={eleccion} alCambiar={setEleccion} etiqueta="Provincia donde votas" conUbicacion />
           {eleccion && (
             <p className="secundario" aria-live="polite" style={{ margin: 0 }}>
               En tu provincia te compararemos con {enPapeleta} {enPapeleta === 1 ? 'partido' : 'partidos'}.
             </p>
           )}
-          <p className="secundario" style={{ margin: 0, fontSize: '0.95rem' }}>No guardamos tu provincia, igual que tus respuestas.</p>
           <div className="acciones-inicio">
             <button className="boton principal" disabled={!eleccion} onClick={() => empezar(eleccion)}>
               Empezar el test

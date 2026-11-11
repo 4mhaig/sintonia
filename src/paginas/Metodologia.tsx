@@ -18,6 +18,7 @@ export function Metodologia() {
 
       <h2>Privacidad</h2>
       <p>Tus respuestas y tu provincia no salen de tu dispositivo: no las guardamos ni las enviamos a ningún sitio. Si cierras la página, se borran.</p>
+      <p>Si pulsas «Usar mi ubicación», el navegador te pide permiso y la provincia se calcula en tu dispositivo con un mapa de provincias del Instituto Geográfico Nacional. Tus coordenadas no se envían a ningún sitio. Es solo una sugerencia: votas donde estás censado, y puedes cambiar la provincia siempre.</p>
 
       <h2>Encuestas</h2>
       <p>Entre el 24 y el 28 de noviembre la ley prohíbe publicar sondeos. Sintonía no hace ni publica encuestas, y el simulador por provincia no usa sondeos.</p>

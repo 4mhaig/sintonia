@@ -48,3 +48,4 @@ Si un partido no se pronuncia en más de la mitad de las frases que has respondi
 - Escaños por provincia: Real Decreto 806/2026, de 5 de octubre.
 - Resultados anteriores: Ministerio del Interior, infoelectoral.interior.gob.es.
 - Programas: los PDF oficiales que publica cada partido, guardados en `programas-pdf/`.
+- Mapa de provincias (botón «Usar mi ubicación»): Instituto Geográfico Nacional, Equipamiento Geográfico de Referencia Nacional (CC BY 4.0), a través de [es-atlas](https://github.com/martgnz/es-atlas) (MIT), simplificado y guardado en `datos/provincias/mapa.json`. La provincia se calcula en el dispositivo; las coordenadas no se envían a ningún sitio.
