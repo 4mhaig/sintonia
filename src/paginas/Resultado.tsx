@@ -93,7 +93,7 @@ export function Resultado({ respuestas, importantes, provincia, alElegirProvinci
 
           <section className="pila" aria-label="Coincidencia con cada partido">
             {afinidades.map((a, i) => (
-              <TarjetaPartido key={a.partido} afinidad={a} orden={i} abierto={abierto} alAbrir={setAbierto} />
+              <TarjetaPartido key={a.partido} afinidad={a} orden={i} abierto={abierto} alAbrir={setAbierto} respuestas={respuestas} />
             ))}
           </section>
 
@@ -119,11 +119,12 @@ export function Resultado({ respuestas, importantes, provincia, alElegirProvinci
   )
 }
 
-function TarjetaPartido({ afinidad: a, orden, abierto, alAbrir }: {
+function TarjetaPartido({ afinidad: a, orden, abierto, alAbrir, respuestas }: {
   afinidad: Afinidad
   orden: number
   abierto: string | null
   alAbrir: (id: string | null) => void
+  respuestas: Respuestas
 }) {
   const p = partidoPorId(a.partido)!
   const abiertoAqui = abierto === p.id
@@ -148,15 +149,18 @@ function TarjetaPartido({ afinidad: a, orden, abierto, alAbrir }: {
       </button>
       {abiertoAqui && (
         <div className="pila" style={{ marginTop: '0.5rem' }}>
-          <Lista titulo="Coincidís en" ids={a.coincidencias} partido={p.id} />
-          <Lista titulo="Pensáis lo contrario en" ids={a.discrepancias} partido={p.id} />
+          <Lista titulo="Pensáis lo mismo" ids={a.coincidencias} partido={p.id} respuestas={respuestas} />
+          <Lista titulo="Pensáis lo contrario" ids={a.discrepancias} partido={p.id} respuestas={respuestas} />
         </div>
       )}
     </div>
   )
 }
 
-function Lista({ titulo, ids, partido }: { titulo: string; ids: string[]; partido: string }) {
+const OPINION: Record<string, string> = { '1': 'de acuerdo', '0': 'neutral', '-1': 'en desacuerdo' }
+const POSTURA: Record<string, string> = { '1': 'a favor', '-1': 'en contra' }
+
+function Lista({ titulo, ids, partido, respuestas }: { titulo: string; ids: string[]; partido: string; respuestas: Respuestas }) {
   if (!ids.length) return null
   const p = partidoPorId(partido)!
   return (
@@ -167,7 +171,11 @@ function Lista({ titulo, ids, partido }: { titulo: string; ids: string[]; partid
           const cita = p.posturas.find((x) => x.afirmacion === id)
           return (
             <li key={id} style={{ marginBottom: '0.5rem' }}>
-              {textoPorId(id)}
+              <span className="frase-detalle">«{textoPorId(id)}»</span>
+              <span className="opiniones">
+                <span className="opinion">Tú: <strong>{OPINION[String(respuestas[id])]}</strong></span>
+                {cita?.postura != null && <span className="opinion">{p.siglas}: <strong>{POSTURA[String(cita.postura)]}</strong></span>}
+              </span>
               {cita && <Cita postura={cita} partido={p} />}
             </li>
           )

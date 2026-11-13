@@ -192,3 +192,9 @@ select {
 .leer-programas-partido { display: inline-flex; align-items: center; gap: 0.5rem; }
 .leer-programas-enlaces { display: flex; flex-direction: column; gap: 0.15rem; font-size: 0.95rem; }
 .leer-programas-enlaces a { padding: 0.2rem 0; }
+
+/* Detalle del resultado: qué respondiste tú y qué dice el partido */
+.frase-detalle { display: block; }
+.opiniones { display: flex; flex-wrap: wrap; gap: 0.4rem; margin: 0.35rem 0 0.15rem; }
+.opinion { font-size: 0.85rem; padding: 0.1em 0.65em; border-radius: 999px; background: var(--superficie-2); color: var(--texto-2); }
+.opinion strong { color: var(--texto); }
