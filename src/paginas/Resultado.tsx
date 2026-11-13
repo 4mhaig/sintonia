@@ -2,7 +2,7 @@ import { useEffect, useMemo, useState } from 'react'
 import type { Respuestas } from '../logica/tipos'
 import { calcularAfinidad } from '../logica/afinidad'
 import type { Afinidad } from '../logica/afinidad'
-import { AFIRMACIONES, PARTIDOS, partidoPorId, partidosEn, presentaEn, provinciaPorId, tienePrograma } from '../datos'
+import { AFIRMACIONES, partidoPorId, partidosEn, provinciaPorId, tienePrograma } from '../datos'
 import { Cita } from '../componentes/Cita'
 import { Onda } from '../componentes/Onda'
 import { Dial } from '../componentes/Dial'
@@ -23,12 +23,6 @@ export function Resultado({ respuestas, importantes, provincia, alElegirProvinci
   // Partidos de tu papeleta que aún no han publicado programa: no se pueden comparar
   const sinPrograma = useMemo(() => partidosEn(provincia).filter((p) => !tienePrograma(p)), [provincia])
   const afinidades = useMemo(() => calcularAfinidad(papeleta, AFIRMACIONES, respuestas, importantes), [papeleta, respuestas, importantes])
-  // Partidos que no se presentan en tu provincia: solo si se piden
-  const otras = useMemo(
-    () => provincia ? calcularAfinidad(PARTIDOS.filter((p) => tienePrograma(p) && !presentaEn(p, provincia)), AFIRMACIONES, respuestas, importantes) : [],
-    [provincia, respuestas, importantes],
-  )
-  const [verOtros, setVerOtros] = useState(false)
   const [cambiarProvincia, setCambiarProvincia] = useState(false)
   const nombreProvincia = provinciaPorId(provincia)?.nombre
   const [listo, setListo] = useState(false)
@@ -83,8 +77,7 @@ export function Resultado({ respuestas, importantes, provincia, alElegirProvinci
             {cambiarProvincia ? (
               <SelectorProvincia
                 valor={provincia}
-                vacio="Todavía no lo sé: ver todos"
-                alCambiar={(id) => { alElegirProvincia(id); setCambiarProvincia(false); setVerOtros(false) }}
+                alCambiar={(id) => { if (id) { alElegirProvincia(id); setCambiarProvincia(false) } }}
               />
             ) : (
               <p style={{ margin: 0 }}>
@@ -113,24 +106,6 @@ export function Resultado({ respuestas, importantes, provincia, alElegirProvinci
                   <p className="secundario" style={{ margin: '0.25rem 0 0' }}>Programa aún no publicado. Lo añadiremos en cuanto salga.</p>
                 </div>
               ))}
-            </section>
-          )}
-
-          {otras.length > 0 && (
-            <section className="pila" aria-label="Partidos que no se presentan en tu provincia">
-              <button className="boton fantasma" style={{ padding: 0, minHeight: 44, alignSelf: 'flex-start' }} aria-expanded={verOtros} onClick={() => setVerOtros((v) => !v)}>
-                {verOtros
-                  ? 'Ocultar los partidos de otras provincias'
-                  : `Ver también ${otras.length === 1 ? 'el partido que no se presenta' : `los ${otras.length} partidos que no se presentan`} en ${nombreProvincia}`}
-              </button>
-              {verOtros && (
-                <>
-                  <p className="secundario" style={{ margin: 0 }}>No están en tu papeleta: no puedes votarlos en {nombreProvincia}. Te los enseñamos solo para comparar.</p>
-                  {otras.map((a, i) => (
-                    <TarjetaPartido key={a.partido} afinidad={a} orden={i} abierto={abierto} alAbrir={setAbierto} />
-                  ))}
-                </>
-              )}
             </section>
           )}
 

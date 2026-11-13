@@ -33,6 +33,15 @@ export function Test({ provincia, alElegirProvincia, alTerminar }: Props) {
   // El ruido nunca llega a cero dentro del test: la claridad total es el resultado
   const ruido = 1 - (avance / total) * 0.8
 
+  // 20 frases y un último paso para elegir los temas importantes
+  const hechas = Math.max(0, paso)
+  const quedanFrases = total - Math.min(Math.max(paso, 0), total)
+  const quedanTexto = enTemas
+    ? 'Último paso: elegir tus temas y ver el resultado'
+    : quedanFrases === 1
+      ? 'Queda 1 frase y un último paso'
+      : `Quedan ${quedanFrases} frases y un último paso`
+
   const empezar = (id: string) => {
     alElegirProvincia(id)
     setPaso(0)
@@ -62,6 +71,22 @@ export function Test({ provincia, alElegirProvincia, alTerminar }: Props) {
         <div className="tarjeta" style={{ padding: 0, marginTop: 8, overflow: 'hidden' }}>
           <Onda ruido={ruido} />
         </div>
+        {!antes && (
+          <>
+            <div
+              className="progreso"
+              role="progressbar"
+              aria-label="Progreso del test"
+              aria-valuemin={0}
+              aria-valuemax={total + 1}
+              aria-valuenow={hechas}
+              aria-valuetext={quedanTexto}
+            >
+              <div className="progreso-relleno" style={{ width: `${(hechas / (total + 1)) * 100}%` }} />
+            </div>
+            <p className="secundario" style={{ margin: '6px 0 0', fontSize: '0.95rem' }}>{quedanTexto}</p>
+          </>
+        )}
       </div>
 
       {antes ? (
@@ -81,9 +106,6 @@ export function Test({ provincia, alElegirProvincia, alTerminar }: Props) {
           <div className="acciones-inicio">
             <button className="boton principal" disabled={!eleccion} onClick={() => empezar(eleccion)}>
               Empezar el test
-            </button>
-            <button className="boton fantasma" onClick={() => empezar('')}>
-              Todavía no lo sé: ver todos los partidos
             </button>
           </div>
         </section>

@@ -71,6 +71,22 @@ select, input[type='search'] {
   border: 2px solid var(--borde-fuerte); border-radius: var(--radio);
   background: var(--superficie); color: var(--texto); font: inherit; font-size: 1.05rem;
 }
+/* Flecha propia, separada del borde y del color del texto en los dos temas */
+select {
+  appearance: none; -webkit-appearance: none; cursor: pointer;
+  padding-right: 3rem;
+  background-image:
+    linear-gradient(45deg, transparent 50%, currentColor 50%),
+    linear-gradient(135deg, currentColor 50%, transparent 50%);
+  background-position: calc(100% - 1.45rem) 50%, calc(100% - 1.1rem) 50%;
+  background-size: 0.36rem 0.36rem;
+  background-repeat: no-repeat;
+}
+
+/* Progreso del test */
+.progreso { height: 8px; background: var(--superficie-2); border-radius: 4px; overflow: hidden; margin-top: 10px; }
+.progreso-relleno { height: 100%; background: var(--acento); border-radius: 4px; transition: width 300ms cubic-bezier(.2,.8,.2,1); }
+@media (prefers-reduced-motion: reduce) { .progreso-relleno { transition: none; } }
 
 /* Cabecera */
 .cabecera { display: flex; align-items: center; justify-content: space-between; gap: 1rem; padding: 1rem 0; flex-wrap: wrap; }
@@ -143,11 +159,9 @@ select, input[type='search'] {
 .cuenta-atras .cuenta-atras-numero { color: var(--acento); }
 
 /* Test: botones de la pregunta "¿Dónde votas?" */
-.acciones-inicio { display: flex; flex-wrap: wrap; align-items: center; gap: 0.5rem 1.5rem; }
-.acciones-inicio .fantasma { padding: 0; text-align: left; }
+.acciones-inicio { display: flex; }
 @media (max-width: 40rem) {
   .acciones-inicio { flex-direction: column; align-items: stretch; }
-  .acciones-inicio .fantasma { align-self: flex-start; }
 }
 .ubicacion-boton { padding: 0; min-height: 44px; }
 .ubicacion-boton { text-decoration: none; }
