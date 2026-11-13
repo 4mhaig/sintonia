@@ -9,7 +9,7 @@
 5. Guarda el PDF del programa en `programas-pdf/`.
 6. Si el partido **no se presenta en toda España**, añade `"ambito"` (por ejemplo `"Andalucía"`) y `"provincias"` con los identificadores de `provincias/escanos.json` donde se presenta. Compruébalo con las candidaturas proclamadas en el BOE. Sin `provincias`, se entiende que se presenta en todas.
 
-Rellena `programa_url`, `programa_titulo`, `programa_publicado` (fecha del partido) y `programa_anadido` (fecha en que lo añadimos). Las posturas aproximadas llevan `"aproximada": true`; si el programa habla del tema pero no del punto concreto, `postura: null` con la cita.
+Rellena `programa_url`, `programa_titulo`, `programa_publicado` (fecha del partido) y `programa_anadido` (fecha en que lo añadimos). En `temas_programa` pon, para cada tema, los tramos de páginas del PDF que lo tratan: `{"tipo": "apartado" | "menciones", "titulo", "desde", "hasta"}` (`null` si no lo trata). Las posturas aproximadas llevan `"aproximada": true`; si el programa habla del tema pero no del punto concreto, `postura: null` con la cita.
 
 ## Resultados por provincia
 

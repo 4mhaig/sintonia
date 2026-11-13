@@ -14,6 +14,113 @@
     "bizkaia",
     "gipuzkoa"
   ],
+  "programa_anadido": "2026-11-13",
+  "temas_programa": {
+    "vivienda": [
+      {
+        "tipo": "apartado",
+        "titulo": "Vivienda: acabar con los abusos y construir más viviendas",
+        "desde": 7,
+        "hasta": 8
+      },
+      {
+        "tipo": "apartado",
+        "titulo": "Emanciparse en Euskadi debe ser posible",
+        "desde": 8,
+        "hasta": 8
+      }
+    ],
+    "sanidad": [
+      {
+        "tipo": "apartado",
+        "titulo": "Una sanidad pública que responda cuando la necesitamos",
+        "desde": 31,
+        "hasta": 32
+      }
+    ],
+    "empleo": [
+      {
+        "tipo": "apartado",
+        "titulo": "Mejores salarios, empleo digno y derechos laborales",
+        "desde": 9,
+        "hasta": 10
+      }
+    ],
+    "impuestos": [
+      {
+        "tipo": "apartado",
+        "titulo": "Una fiscalidad que favorezca la actividad económica y permita invertir",
+        "desde": 20,
+        "hasta": 21
+      }
+    ],
+    "pensiones": [
+      {
+        "tipo": "apartado",
+        "titulo": "Pensiones dignas y justicia para las largas carreras de cotización",
+        "desde": 30,
+        "hasta": 31
+      }
+    ],
+    "educacion": [
+      {
+        "tipo": "apartado",
+        "titulo": "Una educación que abra oportunidades",
+        "desde": 10,
+        "hasta": 10
+      }
+    ],
+    "medio-ambiente": [
+      {
+        "tipo": "apartado",
+        "titulo": "Una transición ecológica que proteja el medio ambiente y genere oportunidades",
+        "desde": 16,
+        "hasta": 17
+      },
+      {
+        "tipo": "apartado",
+        "titulo": "Energía competitiva para nuestra industria y asequible para los hogares",
+        "desde": 15,
+        "hasta": 16
+      }
+    ],
+    "inmigracion": [
+      {
+        "tipo": "apartado",
+        "titulo": "Una migración gestionada desde Euskadi, con derechos y responsabilidades",
+        "desde": 24,
+        "hasta": 25
+      }
+    ],
+    "territorio": [
+      {
+        "tipo": "apartado",
+        "titulo": "Lo pactado se cumple. Más capacidad para decidir aquí",
+        "desde": 38,
+        "hasta": 38
+      },
+      {
+        "tipo": "apartado",
+        "titulo": "Defender el Concierto Económico. Avanzar hacia un nuevo pacto político",
+        "desde": 38,
+        "hasta": 39
+      }
+    ],
+    "igualdad": [
+      {
+        "tipo": "apartado",
+        "titulo": "Igualdad real y una vida libre de violencia machista",
+        "desde": 25,
+        "hasta": 26
+      },
+      {
+        "tipo": "apartado",
+        "titulo": "Defender los derechos de las personas LGTBIQ+ y combatir la discriminación",
+        "desde": 27,
+        "hasta": 27
+      }
+    ]
+  },
   "posturas": [
     {
       "afirmacion": "viv-1",
@@ -140,6 +247,5 @@
       "cita": "",
       "pagina": null
     }
-  ],
-  "programa_anadido": "2026-11-13"
+  ]
 }

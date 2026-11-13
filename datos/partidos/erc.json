@@ -16,6 +16,113 @@
     "lleida",
     "tarragona"
   ],
+  "programa_anadido": "2026-11-13",
+  "temas_programa": {
+    "vivienda": [
+      {
+        "tipo": "apartado",
+        "titulo": "Pla de xoc sobre l’habitatge",
+        "desde": 18,
+        "hasta": 20
+      }
+    ],
+    "sanidad": [
+      {
+        "tipo": "apartado",
+        "titulo": "Enfortir la sanitat pública",
+        "desde": 41,
+        "hasta": 42
+      }
+    ],
+    "empleo": [
+      {
+        "tipo": "apartado",
+        "titulo": "Treball digne i seguretat social garantida",
+        "desde": 25,
+        "hasta": 28
+      }
+    ],
+    "impuestos": [
+      {
+        "tipo": "apartado",
+        "titulo": "Un model econòmic i una fiscalitat més justes",
+        "desde": 21,
+        "hasta": 23
+      }
+    ],
+    "pensiones": [
+      {
+        "tipo": "apartado",
+        "titulo": "Treball digne i seguretat social garantida",
+        "desde": 25,
+        "hasta": 26
+      }
+    ],
+    "educacion": [
+      {
+        "tipo": "apartado",
+        "titulo": "Defensa de l’escola catalana",
+        "desde": 10,
+        "hasta": 11
+      },
+      {
+        "tipo": "apartado",
+        "titulo": "Universitats i recerca públiques, accessibles i de qualitat",
+        "desde": 44,
+        "hasta": 46
+      }
+    ],
+    "medio-ambiente": [
+      {
+        "tipo": "apartado",
+        "titulo": "Impulsar una transició energètica justa, ecològica i accessible",
+        "desde": 29,
+        "hasta": 32
+      }
+    ],
+    "inmigracion": [
+      {
+        "tipo": "menciones",
+        "titulo": null,
+        "desde": 14,
+        "hasta": 14
+      },
+      {
+        "tipo": "menciones",
+        "titulo": null,
+        "desde": 17,
+        "hasta": 17
+      }
+    ],
+    "territorio": [
+      {
+        "tipo": "apartado",
+        "titulo": "Autodeterminació, democràcia i drets",
+        "desde": 7,
+        "hasta": 9
+      },
+      {
+        "tipo": "apartado",
+        "titulo": "Finançament i sobirania fiscal",
+        "desde": 11,
+        "hasta": 12
+      },
+      {
+        "tipo": "apartado",
+        "titulo": "Més sobirania i competències",
+        "desde": 14,
+        "hasta": 15
+      }
+    ],
+    "igualdad": [
+      {
+        "tipo": "apartado",
+        "titulo": "Més feminisme, més drets LGBTI+ i més antiracisme",
+        "desde": 23,
+        "hasta": 25
+      }
+    ]
+  },
   "posturas": [
     {
       "afirmacion": "viv-1",
@@ -169,6 +276,5 @@
       "traduccion": null,
       "pagina": null
     }
-  ],
-  "programa_anadido": "2026-11-13"
+  ]
 }

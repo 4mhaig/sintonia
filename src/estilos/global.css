@@ -171,3 +171,10 @@ select, input[type='search'] {
 .aproximacion-chip { font-size: 0.8rem; padding: 0.1em 0.6em; background: var(--aviso-fondo); color: var(--aviso); }
 .nota-frases { margin: 0; padding: 0.75rem 1rem; border-left: 3px solid var(--borde-fuerte); background: var(--superficie-2); border-radius: 0 var(--radio) var(--radio) 0; font-size: 0.95rem; color: var(--texto-2); }
 .titular-matiz { display: block; font-size: 0.55em; font-weight: 500; color: var(--texto-2); margin-bottom: 0.2em; }
+
+/* Por temas: leer en los programas */
+.leer-programas ul { list-style: none; margin: 0; padding: 0; }
+.leer-programas li { display: flex; flex-direction: column; gap: 0.15rem; padding: 0.6rem 0; border-top: 1px solid var(--borde); }
+.leer-programas-partido { display: inline-flex; align-items: center; gap: 0.5rem; }
+.leer-programas-enlaces { display: flex; flex-direction: column; gap: 0.15rem; font-size: 0.95rem; }
+.leer-programas-enlaces a { padding: 0.2rem 0; }

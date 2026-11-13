@@ -67,6 +67,113 @@
     "zamora",
     "zaragoza"
   ],
+  "programa_anadido": "2026-11-13",
+  "temas_programa": {
+    "vivienda": [
+      {
+        "tipo": "apartado",
+        "titulo": "SE CONSTRUIRÁ UN MILLÓN DE VIVIENDAS MÁS EN ESPAÑA",
+        "desde": 53,
+        "hasta": 55
+      }
+    ],
+    "sanidad": [
+      {
+        "tipo": "apartado",
+        "titulo": "SEREMOS REFERENTE MUNDIAL EN SANIDAD Y CUIDADOS",
+        "desde": 68,
+        "hasta": 71
+      }
+    ],
+    "empleo": [
+      {
+        "tipo": "apartado",
+        "titulo": "EN ESPAÑA SIEMPRE MERECERÁ LA PENA TRABAJAR, EMPRENDER Y ARRIESGAR",
+        "desde": 58,
+        "hasta": 60
+      }
+    ],
+    "impuestos": [
+      {
+        "tipo": "apartado",
+        "titulo": "LOS ESPAÑOLES PAGARÁN MENOS IMPUESTOS",
+        "desde": 60,
+        "hasta": 61
+      }
+    ],
+    "pensiones": [
+      {
+        "tipo": "apartado",
+        "titulo": "Reconstruiremos el pacto entre generaciones",
+        "desde": 42,
+        "hasta": 43
+      }
+    ],
+    "educacion": [
+      {
+        "tipo": "apartado",
+        "titulo": "ESPAÑA TENDRÁ SU MEJOR RESULTADO EN PISA EN CUATRO AÑOS",
+        "desde": 67,
+        "hasta": 68
+      }
+    ],
+    "medio-ambiente": [
+      {
+        "tipo": "apartado",
+        "titulo": "ESPAÑA PUEDE SER POTENCIA ENERGÉTICA DE EUROPA",
+        "desde": 71,
+        "hasta": 73
+      }
+    ],
+    "inmigracion": [
+      {
+        "tipo": "apartado",
+        "titulo": "NUESTRO PAÍS RECUPERARÁ EL CONTROL DE SUS FRONTERAS",
+        "desde": 21,
+        "hasta": 22
+      },
+      {
+        "tipo": "apartado",
+        "titulo": "VIVIR EN ESPAÑA SERÁ UN COMPROMISO MUTUO",
+        "desde": 22,
+        "hasta": 24
+      }
+    ],
+    "territorio": [
+      {
+        "tipo": "apartado",
+        "titulo": "Reconstruiremos el pacto territorial",
+        "desde": 40,
+        "hasta": 42
+      },
+      {
+        "tipo": "apartado",
+        "titulo": "EL ESTADO ESTARÁ PRESENTE EN TODA ESPAÑA",
+        "desde": 15,
+        "hasta": 17
+      },
+      {
+        "tipo": "apartado",
+        "titulo": "UNA CIUDADANÍA COMÚN",
+        "desde": 38,
+        "hasta": 40
+      }
+    ],
+    "igualdad": [
+      {
+        "tipo": "apartado",
+        "titulo": "Fortaleceremos el pacto entre personas",
+        "desde": 43,
+        "hasta": 44
+      },
+      {
+        "tipo": "menciones",
+        "titulo": null,
+        "desde": 19,
+        "hasta": 19
+      }
+    ]
+  },
   "posturas": [
     {
       "afirmacion": "viv-1",
@@ -199,6 +306,5 @@
       "cita": "",
       "pagina": null
     }
-  ],
-  "programa_anadido": "2026-11-13"
+  ]
 }

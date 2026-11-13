@@ -20,7 +20,7 @@ export function Cita({ postura, partido }: { postura: PosturaPartido; partido: P
         </span>
       )}
       «{postura.traduccion ?? postura.cita}»
-      {enlace ? <a href={enlace} target="_blank" rel="noopener noreferrer">{pagina}</a> : pagina}
+      {enlace ? <a href={enlace} target="_blank" rel="noopener noreferrer">{pagina}<span className="solo-lectores"> (abre el programa en otra pestaña)</span></a> : pagina}
       {postura.traduccion && (
         <details className="cita-original">
           <summary>{lengua ? `Traducido del ${lengua}. Ver original` : 'Traducción. Ver original'}</summary>

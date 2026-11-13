@@ -78,7 +78,7 @@ describe('papeleta por provincia', () => {
     expect(presentaEn(estatal, 'soria')).toBe(true)
   })
   it('un partido regional solo aparece en sus provincias', () => {
-    const regional = PARTIDOS.find((p) => p.provincias)!
+    const regional = PARTIDOS.find((p) => p.provincias && !p.provincias.includes('soria'))!
     const suya = regional.provincias![0]
     expect(partidosEn(suya)).toContain(regional)
     expect(partidosEn('soria')).not.toContain(regional)

@@ -17,6 +17,107 @@
     "las-palmas",
     "santa-cruz-de-tenerife"
   ],
+  "programa_anadido": "2026-11-13",
+  "temas_programa": {
+    "vivienda": [
+      {
+        "tipo": "apartado",
+        "titulo": "DEFENDER EL DERECHO A VIVIR Y PERMANECER EN CANARIAS",
+        "desde": 10,
+        "hasta": 11
+      }
+    ],
+    "sanidad": [
+      {
+        "tipo": "menciones",
+        "titulo": null,
+        "desde": 9,
+        "hasta": 9
+      }
+    ],
+    "empleo": [
+      {
+        "tipo": "apartado",
+        "titulo": "DEFENDER A QUIENES LEVANTAN CANARIAS CADA DÍA",
+        "desde": 12,
+        "hasta": 13
+      }
+    ],
+    "impuestos": [
+      {
+        "tipo": "menciones",
+        "titulo": null,
+        "desde": 12,
+        "hasta": 13
+      },
+      {
+        "tipo": "menciones",
+        "titulo": null,
+        "desde": 8,
+        "hasta": 8
+      }
+    ],
+    "pensiones": [
+      {
+        "tipo": "menciones",
+        "titulo": null,
+        "desde": 10,
+        "hasta": 10
+      }
+    ],
+    "educacion": [
+      {
+        "tipo": "menciones",
+        "titulo": null,
+        "desde": 9,
+        "hasta": 10
+      },
+      {
+        "tipo": "menciones",
+        "titulo": null,
+        "desde": 14,
+        "hasta": 14
+      }
+    ],
+    "medio-ambiente": [
+      {
+        "tipo": "apartado",
+        "titulo": "DEFENDER NUESTRA TIERRA Y NUESTROS RECURSOS",
+        "desde": 15,
+        "hasta": 17
+      }
+    ],
+    "inmigracion": [
+      {
+        "tipo": "apartado",
+        "titulo": "DEFENDER UNA POLÍTICA MIGRATORIA SOLIDARIA Y EUROPEA",
+        "desde": 18,
+        "hasta": 19
+      }
+    ],
+    "territorio": [
+      {
+        "tipo": "apartado",
+        "titulo": "DEFENDER LOS DERECHOS DE CANARIAS",
+        "desde": 8,
+        "hasta": 9
+      },
+      {
+        "tipo": "apartado",
+        "titulo": "DEFENDER NUESTRA CAPACIDAD PARA DECIDIR Y EXIGIR RESULTADOS",
+        "desde": 20,
+        "hasta": 21
+      }
+    ],
+    "igualdad": [
+      {
+        "tipo": "menciones",
+        "titulo": null,
+        "desde": 10,
+        "hasta": 10
+      }
+    ]
+  },
   "posturas": [
     {
       "afirmacion": "viv-1",
@@ -162,6 +263,5 @@
       "pagina": null,
       "traduccion": null
     }
-  ],
-  "programa_anadido": "2026-11-13"
+  ]
 }

@@ -19,6 +19,107 @@
     "ourense",
     "pontevedra"
   ],
+  "programa_anadido": "2026-11-13",
+  "temas_programa": {
+    "vivienda": [
+      {
+        "tipo": "apartado",
+        "titulo": "VIVENDA",
+        "desde": 11,
+        "hasta": 14
+      }
+    ],
+    "sanidad": [
+      {
+        "tipo": "apartado",
+        "titulo": "SANIDADE",
+        "desde": 36,
+        "hasta": 40
+      }
+    ],
+    "empleo": [
+      {
+        "tipo": "apartado",
+        "titulo": "MÁIS DEREITOS PARA A CLASE TRABALLADORA",
+        "desde": 14,
+        "hasta": 18
+      }
+    ],
+    "impuestos": [
+      {
+        "tipo": "apartado",
+        "titulo": "POR UNHA NOVA FISCALIDADE",
+        "desde": 43,
+        "hasta": 45
+      }
+    ],
+    "pensiones": [
+      {
+        "tipo": "apartado",
+        "titulo": "NA DEFENSA DO SISTEMA PÚBLICO DE PENSIÓNS",
+        "desde": 18,
+        "hasta": 20
+      }
+    ],
+    "educacion": [
+      {
+        "tipo": "apartado",
+        "titulo": "EDUCACIÓN",
+        "desde": 33,
+        "hasta": 36
+      }
+    ],
+    "medio-ambiente": [
+      {
+        "tipo": "apartado",
+        "titulo": "FRONTE Á CRISE AMBIENTAL E A EMERXENCIA CLIMÁTICA",
+        "desde": 65,
+        "hasta": 70
+      },
+      {
+        "tipo": "apartado",
+        "titulo": "POR UNHA TRANSICIÓN ENERXÉTICA XUSTA",
+        "desde": 53,
+        "hasta": 59
+      }
+    ],
+    "inmigracion": [
+      {
+        "tipo": "apartado",
+        "titulo": "ACOLLIDA, INCLUSIÓN E DEREITOS DAS PERSOAS INMIGRANTES",
+        "desde": 22,
+        "hasta": 23
+      }
+    ],
+    "territorio": [
+      {
+        "tipo": "apartado",
+        "titulo": "MÁIS FORZA PARA GALIZA",
+        "desde": 8,
+        "hasta": 10
+      },
+      {
+        "tipo": "apartado",
+        "titulo": "REESTRUTURACIÓN DA ADMINISTRACIÓN ESTATAL NA GALIZA",
+        "desde": 42,
+        "hasta": 42
+      }
+    ],
+    "igualdad": [
+      {
+        "tipo": "apartado",
+        "titulo": "POLÍTICAS FEMINISTAS PARA AVANZAR NOS DEREITOS DAS MULLERES",
+        "desde": 24,
+        "hasta": 28
+      },
+      {
+        "tipo": "apartado",
+        "titulo": "A DEFENSA DOS DEREITOS DAS PERSOAS LGBT",
+        "desde": 28,
+        "hasta": 29
+      }
+    ]
+  },
   "posturas": [
     {
       "afirmacion": "viv-1",
@@ -177,6 +278,5 @@
       "traduccion": null,
       "pagina": null
     }
-  ],
-  "programa_anadido": "2026-11-13"
+  ]
 }

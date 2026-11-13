@@ -12,6 +12,106 @@
     "la-rioja": "VOX"
   },
   "programa_titulo": "Es sentido común. Programa electoral 29 de noviembre de 2026",
+  "temas_programa": {
+    "vivienda": [
+      {
+        "tipo": "apartado",
+        "titulo": "VIVIENDA",
+        "desde": 19,
+        "hasta": 21
+      }
+    ],
+    "sanidad": [
+      {
+        "tipo": "apartado",
+        "titulo": "SANIDAD",
+        "desde": 32,
+        "hasta": 33
+      }
+    ],
+    "empleo": [
+      {
+        "tipo": "menciones",
+        "titulo": null,
+        "desde": 10,
+        "hasta": 11
+      }
+    ],
+    "impuestos": [
+      {
+        "tipo": "menciones",
+        "titulo": null,
+        "desde": 7,
+        "hasta": 8
+      }
+    ],
+    "pensiones": [
+      {
+        "tipo": "menciones",
+        "titulo": null,
+        "desde": 8,
+        "hasta": 9
+      }
+    ],
+    "educacion": [
+      {
+        "tipo": "apartado",
+        "titulo": "EDUCACIÓN, CULTURA Y DEPORTE",
+        "desde": 35,
+        "hasta": 36
+      }
+    ],
+    "medio-ambiente": [
+      {
+        "tipo": "apartado",
+        "titulo": "ECONOMÍA, INDUSTRIA Y ENERGÍA",
+        "desde": 9,
+        "hasta": 10
+      },
+      {
+        "tipo": "menciones",
+        "titulo": null,
+        "desde": 28,
+        "hasta": 29
+      }
+    ],
+    "inmigracion": [
+      {
+        "tipo": "apartado",
+        "titulo": "INMIGRACIÓN",
+        "desde": 13,
+        "hasta": 14
+      },
+      {
+        "tipo": "apartado",
+        "titulo": "PRIORIDAD NACIONAL",
+        "desde": 16,
+        "hasta": 17
+      }
+    ],
+    "territorio": [
+      {
+        "tipo": "menciones",
+        "titulo": null,
+        "desde": 48,
+        "hasta": 49
+      }
+    ],
+    "igualdad": [
+      {
+        "tipo": "menciones",
+        "titulo": null,
+        "desde": 26,
+        "hasta": 26
+      },
+      {
+        "tipo": "menciones",
+        "titulo": null,
+        "desde": 40,
+        "hasta": 40
+      }
+    ]
+  },
   "posturas": [
     {
       "afirmacion": "viv-1",

@@ -24,6 +24,14 @@ export interface PosturaPartido {
   aproximada?: boolean
 }
 
+export interface TramoPrograma {
+  /** apartado: el programa tiene una sección sobre el tema; menciones: medidas sueltas */
+  tipo: 'apartado' | 'menciones'
+  titulo: string | null
+  desde: number
+  hasta: number
+}
+
 export interface Partido {
   id: string
   nombre: string
@@ -42,6 +50,8 @@ export interface Partido {
   ambito?: string
   /** Provincias donde se presenta. Si falta, se presenta en todas. */
   provincias?: string[]
+  /** Dónde habla el programa de cada tema (páginas del PDF). null = no habla de ese tema */
+  temas_programa?: Record<string, TramoPrograma[] | null>
   posturas: PosturaPartido[]
 }
 
