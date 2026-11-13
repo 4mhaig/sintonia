@@ -65,9 +65,13 @@ export function Resultado({ respuestas, importantes, provincia, alElegirProvinci
 
           <section aria-live="polite">
             <h1 style={{ fontSize: 'clamp(1.6rem, 5vw, 2.4rem)' }}>
-              {empatados.length > 1
-                ? `Sintonizas por igual con ${empatados.map((a) => partidoPorId(a.partido)?.nombre).join(' y ')}`
-                : `Sintonizas más con ${partidoPorId(mejor.partido)?.nombre}`}
+              {sinPrograma.length > 0 && <span className="titular-matiz">De los partidos que ya tienen programa,</span>}
+              {(() => {
+                const texto = empatados.length > 1
+                  ? `sintonizas por igual con ${empatados.map((a) => partidoPorId(a.partido)?.nombre).join(' y ')}`
+                  : `sintonizas más con ${partidoPorId(mejor.partido)?.nombre}`
+                return sinPrograma.length > 0 ? texto : texto.charAt(0).toUpperCase() + texto.slice(1)
+              })()}
             </h1>
             <p className="secundario">
               Coincides en un {mejor.porcentaje}% de las frases.
@@ -131,7 +135,7 @@ export function Resultado({ respuestas, importantes, provincia, alElegirProvinci
           )}
 
           <div className="fila">
-            <button className="boton principal" onClick={() => ir('provincia')}>¿Qué pasa con mi voto en mi provincia?</button>
+            <button className="boton principal" onClick={() => ir('provincia')}>¿Cómo se reparten los escaños en mi provincia?</button>
             <button className="boton" onClick={() => ir('test')}>Repetir el test</button>
           </div>
         </>

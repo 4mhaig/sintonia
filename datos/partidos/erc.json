@@ -1,0 +1,174 @@
+{
+  "id": "erc",
+  "nombre": "Esquerra Republicana de Catalunya",
+  "siglas": "ERC",
+  "color": "#F5A623",
+  "ficticio": false,
+  "programa_titulo": "Pel país. Per la gent. Pel futur.",
+  "programa_idioma": "ca",
+  "programa_url": "https://esquerrarepublicana.cat/documents/e2026-programa.pdf",
+  "programa_publicado": "2026-11-05",
+  "nombre_en_papeleta": "ESQUERRA REPUBLICANA DE CATALUNYA (ERC)",
+  "ambito": "Cataluña",
+  "provincias": [
+    "barcelona",
+    "girona",
+    "lleida",
+    "tarragona"
+  ],
+  "posturas": [
+    {
+      "afirmacion": "viv-1",
+      "postura": 1,
+      "cita": "Cal garantir un finançament públic adequat a les polítiques d’habitatge i incloure’l als pressupostos generals de l’Estat, que dediqui a aquestes polítiques almenys l’1,5 % del Producte Interior Brut (PIB) […] S’ha de garantir que aquests recursos es transfereixen a les comunitats autònomes i es posen al servei d’incrementar el parc públic d’habitatges de lloguer als estàndards europeus.",
+      "traduccion": "Hay que garantizar una financiación pública adecuada a las políticas de vivienda e incluirla en los presupuestos generales del Estado, que dedique a estas políticas al menos el 1,5 % del Producto Interior Bruto (PIB) […] Hay que garantizar que estos recursos se transfieran a las comunidades autónomas y se pongan al servicio de incrementar el parque público de viviendas de alquiler a los estándares europeos.",
+      "pagina": 19,
+      "aproximada": true
+    },
+    {
+      "afirmacion": "viv-2",
+      "postura": null,
+      "cita": "",
+      "traduccion": null,
+      "pagina": null
+    },
+    {
+      "afirmacion": "san-1",
+      "postura": 1,
+      "cita": "Augmentar de manera estructural i suficient els recursos que l’Administració General de l’Estat transfereix a les administracions sanitàries competents per afrontar la situació de saturació del sistema, reduir les llistes d’espera i garantir una atenció sanitària universal.",
+      "traduccion": "Aumentar de manera estructural y suficiente los recursos que la Administración General del Estado transfiere a las administraciones sanitarias competentes para afrontar la situación de saturación del sistema, reducir las listas de espera y garantizar una atención sanitaria universal.",
+      "pagina": 41,
+      "aproximada": true
+    },
+    {
+      "afirmacion": "san-2",
+      "postura": null,
+      "cita": "",
+      "traduccion": null,
+      "pagina": null
+    },
+    {
+      "afirmacion": "emp-1",
+      "postura": 1,
+      "cita": "Incrementar el Salari Mínim Interprofessional de l’estat fins al 60 % del salari mitjà brut d’acord amb les exigències del dret internacional comunitari i, en particular, de la Carta Social Europea.",
+      "traduccion": "Incrementar el Salario Mínimo Interprofesional del Estado hasta el 60 % del salario medio bruto de acuerdo con las exigencias del derecho internacional comunitario y, en particular, de la Carta Social Europea.",
+      "pagina": 20,
+      "aproximada": false
+    },
+    {
+      "afirmacion": "emp-2",
+      "postura": 1,
+      "cita": "Reduir la durada màxima de la jornada laboral setmanal a 37 hores i mitja sense reducció salarial.",
+      "traduccion": "Reducir la duración máxima de la jornada laboral semanal a 37 horas y media sin reducción salarial.",
+      "pagina": 26,
+      "aproximada": false
+    },
+    {
+      "afirmacion": "imp-1",
+      "postura": 1,
+      "cita": "cal reduir els tipus de la fiscalitat del treball per als trams inferiors als 35.000 euros per augmentar els recursos disponibles i la capacitat adquisitiva de la classe treballadora.",
+      "traduccion": "hay que reducir los tipos de la fiscalidad del trabajo para los tramos inferiores a 35.000 euros para aumentar los recursos disponibles y la capacidad adquisitiva de la clase trabajadora.",
+      "pagina": 21,
+      "aproximada": true
+    },
+    {
+      "afirmacion": "imp-2",
+      "postura": 1,
+      "cita": "Fiscalitat dels multimilionaris. Fer permanent l’impost temporal de solidaritat de les grans fortunes, augmentant el tipus per a fortunes de més de 10 milions d’euros i creant un tram nou a partir de 100 milions d’euros.",
+      "traduccion": "Fiscalidad de los multimillonarios. Hacer permanente el impuesto temporal de solidaridad de las grandes fortunas, aumentando el tipo para fortunas de más de 10 millones de euros y creando un tramo nuevo a partir de 100 millones de euros.",
+      "pagina": 22,
+      "aproximada": false
+    },
+    {
+      "afirmacion": "pen-1",
+      "postura": 1,
+      "cita": "Blindar la revaloració de les pensions per evitar la pèrdua de capacitat adquisitiva de les persones pensionistes. Cal garantir l’actualització de pensions públiques d’acord amb la inflació.",
+      "traduccion": "Blindar la revalorización de las pensiones para evitar la pérdida de capacidad adquisitiva de las personas pensionistas. Hay que garantizar la actualización de las pensiones públicas de acuerdo con la inflación.",
+      "pagina": 26,
+      "aproximada": false
+    },
+    {
+      "afirmacion": "pen-2",
+      "postura": null,
+      "cita": "",
+      "traduccion": null,
+      "pagina": null
+    },
+    {
+      "afirmacion": "edu-1",
+      "postura": 1,
+      "cita": "Assegurar el finançament estatal de l’educació pública i gratuïta de 0 a 3 anys. Establir un sistema de finançament estatal suficient i estable per fer efectiu l’accés universal i gratuït de tots els infants a una plaça educativa pública de 0 a 3 anys, amb un calendari d’implantació progressiva",
+      "traduccion": "Asegurar la financiación estatal de la educación pública y gratuita de 0 a 3 años. Establecer un sistema de financiación estatal suficiente y estable para hacer efectivo el acceso universal y gratuito de todos los niños a una plaza educativa pública de 0 a 3 años, con un calendario de implantación progresiva",
+      "pagina": 11,
+      "aproximada": false
+    },
+    {
+      "afirmacion": "edu-2",
+      "postura": null,
+      "cita": "",
+      "traduccion": null,
+      "pagina": null
+    },
+    {
+      "afirmacion": "med-1",
+      "postura": null,
+      "cita": "",
+      "traduccion": null,
+      "pagina": null
+    },
+    {
+      "afirmacion": "med-2",
+      "postura": null,
+      "cita": "",
+      "traduccion": null,
+      "pagina": null
+    },
+    {
+      "afirmacion": "inm-1",
+      "postura": null,
+      "cita": "",
+      "traduccion": null,
+      "pagina": null
+    },
+    {
+      "afirmacion": "inm-2",
+      "postura": -1,
+      "cita": "Condicionar l’aplicació i el desenvolupament legislatiu del Reglament europeu de Retorn a garanties efectives dels drets fonamentals, per evitar la deriva punitiva i les deportacions automàtiques. Rebutgem la creació de centres de retorn a països tercers",
+      "traduccion": "Condicionar la aplicación y el desarrollo legislativo del Reglamento europeo de Retorno a garantías efectivas de los derechos fundamentales, para evitar la deriva punitiva y las deportaciones automáticas. Rechazamos la creación de centros de retorno en terceros países",
+      "pagina": 14,
+      "aproximada": false
+    },
+    {
+      "afirmacion": "ter-1",
+      "postura": 1,
+      "cita": "Com a país amb voluntat d’exercir la seva llibertat, Catalunya aspira a desenvolupar l’autogovern i a assumir plenament totes les competències. Esquerra Republicana continuarà treballant per guanyar àmbits de sobirania",
+      "traduccion": "Como país con voluntad de ejercer su libertad, Cataluña aspira a desarrollar el autogobierno y a asumir plenamente todas las competencias. Esquerra Republicana continuará trabajando para ganar ámbitos de soberanía",
+      "pagina": 14,
+      "aproximada": false
+    },
+    {
+      "afirmacion": "ter-2",
+      "postura": 1,
+      "cita": "Dret d’autodeterminació. Negociar la convocatòria d’un referèndum d’autodeterminació a Catalunya amb acompanyament internacional, amb la Unió Europea i el Consell d’Europa com a facilitadors",
+      "traduccion": "Derecho de autodeterminación. Negociar la convocatoria de un referéndum de autodeterminación en Cataluña con acompañamiento internacional, con la Unión Europea y el Consejo de Europa como facilitadores",
+      "pagina": 8,
+      "aproximada": false
+    },
+    {
+      "afirmacion": "igu-1",
+      "postura": 1,
+      "cita": "Reforçar i actualitzar la legislació contra totes les formes de violència masclista. Reformar la Llei orgànica 1/2004 i la resta de legislació estatal per garantir la prevenció, detecció, protecció i reparació davant totes les violències masclistes, incloses l’econòmica, la vicària i la digital.",
+      "traduccion": "Reforzar y actualizar la legislación contra todas las formas de violencia machista. Reformar la Ley Orgánica 1/2004 y el resto de legislación estatal para garantizar la prevención, detección, protección y reparación frente a todas las violencias machistas, incluidas la económica, la vicaria y la digital.",
+      "pagina": 24,
+      "aproximada": false
+    },
+    {
+      "afirmacion": "igu-2",
+      "postura": null,
+      "cita": "",
+      "traduccion": null,
+      "pagina": null
+    }
+  ],
+  "programa_anadido": "2026-11-13"
+}

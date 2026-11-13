@@ -1,0 +1,18 @@
+{
+  "id": "compromis",
+  "nombre": "Compromís: Front Valencià",
+  "siglas": "Compromís",
+  "color": "#EE7D1C",
+  "ficticio": false,
+  "programa_url": null,
+  "programa_publicado": null,
+  "programa_anadido": null,
+  "nombre_en_papeleta": "COMPROMÍS: FRONT VALENCIÀ (COMPROMIS-EUPV-PODEM-ERPV)",
+  "ambito": "Comunitat Valenciana",
+  "provincias": [
+    "alicante",
+    "castellon",
+    "valencia"
+  ],
+  "posturas": []
+}

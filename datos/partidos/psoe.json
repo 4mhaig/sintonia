@@ -1,0 +1,28 @@
+{
+  "id": "psoe",
+  "nombre": "Partido Socialista Obrero Español",
+  "siglas": "PSOE",
+  "color": "#E1001A",
+  "ficticio": false,
+  "programa_url": null,
+  "programa_publicado": null,
+  "programa_anadido": null,
+  "nombre_en_papeleta": "PARTIDO SOCIALISTA OBRERO ESPAÑOL (PSOE)",
+  "nombres_por_provincia": {
+    "a-coruna": "Partido dos Socialistas de Galicia-PSOE (PSdeG-PSOE)",
+    "alava": "PARTIDO SOCIALISTA DE EUSKADI-EUSKADIKO EZKERRA (PSOE) PSE-EE (PSOE)",
+    "baleares": "PARTIDO SOCIALISTA DE LAS ISLAS BALEARES (PSIB-PSOE)",
+    "barcelona": "PARTIT DELS SOCIALISTES DE CATALUNYA (PSC-PSOE) (PSC)",
+    "bizkaia": "PARTIDO SOCIALISTA DE EUSKADI-EUSKADIKO EZKERRA (PSOE) PSE-EE (PSOE)",
+    "gipuzkoa": "PARTIDO SOCIALISTA DE EUSKADI-EUSKADIKO EZKERRA (PSOE) PSE-EE (PSOE)",
+    "girona": "PARTIT DELS SOCIALISTES DE CATALUNYA (PSC-PSOE) (PSC)",
+    "huelva": "PARTIDO SOCIALISTA DE HUELVA (PSOE)",
+    "lleida": "PARTIT DELS SOCIALISTES DE CATALUNYA (PSC-PSOE) (PSC)",
+    "lugo": "PARTIDO DOS SOCIALISTAS DE GALICIA-PSOE (PSdeG-PSOE)",
+    "navarra": "PARTIDO SOCIALISTA DE NAVARRA-PSOE (PSN-PSOE)",
+    "ourense": "Partido dos Socialistas de Galicia-PSOE (PSdeG-PSOE)",
+    "pontevedra": "Partido dos Socialistas de Galicia-PSOE (PSdeG-PSOE)",
+    "tarragona": "PARTIT DELS SOCIALISTES DE CATALUNYA (PSC-PSOE) (PSC)"
+  },
+  "posturas": []
+}

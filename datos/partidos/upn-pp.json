@@ -1,0 +1,16 @@
+{
+  "id": "upn-pp",
+  "nombre": "Unión del Pueblo Navarro en coalición con el Partido Popular",
+  "siglas": "UPN-PP",
+  "color": "#2A4FA8",
+  "ficticio": false,
+  "programa_url": null,
+  "programa_publicado": null,
+  "programa_anadido": null,
+  "nombre_en_papeleta": "UNIÓN DEL PUEBLO NAVARRO EN COALICIÓN CON EL PARTIDO POPULAR (UPN-PP)",
+  "ambito": "Navarra",
+  "provincias": [
+    "navarra"
+  ],
+  "posturas": []
+}

@@ -1,0 +1,145 @@
+{
+  "id": "pnv",
+  "nombre": "Partido Nacionalista Vasco",
+  "siglas": "EAJ-PNV",
+  "color": "#2E7D32",
+  "ficticio": false,
+  "programa_titulo": "Programa Elecciones Generales 2026",
+  "programa_url": "https://www.eaj-pnv.eus/es/adjuntos-documentos/21765/pdf/programa-electoral-29n",
+  "programa_publicado": "2026-11-10",
+  "nombre_en_papeleta": "EUZKO ALDERDI JELTZALEA-PARTIDO NACIONALISTA VASCO (EAJ-PNV)",
+  "ambito": "Euskadi",
+  "provincias": [
+    "alava",
+    "bizkaia",
+    "gipuzkoa"
+  ],
+  "posturas": [
+    {
+      "afirmacion": "viv-1",
+      "postura": null,
+      "cita": "",
+      "pagina": null
+    },
+    {
+      "afirmacion": "viv-2",
+      "postura": null,
+      "cita": "",
+      "pagina": null
+    },
+    {
+      "afirmacion": "san-1",
+      "postura": null,
+      "cita": "",
+      "pagina": null
+    },
+    {
+      "afirmacion": "san-2",
+      "postura": null,
+      "cita": "",
+      "pagina": null
+    },
+    {
+      "afirmacion": "emp-1",
+      "postura": 1,
+      "cita": "Reclamar, en el marco de un nuevo estatus político para Euskadi, la competencia plena para establecer un salario mínimo propio, adaptado al coste de vida y siempre por encima del mínimo estatal.",
+      "pagina": 9,
+      "aproximada": true
+    },
+    {
+      "afirmacion": "emp-2",
+      "postura": null,
+      "cita": "",
+      "pagina": null
+    },
+    {
+      "afirmacion": "imp-1",
+      "postura": null,
+      "cita": "",
+      "pagina": null
+    },
+    {
+      "afirmacion": "imp-2",
+      "postura": null,
+      "cita": "",
+      "pagina": null
+    },
+    {
+      "afirmacion": "pen-1",
+      "postura": 1,
+      "cita": "Evitar que las pensiones pierdan poder adquisitivo: revalorizarlas anualmente conforme al IPC, protegiendo su poder adquisitivo frente al incremento del coste de la vida.",
+      "pagina": 31,
+      "aproximada": false
+    },
+    {
+      "afirmacion": "pen-2",
+      "postura": null,
+      "cita": "",
+      "pagina": null
+    },
+    {
+      "afirmacion": "edu-1",
+      "postura": null,
+      "cita": "",
+      "pagina": null
+    },
+    {
+      "afirmacion": "edu-2",
+      "postura": null,
+      "cita": "",
+      "pagina": null
+    },
+    {
+      "afirmacion": "med-1",
+      "postura": null,
+      "cita": "",
+      "pagina": null
+    },
+    {
+      "afirmacion": "med-2",
+      "postura": null,
+      "cita": "",
+      "pagina": null
+    },
+    {
+      "afirmacion": "inm-1",
+      "postura": 1,
+      "cita": "Avanzar en los procesos de regularización previstos en la legislación, facilitando la integración social y laboral de las personas que cumplen los requisitos establecidos.",
+      "pagina": 25,
+      "aproximada": true
+    },
+    {
+      "afirmacion": "inm-2",
+      "postura": null,
+      "cita": "",
+      "pagina": null
+    },
+    {
+      "afirmacion": "ter-1",
+      "postura": 1,
+      "cita": "Asegurar el cumplimiento íntegro del Estatuto de Gernika y la culminación de todas las transferencias pendientes, garantizando que las competencias reconocidas puedan ejercerse de forma efectiva y con los recursos correspondientes.",
+      "pagina": 38,
+      "aproximada": false
+    },
+    {
+      "afirmacion": "ter-2",
+      "postura": null,
+      "cita": "",
+      "pagina": null
+    },
+    {
+      "afirmacion": "igu-1",
+      "postura": 1,
+      "cita": "Promover nuevos órganos judiciales especializados y reforzar las secciones de Violencia sobre la Mujer en Euskadi, especialmente en Vitoria-Gasteiz y Barakaldo, con medios humanos y materiales suficientes.",
+      "pagina": 26,
+      "aproximada": false
+    },
+    {
+      "afirmacion": "igu-2",
+      "postura": null,
+      "cita": "",
+      "pagina": null
+    }
+  ],
+  "programa_anadido": "2026-11-13"
+}

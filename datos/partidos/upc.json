@@ -1,0 +1,17 @@
+{
+  "id": "upc",
+  "nombre": "Unidad del Pueblo Canario",
+  "siglas": "UPC",
+  "color": "#B3394B",
+  "ficticio": false,
+  "programa_url": null,
+  "programa_publicado": null,
+  "programa_anadido": null,
+  "nombre_en_papeleta": "UNIDAD DEL PUEBLO CANARIO UPC (NC-BC, PODEMOS, IU, SUMAR)",
+  "ambito": "Canarias",
+  "provincias": [
+    "las-palmas",
+    "santa-cruz-de-tenerife"
+  ],
+  "posturas": []
+}

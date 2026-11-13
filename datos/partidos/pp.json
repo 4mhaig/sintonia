@@ -1,0 +1,204 @@
+{
+  "id": "pp",
+  "nombre": "Partido Popular",
+  "siglas": "PP",
+  "color": "#1D84CE",
+  "ficticio": false,
+  "programa_titulo": "Reconstrucción Nacional",
+  "programa_url": "https://www.pp.es/wp-content/uploads/2026/11/LA-RECONSTRUCCION-NACIONAL.pdf",
+  "programa_publicado": "2026-11-10",
+  "nombre_en_papeleta": "PARTIDO POPULAR (PP)",
+  "nombres_por_provincia": {
+    "barcelona": "PARTIT POPULAR / PARTIDO POPULAR (PP)",
+    "girona": "PARTIT POPULAR / PARTIDO POPULAR (PP)",
+    "pontevedra": "Partido Popular (PP)",
+    "tarragona": "PARTIT POPULAR / PARTIDO POPULAR (PP)"
+  },
+  "provincias": [
+    "a-coruna",
+    "alava",
+    "albacete",
+    "alicante",
+    "almeria",
+    "asturias",
+    "avila",
+    "badajoz",
+    "barcelona",
+    "bizkaia",
+    "burgos",
+    "caceres",
+    "cadiz",
+    "cantabria",
+    "castellon",
+    "ceuta",
+    "ciudad-real",
+    "cordoba",
+    "cuenca",
+    "gipuzkoa",
+    "girona",
+    "granada",
+    "guadalajara",
+    "huelva",
+    "huesca",
+    "baleares",
+    "jaen",
+    "la-rioja",
+    "las-palmas",
+    "leon",
+    "lleida",
+    "lugo",
+    "madrid",
+    "malaga",
+    "melilla",
+    "murcia",
+    "ourense",
+    "palencia",
+    "pontevedra",
+    "salamanca",
+    "santa-cruz-de-tenerife",
+    "segovia",
+    "sevilla",
+    "soria",
+    "tarragona",
+    "teruel",
+    "toledo",
+    "valencia",
+    "valladolid",
+    "zamora",
+    "zaragoza"
+  ],
+  "posturas": [
+    {
+      "afirmacion": "viv-1",
+      "postura": null,
+      "cita": "",
+      "pagina": null
+    },
+    {
+      "afirmacion": "viv-2",
+      "postura": -1,
+      "cita": "DEROGAREMOS LA LEY DE VIVIENDA. Recuperaremos la seguridad jurídica que necesitan propietarios e inquilinos. Eliminaremos las zonas tensionadas y el índice de precios, que han introducido más intervención, más incertidumbre y menos oferta en el mercado del alquiler.",
+      "pagina": 53,
+      "aproximada": false
+    },
+    {
+      "afirmacion": "san-1",
+      "postura": null,
+      "cita": "",
+      "pagina": null
+    },
+    {
+      "afirmacion": "san-2",
+      "postura": null,
+      "cita": "",
+      "pagina": null
+    },
+    {
+      "afirmacion": "emp-1",
+      "postura": null,
+      "cita": "",
+      "pagina": null
+    },
+    {
+      "afirmacion": "emp-2",
+      "postura": null,
+      "cita": "",
+      "pagina": null
+    },
+    {
+      "afirmacion": "imp-1",
+      "postura": 1,
+      "cita": "LAS RENTAS MEDIAS Y BAJAS, LAS FAMILIAS, LOS AUTÓNOMOS Y LOS JÓVENES PAGARÁN MENOS IRPF. Elevaremos los mínimos personales y familiares del IRPF y bajaremos el IRPF de las rentas medias y bajas y de las familias.",
+      "pagina": 60,
+      "aproximada": false
+    },
+    {
+      "afirmacion": "imp-2",
+      "postura": null,
+      "cita": "",
+      "pagina": null
+    },
+    {
+      "afirmacion": "pen-1",
+      "postura": 1,
+      "cita": "Aseguraremos que mantengan su poder adquisitivo y suban cada año con el IPC. Aseguraremos a los más jóvenes que sus futuras pensiones también mantendrán su poder adquisitivo.",
+      "pagina": 42,
+      "aproximada": false
+    },
+    {
+      "afirmacion": "pen-2",
+      "postura": null,
+      "cita": "",
+      "pagina": null
+    },
+    {
+      "afirmacion": "edu-1",
+      "postura": 1,
+      "cita": "LA ESCUELA INFANTIL DE CERO A TRES AÑOS SERÁ GRATUITA. Acordaremos con las Comunidades Autónomas que el Estado financie la mitad del coste de cada plaza de cero a tres años, pública o concertada, y las Comunidades, la otra mitad. Al terminar la legislatura, la etapa será gratuita para todas las familias que la soliciten.",
+      "pagina": 57,
+      "aproximada": false
+    },
+    {
+      "afirmacion": "edu-2",
+      "postura": 1,
+      "cita": "Los conciertos durarán al menos seis años en todas las etapas, con módulos que cubran el coste real, para que la plaza concertada sea gratuita de verdad.",
+      "pagina": 67,
+      "aproximada": true
+    },
+    {
+      "afirmacion": "med-1",
+      "postura": 1,
+      "cita": "ELIMINAREMOS EL CALENDARIO DE CIERRE DE ALMARAZ, ASCÓ, VANDELLÓS, COFRENTES Y TRILLO. En los primeros cien días de Gobierno tramitaremos la extensión de su vida útil con el visto bueno del Consejo de Seguridad Nuclear, garantizando la seguridad de las instalaciones.",
+      "pagina": 71,
+      "aproximada": false
+    },
+    {
+      "afirmacion": "med-2",
+      "postura": null,
+      "cita": "",
+      "pagina": null
+    },
+    {
+      "afirmacion": "inm-1",
+      "postura": -1,
+      "cita": "Reformaremos la Ley de Extranjería para prohibir las regularizaciones masivas e indiscriminadas y para que el arraigo sea un reconocimiento individual excepcional, no una vía generalizada de regularización.",
+      "pagina": 22,
+      "aproximada": false
+    },
+    {
+      "afirmacion": "inm-2",
+      "postura": 1,
+      "cita": "Reforzaremos efectivos, vigilancia e infraestructuras en las fronteras terrestres, marítimas y aeroportuarias. […] Tras estos controles, tramitaremos con rapidez las solicitudes de asilo o la devolución que corresponda.",
+      "pagina": 21,
+      "aproximada": false
+    },
+    {
+      "afirmacion": "ter-1",
+      "postura": -1,
+      "cita": "No habrá cesiones en materia de igualdad básica, Hacienda general, Seguridad Social, Defensa y Fuerzas Armadas, política exterior y política migratoria y fronteras a cambio de apoyos para formar o sostener un Gobierno. Preservaremos la capacidad del Estado para cumplir sus responsabilidades y evaluaremos cualquier transferencia por sus efectos sobre la igualdad de los españoles.",
+      "pagina": 29,
+      "aproximada": true
+    },
+    {
+      "afirmacion": "ter-2",
+      "postura": -1,
+      "cita": "DEFENDEREMOS LA UNIDAD DE ESPAÑA Y EL ORDEN CONSTITUCIONAL. Recuperaremos en el Código Penal el delito de sedición, adaptado a la legislación contemporánea, y el de convocatoria de referéndum ilegal.",
+      "pagina": 16,
+      "aproximada": true
+    },
+    {
+      "afirmacion": "igu-1",
+      "postura": 1,
+      "cita": "Dotaremos de más medios a las unidades especializadas de Policía Nacional y Guardia Civil y reforzaremos la valoración del riesgo y los planes individuales de seguridad, con protección también para los hijos de las víctimas de violencia de género.",
+      "pagina": 19,
+      "aproximada": false
+    },
+    {
+      "afirmacion": "igu-2",
+      "postura": null,
+      "cita": "",
+      "pagina": null
+    }
+  ],
+  "programa_anadido": "2026-11-13"
+}

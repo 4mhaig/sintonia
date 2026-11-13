@@ -1,0 +1,167 @@
+{
+  "id": "vox",
+  "nombre": "Vox",
+  "siglas": "VOX",
+  "color": "#5AB524",
+  "ficticio": false,
+  "programa_url": "https://votasentidocomun.es/general/files/programa-elecct-vox.pdf",
+  "programa_publicado": "2026-11-12",
+  "programa_anadido": "2026-11-13",
+  "nombre_en_papeleta": "VOX (VOX)",
+  "nombres_por_provincia": {
+    "la-rioja": "VOX"
+  },
+  "programa_titulo": "Es sentido común. Programa electoral 29 de noviembre de 2026",
+  "posturas": [
+    {
+      "afirmacion": "viv-1",
+      "postura": null,
+      "cita": "",
+      "pagina": null,
+      "traduccion": null
+    },
+    {
+      "afirmacion": "viv-2",
+      "postura": -1,
+      "cita": "Recuperar la seguridad jurídica y una oferta de alquileres estable, abundante y asequible. Derogación de la Ley de Vivienda.",
+      "pagina": 19,
+      "traduccion": null,
+      "aproximada": true
+    },
+    {
+      "afirmacion": "san-1",
+      "postura": null,
+      "cita": "",
+      "pagina": null,
+      "traduccion": null
+    },
+    {
+      "afirmacion": "san-2",
+      "postura": 1,
+      "cita": "Plan nacional de reducción de listas de espera y mejora de la atención sanitaria. […] Fomento de la colaboración público-privada cuando ayude efectivamente a reducir demoras, con transparencia, evaluación de calidad y control del gasto.",
+      "pagina": 32,
+      "traduccion": null,
+      "aproximada": false
+    },
+    {
+      "afirmacion": "emp-1",
+      "postura": null,
+      "cita": "",
+      "pagina": null,
+      "traduccion": null
+    },
+    {
+      "afirmacion": "emp-2",
+      "postura": null,
+      "cita": "",
+      "pagina": null,
+      "traduccion": null
+    },
+    {
+      "afirmacion": "imp-1",
+      "postura": 1,
+      "cita": "Reforma del sistema de tributación sobre la renta (IRPF). Simplificación y bajada del IRPF.",
+      "pagina": 7,
+      "traduccion": null,
+      "aproximada": false
+    },
+    {
+      "afirmacion": "imp-2",
+      "postura": null,
+      "cita": "",
+      "pagina": null,
+      "traduccion": null
+    },
+    {
+      "afirmacion": "pen-1",
+      "postura": null,
+      "cita": "",
+      "pagina": null,
+      "traduccion": null
+    },
+    {
+      "afirmacion": "pen-2",
+      "postura": null,
+      "cita": "",
+      "pagina": null,
+      "traduccion": null
+    },
+    {
+      "afirmacion": "edu-1",
+      "postura": 1,
+      "cita": "El plan incluirá todo tipo medidas en apoyo a la familia: […] y la gratuidad real de la educación infantil de 0 a 3 años.",
+      "pagina": 44,
+      "traduccion": null,
+      "aproximada": true
+    },
+    {
+      "afirmacion": "edu-2",
+      "postura": 1,
+      "cita": "Garantizar la libre elección de centro educativo en todos los niveles para que las familias elijan libremente el modelo educativo que desean, sin que su situación económica o social sea un impedimento para ello.",
+      "pagina": 35,
+      "traduccion": null,
+      "aproximada": true
+    },
+    {
+      "afirmacion": "med-1",
+      "postura": 1,
+      "cita": "Recuperar urgentemente el plan nuclear nacional. Se garantizará la supervivencia de las centrales nucleares actuales, derogando el calendario de cierre.",
+      "pagina": 10,
+      "traduccion": null,
+      "aproximada": false
+    },
+    {
+      "afirmacion": "med-2",
+      "postura": -1,
+      "cita": "Acabar con todas las imposiciones climáticas como el Pacto Verde que castigan nuestra industria, nuestro campo o que coartan la libertad de circulación de los españoles, como la imposición de ZBE.",
+      "pagina": 25,
+      "traduccion": null,
+      "aproximada": false
+    },
+    {
+      "afirmacion": "inm-1",
+      "postura": -1,
+      "cita": "Prohibición de las regularizaciones masivas. Quien entra de forma ilegal jamás podrá regularizar su situación.",
+      "pagina": 13,
+      "traduccion": null,
+      "aproximada": false
+    },
+    {
+      "afirmacion": "inm-2",
+      "postura": 1,
+      "cita": "Supresión de la institución del arraigo como forma de atajar la inmigración ilegal […]. Repatriación de quienes permanezcan en situación ilegal en nuestra nación.",
+      "pagina": 13,
+      "traduccion": null,
+      "aproximada": false
+    },
+    {
+      "afirmacion": "ter-1",
+      "postura": null,
+      "cita": "",
+      "pagina": null,
+      "traduccion": null
+    },
+    {
+      "afirmacion": "ter-2",
+      "postura": null,
+      "cita": "",
+      "pagina": null,
+      "traduccion": null
+    },
+    {
+      "afirmacion": "igu-1",
+      "postura": -1,
+      "cita": "Derogar las leyes que han criminalizado a los hombres y desprotegido a las mujeres. Las leyes de género no han contribuido a proteger a las mujeres o reducir el número de víctimas, sino a disparar el despilfarro […].",
+      "pagina": 26,
+      "traduccion": null,
+      "aproximada": true
+    },
+    {
+      "afirmacion": "igu-2",
+      "postura": null,
+      "cita": "",
+      "pagina": null,
+      "traduccion": null
+    }
+  ]
+}

@@ -9,7 +9,7 @@ Herramienta web, gratuita y sin registro, para **ayudarte a decidir tu voto si a
 - **Por temas:** qué propone cada partido sobre vivienda, sanidad, pensiones…
 - **Mi provincia:** cuántos escaños se reparten donde votas y cómo funciona el reparto, para entender qué pasa con un voto si el partido no llega. No es una predicción.
 
-> **Estado:** prototipo. Los partidos y los votos que aparecen ahora son **ficticios** (Partido Alfa, Beta…). Se sustituirán por los reales cuando se proclamen las candidaturas y se publiquen los programas.
+> **Estado (13-nov-2026):** con partidos reales. Salen los partidos y coaliciones con diputado en el Congreso saliente o eurodiputado, en las provincias donde el BOE proclama su candidatura (BOE núm. 273, 3-nov-2026). Los que aún no han publicado programa aparecen como «Programa aún no publicado». El simulador de escaños usa partidos y votos inventados.
 
 ## Privacidad
 

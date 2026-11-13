@@ -1,0 +1,182 @@
+{
+  "id": "bng",
+  "nombre": "Bloque Nacionalista Galego",
+  "siglas": "BNG",
+  "color": "#6BAED6",
+  "ficticio": false,
+  "programa_titulo": "29N. Xerais 2026 Programa Electoral",
+  "programa_idioma": "gl",
+  "programa_url": "https://www.bng.gal/media/bnggaliza/files/2026/11/03/26_bng_xerais_documentos_programa_electoral.pdf",
+  "programa_publicado": "2026-11-03",
+  "nombre_en_papeleta": "BLOQUE NACIONALISTA GALEGO (BNG)",
+  "nombres_por_provincia": {
+    "a-coruna": "BLOQUE NACIONALISTA GALEGO (B.N.G.)"
+  },
+  "ambito": "Galicia",
+  "provincias": [
+    "a-coruna",
+    "lugo",
+    "ourense",
+    "pontevedra"
+  ],
+  "posturas": [
+    {
+      "afirmacion": "viv-1",
+      "postura": 1,
+      "cita": "Destinar o 3% dos Orzamentos Xerais do Estado para financiar mediante o Plan estatal de vivenda a creación dun parque público de alugueiro permanente.",
+      "traduccion": "Destinar el 3% de los Presupuestos Generales del Estado a financiar, mediante el Plan estatal de vivienda, la creación de un parque público de alquiler permanente.",
+      "pagina": 12,
+      "aproximada": false
+    },
+    {
+      "afirmacion": "viv-2",
+      "postura": 1,
+      "cita": "Topar por lei os prezos dos alugueiros e prohibir os desafiuzamentos de persoas en situación de vulnerabilidade",
+      "traduccion": "Topar por ley los precios de los alquileres y prohibir los desahucios de personas en situación de vulnerabilidad",
+      "pagina": 12,
+      "aproximada": false
+    },
+    {
+      "afirmacion": "san-1",
+      "postura": 1,
+      "cita": "Aumentar o financiamento da sanidade pública, até como mínimo a media de investimento por habitante da UE, co incremento do valor dos parámetros de dispersión e envellecemento da poboación",
+      "traduccion": "Aumentar la financiación de la sanidad pública hasta, como mínimo, la media de inversión por habitante de la UE, con el incremento del valor de los parámetros de dispersión y envejecimiento de la población",
+      "pagina": 37,
+      "aproximada": true
+    },
+    {
+      "afirmacion": "san-2",
+      "postura": -1,
+      "cita": "Garantir o carácter público da sanidade e reducir as súas posibilidades de privatización, mediante unha modificación da Lei 15/97 […] que asegure que a titularidade, o financiamento, a xestión e a provisión de servizos sanitarios se fará con entidades exclusivamente públicas.",
+      "traduccion": "Garantizar el carácter público de la sanidad y reducir sus posibilidades de privatización, mediante una modificación de la Ley 15/97 […] que asegure que la titularidad, la financiación, la gestión y la provisión de servicios sanitarios se hará con entidades exclusivamente públicas.",
+      "pagina": 37,
+      "aproximada": false
+    },
+    {
+      "afirmacion": "emp-1",
+      "postura": 1,
+      "cita": "Incrementar o Salario Mínimo Interprofesional até o situar no 60 % do salario medio, tal e como fixa a Carta Social Europea conforme aos datos do EUROSTAT.",
+      "traduccion": "Incrementar el Salario Mínimo Interprofesional hasta situarlo en el 60 % del salario medio, tal y como fija la Carta Social Europea conforme a los datos de EUROSTAT.",
+      "pagina": 15,
+      "aproximada": false
+    },
+    {
+      "afirmacion": "emp-2",
+      "postura": 1,
+      "cita": "Promover a implantación da xornada laboral de 35 horas semanais sen redución salarial, e avanzar no horizonte da xornada de 32 horas semanais en 4 xornadas.",
+      "traduccion": "Promover la implantación de la jornada laboral de 35 horas semanales sin reducción salarial, y avanzar en el horizonte de la jornada de 32 horas semanales en 4 jornadas.",
+      "pagina": 15,
+      "aproximada": false
+    },
+    {
+      "afirmacion": "imp-1",
+      "postura": null,
+      "cita": "",
+      "traduccion": null,
+      "pagina": null
+    },
+    {
+      "afirmacion": "imp-2",
+      "postura": 1,
+      "cita": "Blindar a permanencia dos impostos específicos aos beneficios da banca, das grandes enerxéticas e ás grandes fortunas, reducir os límites de exención, aumentar a súa progresividade e traspasar a súa xestión á Galiza.",
+      "traduccion": "Blindar la permanencia de los impuestos específicos a los beneficios de la banca, de las grandes energéticas y a las grandes fortunas, reducir los límites de exención, aumentar su progresividad y traspasar su gestión a Galicia.",
+      "pagina": 44,
+      "aproximada": false
+    },
+    {
+      "afirmacion": "pen-1",
+      "postura": 1,
+      "cita": "Revalorización anual das pensións conforme ao IPC real.",
+      "traduccion": "Revalorización anual de las pensiones conforme al IPC real.",
+      "pagina": 18,
+      "aproximada": false
+    },
+    {
+      "afirmacion": "pen-2",
+      "postura": -1,
+      "cita": "Recuperación da xubilación ordinaria aos 65 anos e a parcial aos 61 anos.",
+      "traduccion": "Recuperación de la jubilación ordinaria a los 65 años y la parcial a los 61 años.",
+      "pagina": 19,
+      "aproximada": false
+    },
+    {
+      "afirmacion": "edu-1",
+      "postura": 1,
+      "cita": "os poderes públicos teñen que garantir unha educación pública, universal e gratuíta de 0 a 18 anos",
+      "traduccion": "los poderes públicos tienen que garantizar una educación pública, universal y gratuita de 0 a 18 años",
+      "pagina": 33,
+      "aproximada": false
+    },
+    {
+      "afirmacion": "edu-2",
+      "postura": -1,
+      "cita": "No camiño da supresión dos concertos en todos os niveis educativos, eliminación destes no ensino non-obrigatorio e control do financiamento alleo aos concertos nos centros sostidos con fondos públicos.",
+      "traduccion": "En el camino de la supresión de los conciertos en todos los niveles educativos, eliminación de estos en la enseñanza no obligatoria y control de la financiación ajena a los conciertos en los centros sostenidos con fondos públicos.",
+      "pagina": 35,
+      "aproximada": false
+    },
+    {
+      "afirmacion": "med-1",
+      "postura": null,
+      "cita": "",
+      "traduccion": null,
+      "pagina": null
+    },
+    {
+      "afirmacion": "med-2",
+      "postura": null,
+      "cita": "Aplicar medidas de medidas de redución do tránsito motorizado e de fomento da mobilidade amábel (modelo Pontevedra) fronte a restricións relacionadas co tipo e coa antigüidade dos vehículos, que xeran discriminacións de acceso por nivel de renda.",
+      "traduccion": "Aplicar medidas de reducción del tráfico motorizado y de fomento de la movilidad amable (modelo Pontevedra) frente a restricciones relacionadas con el tipo y la antigüedad de los vehículos, que generan discriminaciones de acceso por nivel de renta.",
+      "pagina": 70,
+      "aproximada": false
+    },
+    {
+      "afirmacion": "inm-1",
+      "postura": 1,
+      "cita": "Impulsar as reformas lexislativas necesarias para garantir os dereitos da poboación inmigrante (vivenda, traballo, atención sanitaria, educación...) así como favorecer e facilitar os procesos de regularización administrativa.",
+      "traduccion": "Impulsar las reformas legislativas necesarias para garantizar los derechos de la población inmigrante (vivienda, trabajo, atención sanitaria, educación...) así como favorecer y facilitar los procesos de regularización administrativa.",
+      "pagina": 23,
+      "aproximada": false
+    },
+    {
+      "afirmacion": "inm-2",
+      "postura": -1,
+      "cita": "Demandar o peche dos Centros de Internamento para Estranxeiros (CIEs) no Estado español e o fin das deportacións en quente, garantindo o respecto escrupuloso dos dereitos humanos para a poboación inmigrante, refuxiada e/ou solicitante de asilo.",
+      "traduccion": "Demandar el cierre de los Centros de Internamiento para Extranjeros (CIE) en el Estado español y el fin de las deportaciones en caliente, garantizando el respeto escrupuloso de los derechos humanos para la población inmigrante, refugiada y/o solicitante de asilo.",
+      "pagina": 23,
+      "aproximada": false
+    },
+    {
+      "afirmacion": "ter-1",
+      "postura": 1,
+      "cita": "En todo o caso, traspaso á Administración Galega de todas aquelas competencia previstas e que aínda detén a Administración do Estado.",
+      "traduccion": "En todo caso, traspaso a la Administración Gallega de todas aquellas competencias previstas y que aún detenta la Administración del Estado.",
+      "pagina": 10,
+      "aproximada": false
+    },
+    {
+      "afirmacion": "ter-2",
+      "postura": 1,
+      "cita": "promoveremos e apoiaremos as mudanzas legais precisas que posibilitaren a convocatoria de referendos vinculantes en asuntos de interese, incluído o dereito de autodeterminación",
+      "traduccion": "promoveremos y apoyaremos los cambios legales precisos que posibiliten la convocatoria de referendos vinculantes en asuntos de interés, incluido el derecho de autodeterminación",
+      "pagina": 32,
+      "aproximada": false
+    },
+    {
+      "afirmacion": "igu-1",
+      "postura": 1,
+      "cita": "Introducir o termo feminicidio na lexislación española e impulsar un Estatuto de Vítima de Feminicidio para unha abordaxe integral da violencia machista.",
+      "traduccion": "Introducir el término feminicidio en la legislación española e impulsar un Estatuto de Víctima de Feminicidio para un abordaje integral de la violencia machista.",
+      "pagina": 25,
+      "aproximada": false
+    },
+    {
+      "afirmacion": "igu-2",
+      "postura": null,
+      "cita": "",
+      "traduccion": null,
+      "pagina": null
+    }
+  ],
+  "programa_anadido": "2026-11-13"
+}

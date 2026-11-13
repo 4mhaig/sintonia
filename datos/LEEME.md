@@ -2,14 +2,14 @@
 
 ## Añadir un partido real
 
-1. Copia uno de los ejemplos de `partidos/` (por ejemplo `alfa.json`) con el nombre del partido en minúsculas y sin tildes: `partidos/nombre-partido.json`.
+1. Copia la ficha del partido en `partidos/` (ya existe una por candidatura, con `programa_publicado: null` si aún no tiene programa).
 2. Rellena `nombre`, `siglas`, `color` (el de su identidad), `programa_url` y `programa_publicado` (fecha).
 3. Cambia `"ficticio": true` por `"ficticio": false`.
 4. En `posturas`, para cada frase pon `postura` (1, 0, -1 o null), la `cita` literal y la `pagina`.
 5. Guarda el PDF del programa en `programas-pdf/`.
 6. Si el partido **no se presenta en toda España**, añade `"ambito"` (por ejemplo `"Andalucía"`) y `"provincias"` con los identificadores de `provincias/escanos.json` donde se presenta. Compruébalo con las candidaturas proclamadas en el BOE. Sin `provincias`, se entiende que se presenta en todas.
 
-Cuando haya algún partido real, borra los ficticios y pon `"datos_de_ejemplo": false` en `elecciones.json`.
+Rellena `programa_url`, `programa_titulo`, `programa_publicado` (fecha del partido) y `programa_anadido` (fecha en que lo añadimos). Las posturas aproximadas llevan `"aproximada": true`; si el programa habla del tema pero no del punto concreto, `postura: null` con la cita.
 
 ## Resultados por provincia
 

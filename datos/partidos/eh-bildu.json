@@ -1,0 +1,23 @@
+{
+  "id": "eh-bildu",
+  "nombre": "Euskal Herria Bildu",
+  "siglas": "EH Bildu",
+  "color": "#8DB43B",
+  "ficticio": false,
+  "programa_url": null,
+  "programa_publicado": null,
+  "programa_anadido": null,
+  "nombre_en_papeleta": "EUSKAL HERRIA BILDU (EH BILDU)",
+  "nombres_por_provincia": {
+    "bizkaia": "EUSKAL HERRIA BILDU (EH Bildu)",
+    "navarra": "EUSKAL HERRIA BILDU-ESQUERRA REPUBLICANA DE CATALUNYA (EH BILDU-ERC)"
+  },
+  "ambito": "Euskadi y Navarra",
+  "provincias": [
+    "alava",
+    "bizkaia",
+    "gipuzkoa",
+    "navarra"
+  ],
+  "posturas": []
+}

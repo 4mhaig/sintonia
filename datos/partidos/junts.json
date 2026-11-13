@@ -1,0 +1,19 @@
+{
+  "id": "junts",
+  "nombre": "Junts per Catalunya",
+  "siglas": "Junts",
+  "color": "#1BB3A6",
+  "ficticio": false,
+  "programa_url": null,
+  "programa_publicado": null,
+  "programa_anadido": null,
+  "nombre_en_papeleta": "JUNTS PER CATALUNYA (JxCat)",
+  "ambito": "Cataluña",
+  "provincias": [
+    "barcelona",
+    "girona",
+    "lleida",
+    "tarragona"
+  ],
+  "posturas": []
+}

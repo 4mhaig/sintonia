@@ -42,7 +42,7 @@ export function Inicio() {
         </a>
         <a href="#/provincia" className="tarjeta tarjeta-enlace">
           <h2>Mi provincia</h2>
-          <p className="secundario">Cuántos diputados se eligen donde votas y qué pasa con tu voto.</p>
+          <p className="secundario">Cuántos diputados se eligen donde votas y cómo se reparten, con un ejemplo.</p>
           <span className="tarjeta-accion">Elegir provincia <span aria-hidden="true">→</span></span>
         </a>
       </section>

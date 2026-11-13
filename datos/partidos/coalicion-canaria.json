@@ -1,0 +1,167 @@
+{
+  "id": "coalicion-canaria",
+  "nombre": "Coalición Canaria – Primero Canarias",
+  "siglas": "CC",
+  "color": "#F2C200",
+  "ficticio": false,
+  "programa_titulo": "Defiende Canarias. Bases del programa electoral",
+  "programa_idioma": "es",
+  "programa_url": "https://coalicioncanaria.org/wp-content/uploads/2026/11/CCA-26-Programa_Electoral-29NOV.pdf",
+  "programa_publicado": "2026-11-09",
+  "nombre_en_papeleta": "MUNICIPALISTAS PRIMERO CANARIAS-COALICIÓN CANARIA (1.ºCAN-CCa)",
+  "nombres_por_provincia": {
+    "santa-cruz-de-tenerife": "Coalición Canaria-Municipalistas Primero Canarias (CCa-1.ºCAN)"
+  },
+  "ambito": "Canarias",
+  "provincias": [
+    "las-palmas",
+    "santa-cruz-de-tenerife"
+  ],
+  "posturas": [
+    {
+      "afirmacion": "viv-1",
+      "postura": 1,
+      "cita": "Impulsaremos un fondo estatal de ocho años para cofinanciar vivienda pública y asequible, con una asignación para Canarias ajustada a sus necesidades. Permitirá construir, adquirir y rehabilitar viviendas, además de comprar suelo, edificios y promociones disponibles.",
+      "pagina": 10,
+      "traduccion": null,
+      "aproximada": true
+    },
+    {
+      "afirmacion": "viv-2",
+      "postura": null,
+      "cita": "",
+      "pagina": null,
+      "traduccion": null
+    },
+    {
+      "afirmacion": "san-1",
+      "postura": null,
+      "cita": "",
+      "pagina": null,
+      "traduccion": null
+    },
+    {
+      "afirmacion": "san-2",
+      "postura": null,
+      "cita": "",
+      "pagina": null,
+      "traduccion": null
+    },
+    {
+      "afirmacion": "emp-1",
+      "postura": null,
+      "cita": "",
+      "pagina": null,
+      "traduccion": null
+    },
+    {
+      "afirmacion": "emp-2",
+      "postura": null,
+      "cita": "",
+      "pagina": null,
+      "traduccion": null
+    },
+    {
+      "afirmacion": "imp-1",
+      "postura": null,
+      "cita": "",
+      "pagina": null,
+      "traduccion": null
+    },
+    {
+      "afirmacion": "imp-2",
+      "postura": null,
+      "cita": "",
+      "pagina": null,
+      "traduccion": null
+    },
+    {
+      "afirmacion": "pen-1",
+      "postura": null,
+      "cita": "",
+      "pagina": null,
+      "traduccion": null
+    },
+    {
+      "afirmacion": "pen-2",
+      "postura": null,
+      "cita": "",
+      "pagina": null,
+      "traduccion": null
+    },
+    {
+      "afirmacion": "edu-1",
+      "postura": 1,
+      "cita": "Educación infantil de cero a tres años. Reforzaremos la financiación estatal para una oferta suficiente de plazas públicas gratuitas y de calidad.",
+      "pagina": 9,
+      "traduccion": null,
+      "aproximada": true
+    },
+    {
+      "afirmacion": "edu-2",
+      "postura": null,
+      "cita": "",
+      "pagina": null,
+      "traduccion": null
+    },
+    {
+      "afirmacion": "med-1",
+      "postura": null,
+      "cita": "",
+      "pagina": null,
+      "traduccion": null
+    },
+    {
+      "afirmacion": "med-2",
+      "postura": null,
+      "cita": "",
+      "pagina": null,
+      "traduccion": null
+    },
+    {
+      "afirmacion": "inm-1",
+      "postura": null,
+      "cita": "",
+      "pagina": null,
+      "traduccion": null
+    },
+    {
+      "afirmacion": "inm-2",
+      "postura": null,
+      "cita": "",
+      "pagina": null,
+      "traduccion": null
+    },
+    {
+      "afirmacion": "ter-1",
+      "postura": 1,
+      "cita": "Defendemos a Canarias como nación archipelágica, con identidad propia y derecho a decidir su rumbo dentro del Estado español y del marco europeo. Aspiramos al máximo autogobierno en un Estado que reconozca y articule de común acuerdo su realidad plurinacional.",
+      "pagina": 3,
+      "traduccion": null,
+      "aproximada": false
+    },
+    {
+      "afirmacion": "ter-2",
+      "postura": null,
+      "cita": "",
+      "pagina": null,
+      "traduccion": null
+    },
+    {
+      "afirmacion": "igu-1",
+      "postura": 1,
+      "cita": "Reclamaremos financiación estatal suficiente para aplicar el Pacto de Estado contra la violencia de género en todas las islas, reforzar la prevención y proteger a las víctimas y a sus hijos e hijas.",
+      "pagina": 10,
+      "traduccion": null,
+      "aproximada": false
+    },
+    {
+      "afirmacion": "igu-2",
+      "postura": null,
+      "cita": "",
+      "pagina": null,
+      "traduccion": null
+    }
+  ],
+  "programa_anadido": "2026-11-13"
+}
