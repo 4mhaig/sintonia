@@ -38,6 +38,7 @@ export function Metodologia() {
 
       <h2>Las frases</h2>
       <p>Cada frase describe una medida concreta y pertenece a un tema. Para cada partido anotamos si su programa la defiende, la rechaza, tiene una postura intermedia o no dice nada, siempre con la cita literal y la página.</p>
+      <p>Las frases las escribimos nosotros para poder comparar a todos los partidos con la misma vara, y los programas no siempre usan esas palabras. Cuando un programa no habla exactamente de lo que dice la frase pero sí de algo muy cercano, lo marcamos como «≈ Aproximación» junto a la cita, con el mismo criterio para todos. Si no dice nada sobre ese punto concreto, ponemos «No lo menciona»: no deducimos posturas por la ideología del partido.</p>
 
       <h2>Tu resultado</h2>
       <p>Por cada frase que respondes, sumas 2 puntos con un partido si pensáis lo mismo, 1 si uno de los dos es neutral y 0 si pensáis lo contrario. Los temas que marcas como importantes cuentan el doble. Las frases que te saltas, o de las que un partido no habla, no cuentan.</p>

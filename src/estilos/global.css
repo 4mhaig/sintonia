@@ -167,3 +167,6 @@ select, input[type='search'] {
 /* Cómo funciona: estado de los programas */
 .lista-programas { list-style: none; margin: 0; padding: 0; }
 .lista-programas li { display: flex; flex-direction: column; padding: 0.6rem 0; border-bottom: 1px solid var(--borde); font-size: 0.95rem; }
+.aproximacion { display: block; margin-bottom: 0.25rem; font-size: 0.85rem; font-style: normal; }
+.aproximacion-chip { font-size: 0.8rem; padding: 0.1em 0.6em; background: var(--aviso-fondo); color: var(--aviso); }
+.nota-frases { margin: 0; padding: 0.75rem 1rem; border-left: 3px solid var(--borde-fuerte); background: var(--superficie-2); border-radius: 0 var(--radio) var(--radio) 0; font-size: 0.95rem; color: var(--texto-2); }

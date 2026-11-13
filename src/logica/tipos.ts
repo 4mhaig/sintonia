@@ -20,6 +20,8 @@ export interface PosturaPartido {
   /** Traducción al castellano si la cita está en otra lengua */
   traduccion?: string | null
   pagina: number | null
+  /** El programa no lo dice con las palabras de la frase: es lo más cercano que hay */
+  aproximada?: boolean
 }
 
 export interface Partido {

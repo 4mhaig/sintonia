@@ -13,6 +13,12 @@ export function Cita({ postura, partido }: { postura: PosturaPartido; partido: P
 
   return (
     <blockquote className="cita secundario">
+      {postura.aproximada && (
+        <span className="aproximacion">
+          <span className="chip aproximacion-chip">≈ Aproximación</span>{' '}
+          El programa no lo dice con estas palabras: es lo más cercano que hemos encontrado. Léelo y juzga tú.
+        </span>
+      )}
       «{postura.traduccion ?? postura.cita}»
       {enlace ? <a href={enlace} target="_blank" rel="noopener noreferrer">{pagina}</a> : pagina}
       {postura.traduccion && (

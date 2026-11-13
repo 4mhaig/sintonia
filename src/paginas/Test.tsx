@@ -89,6 +89,11 @@ export function Test({ provincia, alElegirProvincia, alTerminar }: Props) {
         </section>
       ) : !enTemas ? (
         <section aria-live="polite" className="pila">
+          {paso === 0 && (
+            <p className="nota-frases">
+              Las frases las hemos escrito nosotros para poder comparar. Los programas no siempre lo dicen con estas palabras, pero cada partido se acerca más o menos a ellas. En tu resultado verás la cita de cada uno para que lo compruebes.
+            </p>
+          )}
           <span className="chip">{temaPorId(AFIRMACIONES[paso].tema)?.nombre}</span>
           <h1 style={{ fontSize: 'clamp(1.5rem, 4.5vw, 2rem)' }}>{AFIRMACIONES[paso].texto}</h1>
 
