@@ -37,7 +37,7 @@ export function Metodologia() {
       <p>Sintonía es una ayuda para decidir tu voto si aún no lo tienes claro. No es una encuesta: no preguntamos a quién vas a votar, no contamos votos y no hacemos predicciones. Tampoco es una recomendación: te enseña qué programas se parecen más a lo que piensas y la decisión es tuya.</p>
 
       <h2>Las frases</h2>
-      <p>Cada frase describe una medida concreta y pertenece a un tema. Para cada partido anotamos si su programa la defiende, la rechaza, tiene una postura intermedia o no dice nada, siempre con la cita literal y la página.</p>
+      <p>Cada frase describe una medida concreta y pertenece a un tema. Para cada partido anotamos si su programa la defiende o la rechaza, siempre con la cita literal y la página. Si no dice nada, ponemos «No lo menciona». Si habla del tema pero no de ese punto concreto, ponemos «No lo menciona tal cual» y te enseñamos lo que sí dice; en ese caso no cuenta para tu resultado.</p>
       <p>Las frases las escribimos nosotros para poder comparar a todos los partidos con la misma vara, y los programas no siempre usan esas palabras. Cuando un programa no habla exactamente de lo que dice la frase pero sí de algo muy cercano, lo marcamos como «≈ Aproximación» junto a la cita, con el mismo criterio para todos. Si no dice nada sobre ese punto concreto, ponemos «No lo menciona»: no deducimos posturas por la ideología del partido.</p>
 
       <h2>Tu resultado</h2>

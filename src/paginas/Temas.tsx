@@ -72,7 +72,11 @@ export function Temas({ provincia }: { provincia: string }) {
           {partidos.map((p) => {
             const postura = p.posturas.find((x) => x.afirmacion === a.id)
             const pendiente = !tienePrograma(p)
-            const e = pendiente ? { texto: 'Programa aún no publicado', color: 'var(--texto-2)' } : etiqueta(postura?.postura ?? null)
+            // Habla del tema pero no del punto concreto: no cuenta, pero enseñamos lo que sí dice
+            const tangencial = !pendiente && postura?.postura === null && Boolean(postura?.cita)
+            const e = pendiente
+              ? { texto: 'Programa aún no publicado', color: 'var(--texto-2)' }
+              : tangencial ? { texto: 'No lo menciona tal cual', color: 'var(--texto-2)' } : etiqueta(postura?.postura ?? null)
             return (
               <div key={p.id} style={{ borderTop: '1px solid var(--borde)', paddingTop: '0.75rem' }}>
                 <div style={{ display: 'flex', justifyContent: 'space-between', gap: '1rem', flexWrap: 'wrap' }}>
@@ -84,6 +88,12 @@ export function Temas({ provincia }: { provincia: string }) {
                   <span style={{ color: e.color, fontWeight: pendiente ? 400 : 700, fontStyle: pendiente ? 'italic' : 'normal' }}>{e.texto}</span>
                 </div>
                 {postura && postura.postura !== null && <Cita postura={postura} partido={p} />}
+                {postura && tangencial && (
+                  <>
+                    <p className="secundario" style={{ margin: '0.25rem 0 0', fontSize: '0.9rem' }}>Lo que sí dice sobre este tema:</p>
+                    <Cita postura={postura} partido={p} />
+                  </>
+                )}
               </div>
             )
           })}

@@ -16,7 +16,7 @@ Para cada frase y cada partido se anota:
 | Valor | Significa |
 |---|---|
 | `1` | El programa la defiende |
-| `0` | Postura intermedia o ambigua |
+| `0` | Postura intermedia (no se usa con partidos reales: si el programa habla del tema pero no del punto concreto, se pone `null` con la cita, y la web muestra «No lo menciona tal cual») |
 | `-1` | El programa se opone |
 | `null` | El programa no dice nada |
 
