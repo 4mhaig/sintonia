@@ -32,7 +32,7 @@ export function Inicio() {
         <a href="#/test" className="tarjeta tarjeta-enlace destacada">
           <span className="chip" style={{ background: 'var(--acento-suave)', color: 'var(--acento)', alignSelf: 'flex-start' }}>Unos 5 minutos</span>
           <h2 style={{ marginTop: '0.75rem' }}>Hacer el test</h2>
-          <p className="secundario">Si no sabes por dónde empezar. 20 frases, una a una.</p>
+          <p className="secundario">Di si estás de acuerdo o no con 20 frases sobre temas como la vivienda o las pensiones, y mira con qué partidos coincides más.</p>
           <span className="boton principal" style={{ width: '100%' }}>Empezar</span>
         </a>
         <a href="#/temas" className="tarjeta tarjeta-enlace">
