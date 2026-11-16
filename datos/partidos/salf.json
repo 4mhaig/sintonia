@@ -4,9 +4,10 @@
   "siglas": "SALF",
   "color": "#9C7A3C",
   "ficticio": false,
-  "programa_url": null,
-  "programa_publicado": null,
-  "programa_anadido": null,
+  "programa_url": "https://www.seacabolafiesta.com/SALF_Contrato_Electoral_29N.pdf",
+  "programa_publicado": "2026-11-10",
+  "programa_anadido": "2026-11-16",
+  "programa_titulo": "La ilusión de un país. Contrato electoral simplificado. Generales 2026",
   "nombre_en_papeleta": "SE ACABÓ LA FIESTA (SALF)",
   "nombres_por_provincia": {
     "ceuta": "SE ACABO LA FIESTA (SALF)",
@@ -60,5 +61,241 @@
     "zamora",
     "zaragoza"
   ],
-  "posturas": []
+  "posturas": [
+    {
+      "afirmacion": "viv-1",
+      "postura": null,
+      "cita": "Todo el suelo de la Sareb y del Estado, en 12 meses, a concurso para construir vivienda protegida en propiedad a precio tasado. El joven que compra es dueño, no inquilino del Ayuntamiento.",
+      "pagina": 6,
+      "traduccion": null
+    },
+    {
+      "afirmacion": "viv-2",
+      "postura": null,
+      "cita": "Seguro público de impago: doce meses de renta y daños garantizados; después, el Estado persigue al moroso. A cambio, se alquila sin exigir tres nóminas y un aval bancario.",
+      "pagina": 7,
+      "traduccion": null
+    },
+    {
+      "afirmacion": "san-1",
+      "postura": null,
+      "cita": "Central única obligatoria con precios netos públicos: 15 % de ahorro, íntegro para sueldos y plazas.",
+      "pagina": 22,
+      "traduccion": null
+    },
+    {
+      "afirmacion": "san-2",
+      "postura": 1,
+      "cita": "60 días para cirugía, 30 para especialista, 7 para pruebas prioritarias. Superado el plazo, eliges centro, público o privado, y lo paga la sanidad pública.",
+      "pagina": 22,
+      "traduccion": null,
+      "aproximada": false
+    },
+    {
+      "afirmacion": "emp-1",
+      "postura": null,
+      "cita": "Mínimo exento de 35.000, deflactación, el 0,9 % a tu cuenta y cero cotización del trabajador en el salario mínimo.",
+      "pagina": 30,
+      "traduccion": null
+    },
+    {
+      "afirmacion": "emp-2",
+      "postura": null,
+      "cita": "Un solo contrato indefinido con indemnización creciente de 12 a 33 días, más la mochila del 1,53 %.",
+      "pagina": 30,
+      "traduccion": null
+    },
+    {
+      "afirmacion": "imp-1",
+      "postura": 1,
+      "cita": "35.000 euros libres de IRPF para todos. Mínimo exento de 35.000 euros (hoy, 5.550), con reducción gradual hasta 50.000 para que ganar un euro más nunca cueste dinero.",
+      "pagina": 12,
+      "traduccion": null,
+      "aproximada": false
+    },
+    {
+      "afirmacion": "imp-2",
+      "postura": -1,
+      "cita": "Sucesiones, Donaciones y Patrimonio: suprimidos. […] Fuera también el impuesto a las grandes fortunas.",
+      "pagina": 13,
+      "traduccion": null,
+      "aproximada": false
+    },
+    {
+      "afirmacion": "pen-1",
+      "postura": 1,
+      "cita": "Las pensiones de hoy, blindadas en la Constitución. Revalorización con el IPC y prohibición de recortes, con rango constitucional.",
+      "pagina": 20,
+      "traduccion": null,
+      "aproximada": false
+    },
+    {
+      "afirmacion": "pen-2",
+      "postura": null,
+      "cita": "Jubilación activa total. Cobra el 100 % de la pensión y sigue trabajando sin recortes ni cotizaciones extra. Con 40 años cotizados te jubilas cuando quieras, sin penalización.",
+      "pagina": 20,
+      "traduccion": null
+    },
+    {
+      "afirmacion": "edu-1",
+      "postura": null,
+      "cita": "Cheque escolar válido en pública, concertada y privada, con el mismo importe por alumno y resultados públicos de cada centro.",
+      "pagina": 34,
+      "traduccion": null
+    },
+    {
+      "afirmacion": "edu-2",
+      "postura": 1,
+      "cita": "Cheque escolar válido en pública, concertada y privada, con el mismo importe por alumno y resultados públicos de cada centro. Elegir colegio no puede ser un lujo.",
+      "pagina": 34,
+      "traduccion": null,
+      "aproximada": false
+    },
+    {
+      "afirmacion": "med-1",
+      "postura": null,
+      "cita": "La luz, del 21 al 4 %; el agua, del 10 al 4 %. Y fuera el impuesto a la producción eléctrica que va directo a tu factura.",
+      "pagina": 13,
+      "traduccion": null
+    },
+    {
+      "afirmacion": "med-2",
+      "postura": null,
+      "cita": "Veto a Mercosur, al recorte de la PAC y al Pacto Verde.",
+      "pagina": 35,
+      "traduccion": null
+    },
+    {
+      "afirmacion": "inm-1",
+      "postura": -1,
+      "cita": "Fin de las regularizaciones. Derogación de la regularización de 2026, revisión una por una de las concesiones y prohibición por ley orgánica de cualquier regularización masiva.",
+      "pagina": 17,
+      "traduccion": null,
+      "aproximada": false
+    },
+    {
+      "afirmacion": "inm-2",
+      "postura": 1,
+      "cita": "Orden de expulsión = expulsión. En 48 horas. Identificación, orden y salida en 48 horas. El 100 % de las órdenes ejecutadas en 90 días. Internamiento hasta la expulsión.",
+      "pagina": 17,
+      "traduccion": null,
+      "aproximada": false
+    },
+    {
+      "afirmacion": "ter-1",
+      "postura": null,
+      "cita": "Contenidos mínimos comunes al 100 %, evaluaciones externas al final de cada etapa y selectividad única y en castellano en toda España.",
+      "pagina": 33,
+      "traduccion": null
+    },
+    {
+      "afirmacion": "ter-2",
+      "postura": null,
+      "cita": "Frente a modelos de financiación improvisados ad hoc por el sanchismo para contentar a sus socios separatistas y mantenerse un día más en el poder, defenderemos un sistema justo, solidario y responsable",
+      "pagina": 14,
+      "traduccion": null
+    },
+    {
+      "afirmacion": "igu-1",
+      "postura": null,
+      "cita": "Registro público de reincidentes, pulsera telemática de por vida y castración química voluntaria como condición de cualquier beneficio penitenciario.",
+      "pagina": 8,
+      "traduccion": null
+    },
+    {
+      "afirmacion": "igu-2",
+      "postura": null,
+      "cita": "",
+      "pagina": null,
+      "traduccion": null
+    }
+  ],
+  "temas_programa": {
+    "vivienda": [
+      {
+        "tipo": "apartado",
+        "titulo": "VIVIENDA",
+        "desde": 5,
+        "hasta": 7
+      }
+    ],
+    "sanidad": [
+      {
+        "tipo": "apartado",
+        "titulo": "SANIDAD",
+        "desde": 22,
+        "hasta": 24
+      }
+    ],
+    "empleo": [
+      {
+        "tipo": "apartado",
+        "titulo": "EMPLEO",
+        "desde": 30,
+        "hasta": 32
+      }
+    ],
+    "impuestos": [
+      {
+        "tipo": "apartado",
+        "titulo": "IMPUESTOS",
+        "desde": 12,
+        "hasta": 16
+      }
+    ],
+    "pensiones": [
+      {
+        "tipo": "apartado",
+        "titulo": "PENSIONES",
+        "desde": 20,
+        "hasta": 21
+      }
+    ],
+    "educacion": [
+      {
+        "tipo": "apartado",
+        "titulo": "EDUCACIÓN",
+        "desde": 33,
+        "hasta": 34
+      }
+    ],
+    "medio-ambiente": [
+      {
+        "tipo": "menciones",
+        "titulo": null,
+        "desde": 35,
+        "hasta": 35
+      }
+    ],
+    "inmigracion": [
+      {
+        "tipo": "apartado",
+        "titulo": "INMIGRACIÓN",
+        "desde": 17,
+        "hasta": 19
+      }
+    ],
+    "territorio": [
+      {
+        "tipo": "menciones",
+        "titulo": null,
+        "desde": 14,
+        "hasta": 14
+      },
+      {
+        "tipo": "menciones",
+        "titulo": null,
+        "desde": 16,
+        "hasta": 16
+      }
+    ],
+    "igualdad": [
+      {
+        "tipo": "menciones",
+        "titulo": null,
+        "desde": 8,
+        "hasta": 8
+      }
+    ]
+  }
 }

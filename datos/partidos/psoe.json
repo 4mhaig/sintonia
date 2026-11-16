@@ -4,9 +4,10 @@
   "siglas": "PSOE",
   "color": "#E1001A",
   "ficticio": false,
-  "programa_url": null,
-  "programa_publicado": null,
-  "programa_anadido": null,
+  "programa_url": "https://www.psoe.es/media-content/2026/11/PROGRAMAPSOE29N26.pdf",
+  "programa_publicado": "2026-11-15",
+  "programa_anadido": "2026-11-16",
+  "programa_titulo": "La fuerza de seguir avanzando. Programa elecciones generales 29 noviembre 2026",
   "nombre_en_papeleta": "PARTIDO SOCIALISTA OBRERO ESPAÑOL (PSOE)",
   "nombres_por_provincia": {
     "a-coruna": "Partido dos Socialistas de Galicia-PSOE (PSdeG-PSOE)",
@@ -24,5 +25,264 @@
     "pontevedra": "Partido dos Socialistas de Galicia-PSOE (PSdeG-PSOE)",
     "tarragona": "PARTIT DELS SOCIALISTES DE CATALUNYA (PSC-PSOE) (PSC)"
   },
-  "posturas": []
+  "posturas": [
+    {
+      "afirmacion": "viv-1",
+      "postura": 1,
+      "cita": "Constituir un parque público estatal de 100.000 viviendas mediante la construcción y adquisición para incrementar la oferta de vivienda para la venta o alquiler estable a precio asequible, que se sumarán a las promovidas por las comunidades autónomas y las entidades locales en el ejercicio de sus competencias.",
+      "pagina": 28,
+      "traduccion": null,
+      "aproximada": false
+    },
+    {
+      "afirmacion": "viv-2",
+      "postura": 1,
+      "cita": "Congelar temporalmente las rentas que superen los índices de referencia, evitando incrementos abusivos en los mercados tensionados.",
+      "pagina": 30,
+      "traduccion": null,
+      "aproximada": false
+    },
+    {
+      "afirmacion": "san-1",
+      "postura": null,
+      "cita": "Acabar con las listas de espera, consolidando una financiación pública de la sanidad en torno al 7% del PIB, reforzando el carácter público del Sistema Nacional de Salud y aumentando progresivamente la inversión en prevención hasta converger con la media europea.",
+      "pagina": 49,
+      "traduccion": null
+    },
+    {
+      "afirmacion": "san-2",
+      "postura": -1,
+      "cita": "Limitar la privatización de la sanidad estableciendo la gestión directa como modalidad preferente en la prestación sanitaria.",
+      "pagina": 49,
+      "traduccion": null,
+      "aproximada": true
+    },
+    {
+      "afirmacion": "emp-1",
+      "postura": 1,
+      "cita": "Blindar por ley el SMI por encima del 60% del salario medio y actualizarlo periódicamente según los precios, los salarios, la productividad y las necesidades de las personas trabajadoras, garantizando que cada subida mejore efectivamente la nómina",
+      "pagina": 37,
+      "traduccion": null,
+      "aproximada": false
+    },
+    {
+      "afirmacion": "emp-2",
+      "postura": 1,
+      "cita": "Completar la reducción de la jornada a 37,5 horas e incentivar los avances en la negociación colectiva hacia las 35 horas. Trabajar menos horas debe permitir ganar tiempo para la familia, los cuidados, el descanso y la vida personal, sin perder salario.",
+      "pagina": 41,
+      "traduccion": null,
+      "aproximada": false
+    },
+    {
+      "afirmacion": "imp-1",
+      "postura": null,
+      "cita": "Mejorar la fiscalidad para las rentas medias bajas. Convertiremos el mínimo exento por descendiente en el IRPF en un crédito fiscal reembolsable, lo que permitirá que se beneficien de él 2 millones de hogares de ingresos medios y bajos",
+      "pagina": 49,
+      "traduccion": null
+    },
+    {
+      "afirmacion": "imp-2",
+      "postura": 1,
+      "cita": "Ingresos nuevos para derechos nuevos. La recaudación de la tributación complementaria de los grandes patrimonios y de la mayor progresividad de las rentas del capital contribuirá a financiar la prestación por crianza y la lucha contra la pobreza infantil.",
+      "pagina": 47,
+      "traduccion": null,
+      "aproximada": true
+    },
+    {
+      "afirmacion": "pen-1",
+      "postura": 1,
+      "cita": "Blindar constitucionalmente el sistema público de pensiones y su revalorización conforme al IPC, garantizando el derecho de las personas mayores a una pensión digna, suficiente y actualizada.",
+      "pagina": 40,
+      "traduccion": null,
+      "aproximada": false
+    },
+    {
+      "afirmacion": "pen-2",
+      "postura": null,
+      "cita": "Mejorar la jubilación en trabajos penosos y en las jubilaciones anticipadas involuntarias. Evaluar la mejora de los coeficientes reductores de edad por penosidad y la reducción de las penalizaciones de las pensiones por jubilación anticipada involuntaria",
+      "pagina": 40,
+      "traduccion": null
+    },
+    {
+      "afirmacion": "edu-1",
+      "postura": 1,
+      "cita": "Aspiramos a consolidar un Estado de bienestar que acompañe a cada persona en todas las etapas de su vida. […] con una sanidad pública que llegue a tiempo, una educación pública y gratuita de los 0 a los 18 años",
+      "pagina": 46,
+      "traduccion": null,
+      "aproximada": true
+    },
+    {
+      "afirmacion": "edu-2",
+      "postura": null,
+      "cita": "",
+      "pagina": null,
+      "traduccion": null
+    },
+    {
+      "afirmacion": "med-1",
+      "postura": -1,
+      "cita": "Mantener el calendario de cierre de las centrales nucleares hasta 2035 y desarrollar proyectos de transición justa en las comarcas afectadas",
+      "pagina": 66,
+      "traduccion": null,
+      "aproximada": false
+    },
+    {
+      "afirmacion": "med-2",
+      "postura": 1,
+      "cita": "Impulsar las Zonas de Bajas Emisiones y la movilidad sostenible en las ciudades, promoviendo medidas eficaces para reducir las emisiones y mejorar la calidad del aire.",
+      "pagina": 71,
+      "traduccion": null,
+      "aproximada": false
+    },
+    {
+      "afirmacion": "inm-1",
+      "postura": null,
+      "cita": "Queremos seguir avanzando en esta dirección: simplificar los trámites, dar seguridad jurídica, impulsar la contratación en origen, agilizar la homologación de títulos y facilitar el acceso al empleo, para aprovechar el talento de quienes vienen a vivir y trabajar aquí.",
+      "pagina": 92,
+      "traduccion": null
+    },
+    {
+      "afirmacion": "inm-2",
+      "postura": null,
+      "cita": "Defender una política migratoria europea ordenada, basada en la solidaridad, la responsabilidad, las necesidades del mercado de trabajo europeo y el respeto de los derechos humanos, combinando la lucha contra las mafias con una gestión eficaz del asilo, las fronteras y las vías legales y seguras de migración.",
+      "pagina": 110,
+      "traduccion": null
+    },
+    {
+      "afirmacion": "ter-1",
+      "postura": null,
+      "cita": "Casi cincuenta años después, el reto no es recentralizar ni fragmentar, sino hacer que el Estado autonómico funcione mejor: con más cooperación entre administraciones, con instituciones que representen de verdad a los territorios y con un compromiso firme con la igualdad de derechos, se viva donde se viva.",
+      "pagina": 91,
+      "traduccion": null
+    },
+    {
+      "afirmacion": "ter-2",
+      "postura": null,
+      "cita": "",
+      "pagina": null,
+      "traduccion": null
+    },
+    {
+      "afirmacion": "igu-1",
+      "postura": 1,
+      "cita": "Aprobar una nueva Estrategia Estatal para combatir las Violencias Machistas, profundizando en la prevención, protección y respuesta frente a las nuevas formas de violencia contra las mujeres.",
+      "pagina": 82,
+      "traduccion": null,
+      "aproximada": false
+    },
+    {
+      "afirmacion": "igu-2",
+      "postura": 1,
+      "cita": "Garantizar la muerte digna y el ejercicio efectivo del derecho a la eutanasia, de acuerdo con la legislación vigente.",
+      "pagina": 50,
+      "traduccion": null,
+      "aproximada": false
+    }
+  ],
+  "temas_programa": {
+    "vivienda": [
+      {
+        "tipo": "apartado",
+        "titulo": "Una política ambiciosa para garantizar el derecho a la vivienda",
+        "desde": 24,
+        "hasta": 33
+      }
+    ],
+    "sanidad": [
+      {
+        "tipo": "apartado",
+        "titulo": "La sanidad pública, la gran prioridad",
+        "desde": 49,
+        "hasta": 51
+      }
+    ],
+    "empleo": [
+      {
+        "tipo": "apartado",
+        "titulo": "Trabajo digno",
+        "desde": 41,
+        "hasta": 43
+      },
+      {
+        "tipo": "apartado",
+        "titulo": "Coste de vida y poder adquisitivo",
+        "desde": 37,
+        "hasta": 39
+      }
+    ],
+    "impuestos": [
+      {
+        "tipo": "apartado",
+        "titulo": "Fiscalidad justa",
+        "desde": 48,
+        "hasta": 49
+      },
+      {
+        "tipo": "apartado",
+        "titulo": "Senda y responsabilidad fiscal",
+        "desde": 47,
+        "hasta": 48
+      }
+    ],
+    "pensiones": [
+      {
+        "tipo": "apartado",
+        "titulo": "Pensiones",
+        "desde": 39,
+        "hasta": 41
+      }
+    ],
+    "educacion": [
+      {
+        "tipo": "apartado",
+        "titulo": "La educación pública: motor de progreso e igualdad",
+        "desde": 51,
+        "hasta": 55
+      }
+    ],
+    "medio-ambiente": [
+      {
+        "tipo": "apartado",
+        "titulo": "Un país que combate el cambio climático y aprovecha la transición verde",
+        "desde": 63,
+        "hasta": 74
+      }
+    ],
+    "inmigracion": [
+      {
+        "tipo": "apartado",
+        "titulo": "Impulsar una política migratoria regular, humana y eficaz",
+        "desde": 92,
+        "hasta": 93
+      },
+      {
+        "tipo": "menciones",
+        "titulo": null,
+        "desde": 110,
+        "hasta": 110
+      }
+    ],
+    "territorio": [
+      {
+        "tipo": "apartado",
+        "titulo": "Un Estado autonómico que funciona: cooperación, autogobierno y cohesión",
+        "desde": 91,
+        "hasta": 92
+      },
+      {
+        "tipo": "apartado",
+        "titulo": "Financiación territorial justa para garantizar los servicios públicos",
+        "desde": 60,
+        "hasta": 61
+      }
+    ],
+    "igualdad": [
+      {
+        "tipo": "apartado",
+        "titulo": "La fuerza de la gente, la fuerza de las mujeres",
+        "desde": 76,
+        "hasta": 86
+      }
+    ]
+  }
 }
