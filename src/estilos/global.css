@@ -40,10 +40,10 @@ a { color: var(--acento); text-underline-offset: 3px; }
   cursor: pointer; text-decoration: none;
   transition: background 150ms, border-color 150ms, transform 100ms;
 }
-.boton:hover { border-color: var(--texto); }
+@media (hover: hover) { .boton:hover { border-color: var(--texto); } }
 .boton:active { transform: scale(0.98); }
 .boton.principal { background: var(--acento); border-color: var(--acento); color: var(--acento-texto); }
-.boton.principal:hover { filter: brightness(1.08); }
+@media (hover: hover) { .boton.principal:hover { filter: brightness(1.08); } }
 .boton.fantasma { border-color: transparent; background: transparent; text-decoration: underline; text-underline-offset: 4px; }
 .boton[aria-pressed='true'] { background: var(--acento-suave); border-color: var(--acento); }
 .boton:disabled { opacity: 0.45; cursor: not-allowed; }
@@ -83,10 +83,6 @@ select {
   background-repeat: no-repeat;
 }
 
-/* Progreso del test */
-.progreso { height: 8px; background: var(--superficie-2); border-radius: 4px; overflow: hidden; margin-top: 10px; }
-.progreso-relleno { height: 100%; background: var(--acento); border-radius: 4px; transition: width 300ms cubic-bezier(.2,.8,.2,1); }
-@media (prefers-reduced-motion: reduce) { .progreso-relleno { transition: none; } }
 
 /* Cabecera */
 .cabecera { display: flex; align-items: center; justify-content: space-between; gap: 1rem; padding: 1rem 0; flex-wrap: wrap; }
@@ -183,7 +179,9 @@ select {
 .lista-programas li { display: flex; flex-direction: column; padding: 0.6rem 0; border-bottom: 1px solid var(--borde); font-size: 0.95rem; }
 .aproximacion { display: block; margin-bottom: 0.25rem; font-size: 0.85rem; font-style: normal; }
 .aproximacion-chip { font-size: 0.8rem; padding: 0.1em 0.6em; background: var(--aviso-fondo); color: var(--aviso); }
-.nota-frases { margin: 0; padding: 0.75rem 1rem; border-left: 3px solid var(--borde-fuerte); background: var(--superficie-2); border-radius: 0 var(--radio) var(--radio) 0; font-size: 0.95rem; color: var(--texto-2); }
+.nota-frases { margin: 0; font-size: 0.95rem; color: var(--texto-2); }
+.nota-frases summary { cursor: pointer; min-height: 44px; display: flex; align-items: center; text-decoration: underline; text-underline-offset: 4px; }
+.nota-frases p { margin: 0.25rem 0 0; padding: 0.75rem 1rem; border-left: 3px solid var(--borde-fuerte); background: var(--superficie-2); border-radius: 0 var(--radio) var(--radio) 0; }
 .titular-matiz { display: block; font-size: 0.55em; font-weight: 500; color: var(--texto-2); margin-bottom: 0.2em; }
 
 /* Por temas: leer en los programas */
@@ -203,3 +201,15 @@ select {
 .asterisco { font-weight: 700; color: var(--aviso); margin-left: 0.1em; }
 .nota-pendientes { font-size: 0.9rem; margin: 0; }
 .nota-pendientes > span[aria-hidden] { color: var(--aviso); font-weight: 700; }
+
+/* Cabecera del test: onda, señal y número de frase, siempre a la vista */
+.test-cabecera { position: sticky; top: 0; z-index: 5; background: var(--fondo); padding: 0.5rem 0; margin-top: -0.5rem; }
+.test-estado { display: flex; justify-content: space-between; align-items: baseline; gap: 1rem; margin-top: 0.4rem; }
+.paso-actual { color: var(--acento); font-size: 1.15rem; font-weight: 700; }
+.frase-test { font-size: clamp(1.5rem, 4.5vw, 2rem); }
+.frase-test:focus { outline: none; }
+.frase-numero { color: var(--acento); }
+
+/* Pie plegado fuera de la portada */
+.que-es-plegado summary { cursor: pointer; min-height: 44px; display: inline-flex; align-items: center; color: var(--texto); font-weight: 700; text-decoration: underline; text-underline-offset: 4px; }
+.que-es-plegado[open] summary { margin-bottom: 0.75rem; }

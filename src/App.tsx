@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react'
+import { useEffect, useLayoutEffect, useState } from 'react'
 import type { Respuestas } from './logica/tipos'
 import { ELECCIONES } from './datos'
 import { Cabecera } from './componentes/Cabecera'
@@ -28,10 +28,15 @@ export function App() {
   const [provincia, setProvincia] = useState('')
 
   useEffect(() => {
-    const cambiar = () => { setRuta(leerRuta()); window.scrollTo(0, 0) }
+    // Que el navegador no recupere la posición anterior: cada página empieza arriba
+    if ('scrollRestoration' in history) history.scrollRestoration = 'manual'
+    const cambiar = () => setRuta(leerRuta())
     window.addEventListener('hashchange', cambiar)
     return () => window.removeEventListener('hashchange', cambiar)
   }, [])
+
+  // Después de pintar la página nueva, arriba del todo
+  useLayoutEffect(() => { window.scrollTo(0, 0) }, [ruta])
 
   const terminado = Object.keys(respuestas).length > 0
 
@@ -59,7 +64,7 @@ export function App() {
         {ruta === 'provincia' && <Provincia provincia={provincia} alElegirProvincia={setProvincia} />}
         {ruta === 'metodologia' && <Metodologia />}
       </main>
-      <Pie />
+      <Pie completo={ruta === 'inicio'} />
     </div>
   )
 }

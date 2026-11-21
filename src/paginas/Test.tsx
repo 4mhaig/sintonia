@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useEffect, useRef, useState } from 'react'
 import type { Postura, Respuestas } from '../logica/tipos'
 import { AFIRMACIONES, TEMAS, partidosEn, temaPorId, tienePrograma } from '../datos'
 import { Onda } from '../componentes/Onda'
@@ -17,6 +17,19 @@ const OPCIONES: { valor: Postura; texto: string }[] = [
 ]
 const MAX_IMPORTANTES = 3
 
+/** true en pantallas de móvil: la onda se hace más baja para que la cabecera fija ocupe menos */
+function useEstrecho() {
+  const consulta = '(max-width: 40rem)'
+  const [estrecho, setEstrecho] = useState(() => window.matchMedia(consulta).matches)
+  useEffect(() => {
+    const m = window.matchMedia(consulta)
+    const cambiar = () => setEstrecho(m.matches)
+    m.addEventListener('change', cambiar)
+    return () => m.removeEventListener('change', cambiar)
+  }, [])
+  return estrecho
+}
+
 export function Test({ provincia, alElegirProvincia, alTerminar }: Props) {
   // Paso -1: "¿Dónde votas?" antes de la primera frase
   const [paso, setPaso] = useState(-1)
@@ -33,14 +46,13 @@ export function Test({ provincia, alElegirProvincia, alTerminar }: Props) {
   // El ruido nunca llega a cero dentro del test: la claridad total es el resultado
   const ruido = 1 - (avance / total) * 0.8
 
-  // 20 frases y un último paso para elegir los temas importantes
-  const hechas = Math.max(0, paso)
-  const quedanFrases = total - Math.min(Math.max(paso, 0), total)
-  const quedanTexto = enTemas
-    ? 'Último paso: elegir tus temas y ver el resultado'
-    : quedanFrases === 1
-      ? 'Queda 1 frase y un último paso'
-      : `Quedan ${quedanFrases} frases y un último paso`
+  // Cada vez que cambia de paso: arriba del todo y el foco en la pregunta nueva
+  const titulo = useRef<HTMLHeadingElement>(null)
+  useEffect(() => {
+    window.scrollTo(0, 0)
+    if (paso >= 0) titulo.current?.focus({ preventScroll: true })
+  }, [paso])
+  const estrecho = useEstrecho()
 
   const empezar = (id: string) => {
     alElegirProvincia(id)
@@ -63,30 +75,20 @@ export function Test({ provincia, alElegirProvincia, alTerminar }: Props) {
 
   return (
     <div className="pila">
-      <div>
-        <div style={{ display: 'flex', justifyContent: 'space-between', gap: '1rem' }}>
-          <span className="mono secundario">señal {senal}% · {senal < 50 ? 'mucho ruido' : 'sintonizando'}</span>
-          <span className="mono secundario">{antes ? `0 de ${total}` : enTemas ? 'último paso' : `${paso + 1} de ${total}`}</span>
+      <div className="test-cabecera">
+        <div className="tarjeta" style={{ padding: 0, overflow: 'hidden' }}>
+          <Onda ruido={ruido} alto={estrecho ? 56 : 96} />
         </div>
-        <div className="tarjeta" style={{ padding: 0, marginTop: 8, overflow: 'hidden' }}>
-          <Onda ruido={ruido} />
+        <div className="test-estado">
+          <span className="mono secundario">señal {senal}%</span>
+          <span className="mono secundario" aria-live="polite">
+            {antes
+              ? `0 de ${total}`
+              : enTemas
+                ? 'último paso'
+                : <><strong className="paso-actual">{paso + 1}</strong> de {total}<span className="solo-lectores"> frases</span></>}
+          </span>
         </div>
-        {!antes && (
-          <>
-            <div
-              className="progreso"
-              role="progressbar"
-              aria-label="Progreso del test"
-              aria-valuemin={0}
-              aria-valuemax={total + 1}
-              aria-valuenow={hechas}
-              aria-valuetext={quedanTexto}
-            >
-              <div className="progreso-relleno" style={{ width: `${(hechas / (total + 1)) * 100}%` }} />
-            </div>
-            <p className="secundario" style={{ margin: '6px 0 0', fontSize: '0.95rem' }}>{quedanTexto}</p>
-          </>
-        )}
       </div>
 
       {antes ? (
@@ -110,14 +112,11 @@ export function Test({ provincia, alElegirProvincia, alTerminar }: Props) {
           </div>
         </section>
       ) : !enTemas ? (
-        <section aria-live="polite" className="pila">
-          {paso === 0 && (
-            <p className="nota-frases">
-              Las frases las hemos escrito nosotros para poder comparar. Los programas no siempre lo dicen con estas palabras, pero cada partido se acerca más o menos a ellas. En tu resultado verás la cita de cada uno para que lo compruebes.
-            </p>
-          )}
+        <section key={paso} className="pila">
           <span className="chip">{temaPorId(AFIRMACIONES[paso].tema)?.nombre}</span>
-          <h1 style={{ fontSize: 'clamp(1.5rem, 4.5vw, 2rem)' }}>{AFIRMACIONES[paso].texto}</h1>
+          <h1 ref={titulo} tabIndex={-1} className="frase-test">
+            <span className="frase-numero">{paso + 1}.</span> {AFIRMACIONES[paso].texto}
+          </h1>
 
           <div>
             <button className="boton fantasma" style={{ padding: 0, minHeight: 44 }} aria-expanded={verExplicacion} onClick={() => setVerExplicacion((v) => !v)}>
@@ -137,6 +136,11 @@ export function Test({ provincia, alElegirProvincia, alTerminar }: Props) {
             </button>
             <button className="boton fantasma" onClick={() => responder(null)}>Saltar esta frase</button>
           </div>
+
+          <details className="nota-frases">
+            <summary>¿Quién ha escrito estas frases?</summary>
+            <p>Las frases las hemos escrito nosotros para poder comparar. Los programas no siempre lo dicen con estas palabras, pero cada partido se acerca más o menos a ellas. En tu resultado verás la cita de cada uno para que lo compruebes.</p>
+          </details>
         </section>
       ) : (
         <section className="pila">

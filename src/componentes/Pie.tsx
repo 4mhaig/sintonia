@@ -6,19 +6,41 @@ const QUE_ES = [
   { es: false, titulo: 'No es una recomendación.', texto: 'Te enseña parecidos y diferencias. La decisión es siempre tuya.' },
 ]
 
-/** Pie común a todas las páginas: el único sitio donde se explica qué es y qué no es Sintonía. */
-export function Pie() {
+function Lista() {
+  return (
+    <ul>
+      {QUE_ES.map((x) => (
+        <li key={x.titulo}>
+          <span className={`que-es-icono ${x.es ? 'si' : 'no'}`} aria-hidden="true">{x.es ? '✓' : '✕'}</span>
+          <span><strong>{x.titulo}</strong> {x.texto}</span>
+        </li>
+      ))}
+    </ul>
+  )
+}
+
+/**
+ * Pie común. En la portada se explica entero qué es y qué no es Sintonía;
+ * en el resto de páginas queda plegado para no cargar la pantalla.
+ */
+export function Pie({ completo }: { completo: boolean }) {
+  if (!completo) {
+    return (
+      <footer className="pie que-es">
+        <details className="que-es-plegado">
+          <summary>¿Qué es Sintonía y qué no?</summary>
+          <Lista />
+        </details>
+        <p style={{ margin: '1rem 0 0' }}>
+          <a href="#/metodologia" style={{ fontWeight: 700 }}>Cómo funciona <span aria-hidden="true">→</span></a>
+        </p>
+      </footer>
+    )
+  }
   return (
     <footer className="pie que-es" aria-labelledby="que-es">
       <h2 id="que-es" className="mono secundario">Qué es Sintonía y qué no</h2>
-      <ul>
-        {QUE_ES.map((x) => (
-          <li key={x.titulo}>
-            <span className={`que-es-icono ${x.es ? 'si' : 'no'}`} aria-hidden="true">{x.es ? '✓' : '✕'}</span>
-            <span><strong>{x.titulo}</strong> {x.texto}</span>
-          </li>
-        ))}
-      </ul>
+      <Lista />
       <p style={{ margin: '1.25rem 0 0' }}>
         <a href="#/metodologia" style={{ fontWeight: 700 }}>Cómo funciona <span aria-hidden="true">→</span></a>
       </p>
