@@ -1,3 +1,4 @@
+import { NombrePartido, NotaPendientes } from '../componentes/Pendiente'
 import { PARTIDOS, tienePrograma } from '../datos'
 
 const fecha = (iso?: string | null) =>
@@ -10,10 +11,11 @@ function EstadoProgramas() {
     return <p>Los partidos reales se añadirán el 13 de noviembre, al empezar la campaña, con los programas que se hayan publicado para entonces. Los demás se irán añadiendo en un máximo de 48 horas desde que se publiquen.</p>
   }
   return (
+    <>
     <ul className="lista-programas">
       {reales.map((p) => (
         <li key={p.id}>
-          <strong>{p.nombre}</strong>
+          <strong><NombrePartido partido={p} /></strong>
           {tienePrograma(p) && p.programa_url ? (
             <span>
               <a href={p.programa_url} target="_blank" rel="noopener noreferrer">{p.programa_titulo ?? 'Programa (PDF)'}</a>
@@ -25,6 +27,8 @@ function EstadoProgramas() {
         </li>
       ))}
     </ul>
+    <NotaPendientes partidos={reales} />
+    </>
   )
 }
 

@@ -3,6 +3,7 @@ import type { Postura } from '../logica/tipos'
 import { AFIRMACIONES, PARTIDOS, TEMAS, partidosEn, provinciaPorId, tienePrograma } from '../datos'
 import { Cita } from '../componentes/Cita'
 import { LeerEnProgramas } from '../componentes/LeerEnProgramas'
+import { NombrePartido, NotaPendientes } from '../componentes/Pendiente'
 
 const ETIQUETA: Record<string, { texto: string; color: string }> = {
   '1': { texto: 'A favor', color: 'var(--acento)' },
@@ -83,7 +84,7 @@ export function Temas({ provincia }: { provincia: string }) {
                 <div style={{ display: 'flex', justifyContent: 'space-between', gap: '1rem', flexWrap: 'wrap' }}>
                   <strong style={{ display: 'inline-flex', alignItems: 'center', gap: '0.5rem' }}>
                     <span aria-hidden="true" style={{ width: 12, height: 12, borderRadius: 6, background: p.color }} />
-                    {p.nombre}
+                    <NombrePartido partido={p} />
                     {p.ambito && <span className="secundario" style={{ fontWeight: 400, fontSize: '0.9rem' }}>· solo en {p.ambito}</span>}
                   </strong>
                   <span style={{ color: e.color, fontWeight: pendiente ? 400 : 700, fontStyle: pendiente ? 'italic' : 'normal' }}>{e.texto}</span>
@@ -104,6 +105,8 @@ export function Temas({ provincia }: { provincia: string }) {
       {!busqueda && (
         <LeerEnProgramas tema={tema} nombreTema={TEMAS.find((t) => t.id === tema)?.nombre ?? ''} partidos={partidos} />
       )}
+
+      {frases.length > 0 && <NotaPendientes partidos={partidos} />}
 
       {busqueda && frases.length === 0 && (
         <p>No hay ninguna frase con esa palabra. Prueba con otra o elige un tema.</p>

@@ -7,6 +7,7 @@ import { Cita } from '../componentes/Cita'
 import { Onda } from '../componentes/Onda'
 import { Dial } from '../componentes/Dial'
 import { SelectorProvincia } from '../componentes/SelectorProvincia'
+import { NombrePartido, NotaPendientes } from '../componentes/Pendiente'
 import { ir } from '../App'
 
 interface Props {
@@ -50,7 +51,7 @@ export function Resultado({ respuestas, importantes, provincia, alElegirProvinci
         <>
           {sinPrograma.length > 0 && (
             <p className="aviso" role="note" style={{ margin: 0 }}>
-              <strong>Aún no han publicado su programa:</strong> {sinPrograma.map((p) => p.nombre).join(', ')}.
+              <strong>Aún no han publicado su programa:</strong> {sinPrograma.map((p, i) => <span key={p.id}>{i > 0 && ', '}<NombrePartido partido={p} /></span>)}.
               {' '}No podemos compararte con {sinPrograma.length === 1 ? 'él' : 'ellos'} todavía, así que tu resultado puede cambiar cuando {sinPrograma.length === 1 ? 'lo haga' : 'lo hagan'}.
             </p>
           )}
@@ -102,10 +103,11 @@ export function Resultado({ respuestas, importantes, provincia, alElegirProvinci
               <h2 style={{ fontSize: '1.15rem', margin: '0.5rem 0 0' }}>También en tu papeleta, sin programa todavía</h2>
               {sinPrograma.map((p) => (
                 <div key={p.id} className="tarjeta sin-programa">
-                  <h3>{p.nombre}</h3>
-                  <p className="secundario" style={{ margin: '0.25rem 0 0' }}>Programa aún no publicado. Lo añadiremos en cuanto salga.</p>
+                  <h3><NombrePartido partido={p} /></h3>
+                  <p className="secundario" style={{ margin: '0.25rem 0 0' }}>Programa aún no publicado.</p>
                 </div>
               ))}
+              <NotaPendientes partidos={sinPrograma} />
             </section>
           )}
 

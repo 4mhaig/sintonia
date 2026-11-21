@@ -1,5 +1,6 @@
 import type { Partido } from '../logica/tipos'
 import { tienePrograma } from '../datos'
+import { NombrePartido } from './Pendiente'
 
 const paginas = (desde: number, hasta: number) => (desde === hasta ? `pág. ${desde}` : `págs. ${desde}–${hasta}`)
 
@@ -43,7 +44,7 @@ export function LeerEnProgramas({ tema, nombreTema, partidos }: { tema: string; 
       </ul>
       {sinPrograma.length > 0 && (
         <p className="secundario" style={{ margin: 0, fontSize: '0.95rem' }}>
-          <strong>Aún sin programa:</strong> {sinPrograma.map((p) => p.nombre).join(', ')}.
+          <strong>Aún sin programa:</strong> {sinPrograma.map((p, i) => <span key={p.id}>{i > 0 && ', '}<NombrePartido partido={p} /></span>)}.
         </p>
       )}
     </section>

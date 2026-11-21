@@ -198,3 +198,8 @@ select {
 .opiniones { display: flex; flex-wrap: wrap; gap: 0.4rem; margin: 0.35rem 0 0.15rem; }
 .opinion { font-size: 0.85rem; padding: 0.1em 0.65em; border-radius: 999px; background: var(--superficie-2); color: var(--texto-2); }
 .opinion strong { color: var(--texto); }
+
+/* Partidos sin programa todavía */
+.asterisco { font-weight: 700; color: var(--aviso); margin-left: 0.1em; }
+.nota-pendientes { font-size: 0.9rem; margin: 0; }
+.nota-pendientes > span[aria-hidden] { color: var(--aviso); font-weight: 700; }
