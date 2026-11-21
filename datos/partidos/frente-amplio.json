@@ -4,9 +4,10 @@
   "siglas": "FA",
   "color": "#D6286E",
   "ficticio": false,
-  "programa_url": null,
-  "programa_publicado": null,
-  "programa_anadido": null,
+  "programa_url": "https://frenteamplio.info/pdf/ProgramaFrenteAmplio.pdf",
+  "programa_publicado": "2026-11-16",
+  "programa_anadido": "2026-11-21",
+  "programa_titulo": "Un programa como una casa",
   "nombre_en_papeleta": "Frente Amplio (FA)",
   "nombres_por_provincia": {
     "a-coruna": "Frente Amplio-Fronte Ampla (FRENTE AMPLIO-FRONTE AMPLA)",
@@ -81,5 +82,276 @@
     "zamora",
     "zaragoza"
   ],
-  "posturas": []
+  "posturas": [
+    {
+      "afirmacion": "viv-1",
+      "postura": 1,
+      "cita": "Ampliaremos el parque público y asequible de vivienda a través de la construcción directa y delegada, la compra por tanteo y retracto, la movilización de vivienda vacía o infrautilizada, la redensificación, la expropiación y el ejercicio del tanteo público con el que se incorporarán 1,5 millones de viviendas públicas en 12 años (125.000 viviendas públicas/año)",
+      "pagina": 10,
+      "traduccion": null,
+      "aproximada": false
+    },
+    {
+      "afirmacion": "viv-2",
+      "postura": 1,
+      "cita": "Limitaremos por ley el precio del alquiler residencial en todas las zonas tensionadas aplicando la fórmula objetiva que garantice la renta más baja para el inquilino",
+      "pagina": 13,
+      "traduccion": null,
+      "aproximada": false
+    },
+    {
+      "afirmacion": "san-1",
+      "postura": null,
+      "cita": "Blindaje del gasto sanitario público: Compromiso desde los Presupuestos Generales del Estado del 8 % del PIB estatal para la sanidad pública.",
+      "pagina": 26,
+      "traduccion": null
+    },
+    {
+      "afirmacion": "san-2",
+      "postura": -1,
+      "cita": "Derogaremos expresamente la Ley 15/1997, sobre habilitación de nuevas formas de gestión del SNS, que había abierto la puerta a la colaboración con entidades privadas, y los modelos de gestión indirecta pasarán a ser estrictamente excepcionales.",
+      "pagina": 26,
+      "traduccion": null,
+      "aproximada": true
+    },
+    {
+      "afirmacion": "emp-1",
+      "postura": 1,
+      "cita": "Suelo legal del SMI al 60 % del salario medio neto: Garantizaremos por ley una subida progresiva del Salario Mínimo Interprofesional (SMI) manteniendo un suelo permanente equivalente al 60 % del salario medio neto de la economía.",
+      "pagina": 51,
+      "traduccion": null,
+      "aproximada": false
+    },
+    {
+      "afirmacion": "emp-2",
+      "postura": 1,
+      "cita": "Hacia una jornada laboral máxima de 32 horas semanales sin reducción salarial",
+      "pagina": 55,
+      "traduccion": null,
+      "aproximada": false
+    },
+    {
+      "afirmacion": "imp-1",
+      "postura": 1,
+      "cita": "Bajaremos el IRPF a las rentas del trabajo de hasta 27.000 euros (1,5 veces el SMI).",
+      "pagina": 46,
+      "traduccion": null,
+      "aproximada": true
+    },
+    {
+      "afirmacion": "imp-2",
+      "postura": 1,
+      "cita": "Implantaremos la Tasa Zucman, consistente en un impuesto estatal, permanente y finalista del 3 % anual sobre el patrimonio neto individual que supere los 50 millones de euros.",
+      "pagina": 45,
+      "traduccion": null,
+      "aproximada": false
+    },
+    {
+      "afirmacion": "pen-1",
+      "postura": 1,
+      "cita": "ubicaremos el derecho a la pensión pública y su revalorización automática con arreglo al IPC",
+      "pagina": 57,
+      "traduccion": null,
+      "aproximada": false
+    },
+    {
+      "afirmacion": "pen-2",
+      "postura": -1,
+      "cita": "Devolveremos la edad de jubilación a los 65 años, que nos fue arrebatada sin diálogo ni justificación en la reforma realizada en 2011.",
+      "pagina": 58,
+      "traduccion": null,
+      "aproximada": false
+    },
+    {
+      "afirmacion": "edu-1",
+      "postura": 1,
+      "cita": "Universalización de la educación de 0 a 3 años: Integraremos plenamente el primer ciclo de educación infantil en el sistema educativo, ampliaremos plazas públicas gratuitas garantizadas para toda familia solicitante",
+      "pagina": 25,
+      "traduccion": null,
+      "aproximada": false
+    },
+    {
+      "afirmacion": "edu-2",
+      "postura": -1,
+      "cita": "El objetivo es que el 100 % de los fondos públicos vayan destinados a la educación pública.",
+      "pagina": 31,
+      "traduccion": null,
+      "aproximada": false
+    },
+    {
+      "afirmacion": "med-1",
+      "postura": -1,
+      "cita": "Cumpliremos el calendario de cierre de las centrales nucleares.",
+      "pagina": 64,
+      "traduccion": null,
+      "aproximada": false
+    },
+    {
+      "afirmacion": "med-2",
+      "postura": null,
+      "cita": "Protegeremos los entornos escolares del tráfico motorizado. Priorizaremos el acceso peatonal y ciclista, y reduciremos los carriles para vehículos en perímetros de centros educativos, permitiendo el paso de emergencias.",
+      "pagina": 68,
+      "traduccion": null
+    },
+    {
+      "afirmacion": "inm-1",
+      "postura": 1,
+      "cita": "Procedimiento estable de regularización: Reformaremos de forma integral la Ley de Extranjería para instaurar un procedimiento estable, permanente y reglado de regularización administrativa.",
+      "pagina": 126,
+      "traduccion": null,
+      "aproximada": false
+    },
+    {
+      "afirmacion": "inm-2",
+      "postura": -1,
+      "cita": "Derogaremos formalmente la disposición adicional décima de la Ley de Extranjería (relativa al «rechazo en frontera») por poner en riesgo el derecho de asilo al carecer de procedimientos y garantías procesales debidas.",
+      "pagina": 126,
+      "traduccion": null,
+      "aproximada": true
+    },
+    {
+      "afirmacion": "ter-1",
+      "postura": 1,
+      "cita": "Promoveremos un pacto territorial con los objetivos siguientes: el pleno respeto a las competencias de las comunidades autónomas y el máximo desarrollo de los Estatutos de Autonomía y de la Constitución a partir de una lectura federal",
+      "pagina": 140,
+      "traduccion": null,
+      "aproximada": true
+    },
+    {
+      "afirmacion": "ter-2",
+      "postura": 1,
+      "cita": "impulsar el cambio de modelo territorial establecido en la Constitución, en un sentido federal y plurinacional incluyendo el derecho a decidir mediante referéndum para resolver definitivamente la cuestión territorial.",
+      "pagina": 140,
+      "traduccion": null,
+      "aproximada": true
+    },
+    {
+      "afirmacion": "igu-1",
+      "postura": 1,
+      "cita": "Aumentaremos un 10 % (con carácter adicional anual) la partida contra las violencias machistas y blindaremos con carácter plurianual las partidas estructurales del Pacto de Estado contra la Violencia de Género para asegurar su estabilidad.",
+      "pagina": 38,
+      "traduccion": null,
+      "aproximada": false
+    },
+    {
+      "afirmacion": "igu-2",
+      "postura": 1,
+      "cita": "Derecho a la interrupción voluntaria del embarazo, a la eutanasia y al suicidio asistido.",
+      "pagina": 150,
+      "traduccion": null,
+      "aproximada": false
+    }
+  ],
+  "temas_programa": {
+    "vivienda": [
+      {
+        "tipo": "apartado",
+        "titulo": "Acabar con la especulación y garantizar el derecho a la vivienda",
+        "desde": 9,
+        "hasta": 19
+      }
+    ],
+    "sanidad": [
+      {
+        "tipo": "apartado",
+        "titulo": "Una sanidad pública más fuerte",
+        "desde": 26,
+        "hasta": 31
+      }
+    ],
+    "empleo": [
+      {
+        "tipo": "apartado",
+        "titulo": "Salarios que deben crecer, más tiempo para la vida",
+        "desde": 51,
+        "hasta": 56
+      },
+      {
+        "tipo": "apartado",
+        "titulo": "Empleo público de calidad",
+        "desde": 99,
+        "hasta": 101
+      }
+    ],
+    "impuestos": [
+      {
+        "tipo": "apartado",
+        "titulo": "Una reforma fiscal en profundidad",
+        "desde": 43,
+        "hasta": 49
+      }
+    ],
+    "pensiones": [
+      {
+        "tipo": "apartado",
+        "titulo": "Pensiones públicas dignas",
+        "desde": 57,
+        "hasta": 58
+      }
+    ],
+    "educacion": [
+      {
+        "tipo": "apartado",
+        "titulo": "Una educación pública para la igualdad de oportunidades",
+        "desde": 31,
+        "hasta": 33
+      },
+      {
+        "tipo": "menciones",
+        "titulo": null,
+        "desde": 25,
+        "hasta": 25
+      }
+    ],
+    "medio-ambiente": [
+      {
+        "tipo": "apartado",
+        "titulo": "Continuar el impulso hacia una transición ecológica justa",
+        "desde": 59,
+        "hasta": 78
+      },
+      {
+        "tipo": "apartado",
+        "titulo": "Sostenibilidad medioambiental: descarbonización de la agricultura, la ganadería y la pesca",
+        "desde": 88,
+        "hasta": 90
+      }
+    ],
+    "inmigracion": [
+      {
+        "tipo": "apartado",
+        "titulo": "Migraciones y antirracismo",
+        "desde": 125,
+        "hasta": 128
+      }
+    ],
+    "territorio": [
+      {
+        "tipo": "apartado",
+        "titulo": "Financiación autonómica y vertebración territorial",
+        "desde": 102,
+        "hasta": 107
+      },
+      {
+        "tipo": "apartado",
+        "titulo": "Hacia una República Federal para alcanzar la democracia real",
+        "desde": 140,
+        "hasta": 141
+      }
+    ],
+    "igualdad": [
+      {
+        "tipo": "apartado",
+        "titulo": "Feminismo que pone la vida en el centro y transforma lo cotidiano",
+        "desde": 37,
+        "hasta": 40
+      },
+      {
+        "tipo": "apartado",
+        "titulo": "Igualdad y más derechos para todas, todos y todes",
+        "desde": 122,
+        "hasta": 124
+      }
+    ]
+  }
 }

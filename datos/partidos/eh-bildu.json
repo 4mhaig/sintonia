@@ -4,20 +4,270 @@
   "siglas": "EH Bildu",
   "color": "#8DB43B",
   "ficticio": false,
-  "programa_url": null,
-  "programa_publicado": null,
-  "programa_anadido": null,
+  "programa_url": "https://posibleegin.ehbildu.eus/wp-content/uploads/2026/11/PROGRAMA-CAS.pdf",
+  "programa_publicado": "2026-11-16",
+  "programa_anadido": "2026-11-21",
+  "programa_titulo": "Posible egin. Garantía y derechos",
+  "ambito": "Euskadi y Navarra",
   "nombre_en_papeleta": "EUSKAL HERRIA BILDU (EH BILDU)",
   "nombres_por_provincia": {
     "bizkaia": "EUSKAL HERRIA BILDU (EH Bildu)",
     "navarra": "EUSKAL HERRIA BILDU-ESQUERRA REPUBLICANA DE CATALUNYA (EH BILDU-ERC)"
   },
-  "ambito": "Euskadi y Navarra",
   "provincias": [
     "alava",
     "bizkaia",
     "gipuzkoa",
     "navarra"
   ],
-  "posturas": []
+  "posturas": [
+    {
+      "afirmacion": "viv-1",
+      "postura": null,
+      "cita": "Un mecanismo especial de financiación estatal dirigido a ayuntamientos que hayan aplicado y declarado zonas tensionadas, para impulsar el desarrollo de los planes de vivienda locales asociados a la declaración y regulación del alquiler.",
+      "pagina": 5,
+      "traduccion": null
+    },
+    {
+      "afirmacion": "viv-2",
+      "postura": 1,
+      "cita": "Un mecanismo especial de financiación estatal dirigido a ayuntamientos que hayan aplicado y declarado zonas tensionadas, para impulsar el desarrollo de los planes de vivienda locales asociados a la declaración y regulación del alquiler.",
+      "pagina": 5,
+      "traduccion": null,
+      "aproximada": false
+    },
+    {
+      "afirmacion": "san-1",
+      "postura": null,
+      "cita": "Nuestro objetivo será en primer lugar defender las competencias que actualmente se materializan en Hego Euskal Herria, adquirir las competencias que todavía ejerce el Ministerio de Sanidad, y trabajar en colaboración con el resto de colectivos, profesionales y ciudadanía de todas comunidades Autónomas para fortalecer los derechos de la salud individual y colectiva y garantizar el cumplimiento de los mismos.",
+      "pagina": 10,
+      "traduccion": null
+    },
+    {
+      "afirmacion": "san-2",
+      "postura": -1,
+      "cita": "Derogar la Ley 15/1997 de 25 de abril, sobre habilitación de nuevas formas de gestión del Sistema Nacional de Salud, aprobada por el PP que permite la privatización y externalización de los servicios sanitarios.",
+      "pagina": 11,
+      "traduccion": null,
+      "aproximada": true
+    },
+    {
+      "afirmacion": "emp-1",
+      "postura": 1,
+      "cita": "Establecer la adaptación a la realidad socioeconómica mediante un SMI propio, que permita alcanzar valores de suficiencia, evitando la pérdida de poder adquisitivo de los sectores más dependientes del Salario Mínimo Interprofesional como jóvenes, mujeres y sectores vulnerables.",
+      "pagina": 6,
+      "traduccion": null,
+      "aproximada": true
+    },
+    {
+      "afirmacion": "emp-2",
+      "postura": 1,
+      "cita": "Reducción de la jornada laboral hasta las 32 horas semanales o la jornada de 4 días sin reducción salarial.",
+      "pagina": 6,
+      "traduccion": null,
+      "aproximada": false
+    },
+    {
+      "afirmacion": "imp-1",
+      "postura": null,
+      "cita": "La redistribución de la riqueza debe ser un objetivo que cualquier sociedad justa debe asegurar. La política fiscal es uno de los instrumentos eficaces para ello.",
+      "pagina": 14,
+      "traduccion": null
+    },
+    {
+      "afirmacion": "imp-2",
+      "postura": 1,
+      "cita": "Aumentar el peso impositivo del impuesto a la banca y las grandes fortunas.",
+      "pagina": 14,
+      "traduccion": null,
+      "aproximada": false
+    },
+    {
+      "afirmacion": "pen-1",
+      "postura": 1,
+      "cita": "Garantizar el poder adquisitivo de las y los pensionistas, manteniendo y blindando la revalorización anual al IPC.",
+      "pagina": 7,
+      "traduccion": null,
+      "aproximada": false
+    },
+    {
+      "afirmacion": "pen-2",
+      "postura": -1,
+      "cita": "Blindar el carácter público de las pensiones/el sistema público de pensiones rechazando cualquier intento de recorte, privatización o aumento de la edad de jubilación y periodo de cómputo.",
+      "pagina": 7,
+      "traduccion": null,
+      "aproximada": false
+    },
+    {
+      "afirmacion": "edu-1",
+      "postura": null,
+      "cita": "Aumentar la financiación, acercándonos progresivamente al 6% de inversión definido por la UNESCO.",
+      "pagina": 12,
+      "traduccion": null
+    },
+    {
+      "afirmacion": "edu-2",
+      "postura": null,
+      "cita": "Defendemos, mediante la capacidad y herramientas propias de nuestro autogobierno, un sistema educativo propio para Euskal Herria, de calidad, inclusivo, coeducativo, participativo, laiko, euskaldun y soberano.",
+      "pagina": 11,
+      "traduccion": null
+    },
+    {
+      "afirmacion": "med-1",
+      "postura": -1,
+      "cita": "Calendario nuclear: Apostaremos por mantener el calendario de cierre nuclear definido en el PNIEC.",
+      "pagina": 15,
+      "traduccion": null,
+      "aproximada": false
+    },
+    {
+      "afirmacion": "med-2",
+      "postura": null,
+      "cita": "Refuerzo de Cercanías, Media Distancia y conexiones con Ipar Euskal Herria: “Más tren para la movilidad cotidiana”.",
+      "pagina": 17,
+      "traduccion": null
+    },
+    {
+      "afirmacion": "inm-1",
+      "postura": 1,
+      "cita": "Regularización y nueva Ley de Extranjería: Garantizar una regularización efectiva, accesible y estable. Facilitar las autorizaciones de residencia y trabajo y prevenir la irregularidad sobrevenida.",
+      "pagina": 20,
+      "traduccion": null,
+      "aproximada": false
+    },
+    {
+      "afirmacion": "inm-2",
+      "postura": -1,
+      "cita": "Garantía del derecho de asilo y fin de las políticas migratorias que vulneran derechos: Rechazar las disposiciones restrictivas del Pacto Europeo sobre Migración y Asilo, las devoluciones sumarias, la externalización de fronteras y los CIE, garantizando procedimientos individuales con todas las garantías jurídicas.",
+      "pagina": 20,
+      "traduccion": null,
+      "aproximada": true
+    },
+    {
+      "afirmacion": "ter-1",
+      "postura": 1,
+      "cita": "Propondremos la asunción de nuevas competencias plenas e instrumentos para ampliar nuestras capacidades de autogobierno que nos permitan decidir, diseñar y desarrollar políticas propias adaptadas a las realidades y necesidades de nuestro país y nuestra sociedad:",
+      "pagina": 24,
+      "traduccion": null,
+      "aproximada": false
+    },
+    {
+      "afirmacion": "ter-2",
+      "postura": 1,
+      "cita": "El reconocimiento del derecho a decidir del pueblo vasco como mecanismo democrático y legítimo para dicha solución, basado en la voluntad y decisión de la ciudadanía vasca libre y democráticamente expresada.",
+      "pagina": 24,
+      "traduccion": null,
+      "aproximada": true
+    },
+    {
+      "afirmacion": "igu-1",
+      "postura": 1,
+      "cita": "Avanzar en el reconocimiento y penalización de la violencia vicaria. Identificar así tanto sus causas como consecuencias. Desarrollaremos medidas de prevención y reparación para combatirla.",
+      "pagina": 19,
+      "traduccion": null,
+      "aproximada": false
+    },
+    {
+      "afirmacion": "igu-2",
+      "postura": 1,
+      "cita": "Modificar la ley Orgánica 3/2021 de 4 de marzo, de regulación de la Eutanasia para garantizar el derecho a recibir la prestación de todas las personas, que abarque por igual el sufrimiento de origen físico, como psíquico. Con el objetivo de blindar el derecho a morir dignamente frente a la intromisión judicial de terceros.",
+      "pagina": 10,
+      "traduccion": null,
+      "aproximada": false
+    }
+  ],
+  "temas_programa": {
+    "vivienda": [
+      {
+        "tipo": "apartado",
+        "titulo": "Vivienda",
+        "desde": 5,
+        "hasta": 6
+      }
+    ],
+    "sanidad": [
+      {
+        "tipo": "apartado",
+        "titulo": "Salud, derechos colectivos y bienestar comunitario",
+        "desde": 10,
+        "hasta": 11
+      }
+    ],
+    "empleo": [
+      {
+        "tipo": "apartado",
+        "titulo": "Empleo",
+        "desde": 6,
+        "hasta": 7
+      }
+    ],
+    "impuestos": [
+      {
+        "tipo": "apartado",
+        "titulo": "Política fiscal",
+        "desde": 14,
+        "hasta": 14
+      },
+      {
+        "tipo": "apartado",
+        "titulo": "Fiscalidad y financiación de la transición ecosocial",
+        "desde": 18,
+        "hasta": 18
+      }
+    ],
+    "pensiones": [
+      {
+        "tipo": "apartado",
+        "titulo": "Pensiones",
+        "desde": 7,
+        "hasta": 8
+      }
+    ],
+    "educacion": [
+      {
+        "tipo": "apartado",
+        "titulo": "Educación",
+        "desde": 11,
+        "hasta": 12
+      }
+    ],
+    "medio-ambiente": [
+      {
+        "tipo": "apartado",
+        "titulo": "Transición ecosocial y desarrollo económico",
+        "desde": 15,
+        "hasta": 18
+      }
+    ],
+    "inmigracion": [
+      {
+        "tipo": "apartado",
+        "titulo": "Migración",
+        "desde": 20,
+        "hasta": 20
+      }
+    ],
+    "territorio": [
+      {
+        "tipo": "apartado",
+        "titulo": "Reconocimiento de Euskal Herria como nación y autogobierno",
+        "desde": 23,
+        "hasta": 24
+      }
+    ],
+    "igualdad": [
+      {
+        "tipo": "apartado",
+        "titulo": "Feminismo",
+        "desde": 19,
+        "hasta": 19
+      },
+      {
+        "tipo": "menciones",
+        "titulo": null,
+        "desde": 10,
+        "hasta": 10
+      }
+    ]
+  }
 }

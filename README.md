@@ -9,7 +9,7 @@ Herramienta web, gratuita y sin registro, para **ayudarte a decidir tu voto si a
 - **Por temas:** qué propone cada partido sobre vivienda, sanidad, pensiones…
 - **Mi provincia:** cuántos escaños se reparten donde votas y cómo funciona el reparto, para entender qué pasa con un voto si el partido no llega. No es una predicción.
 
-> **Estado (16-nov-2026):** con partidos reales. Con programa: PP, PSOE, Vox, SALF, PNV, ERC, BNG y Coalición Canaria. Salen los partidos y coaliciones con diputado en el Congreso saliente o eurodiputado, en las provincias donde el BOE proclama su candidatura (BOE núm. 273, 3-nov-2026). Los que aún no han publicado programa aparecen como «Programa aún no publicado». El simulador de escaños usa partidos y votos inventados.
+> **Estado (21-nov-2026):** con partidos reales. Con programa: PP, PSOE, Vox, SALF, Frente Amplio, Podemos, PNV, ERC, BNG, EH Bildu, Compromís y Coalición Canaria. Faltan Junts, UPN-PP y Unidad del Pueblo Canario. Salen los partidos y coaliciones con diputado en el Congreso saliente o eurodiputado, en las provincias donde el BOE proclama su candidatura (BOE núm. 273, 3-nov-2026). Los que aún no han publicado programa aparecen como «Programa aún no publicado». El simulador de escaños usa partidos y votos inventados.
 
 ## Privacidad
 

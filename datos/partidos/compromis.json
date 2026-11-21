@@ -4,15 +4,340 @@
   "siglas": "Compromís",
   "color": "#EE7D1C",
   "ficticio": false,
-  "programa_url": null,
-  "programa_publicado": null,
-  "programa_anadido": null,
-  "nombre_en_papeleta": "COMPROMÍS: FRONT VALENCIÀ (COMPROMIS-EUPV-PODEM-ERPV)",
+  "programa_url": "https://frontvalencia.org/programa-compromis-front-valencia.pdf",
+  "programa_publicado": "2026-11-13",
+  "programa_anadido": "2026-11-21",
+  "programa_titulo": "Programa electoral 29N Compromís-Front Valencià",
+  "programa_idioma": "va",
   "ambito": "Comunitat Valenciana",
+  "nombre_en_papeleta": "COMPROMÍS: FRONT VALENCIÀ (COMPROMIS-EUPV-PODEM-ERPV)",
   "provincias": [
     "alicante",
     "castellon",
     "valencia"
   ],
-  "posturas": []
+  "posturas": [
+    {
+      "afirmacion": "viv-1",
+      "postura": 1,
+      "cita": "Destinarem l’ 1% del PIB anual a programes d’adquisició d’habitatges o de promoció d’habitatge protegit, de titularitat pública o en col·laboració amb cooperatives, empreses del tercer sector i d’altres societats privades sense ànim especulatiu, en col·laboració amb comunitats autònomes i ajuntaments.",
+      "pagina": 5,
+      "traduccion": "Destinaremos el 1% del PIB anual a programas de adquisición de viviendas o de promoción de vivienda protegida, de titularidad pública o en colaboración con cooperativas, empresas del tercer sector y otras sociedades privadas sin ánimo especulativo, en colaboración con comunidades autónomas y ayuntamientos.",
+      "aproximada": true
+    },
+    {
+      "afirmacion": "viv-2",
+      "postura": 1,
+      "cita": "Donarem competències als ajuntaments perquè puguen declarar zones tensionades als municipis, d’acord amb la Llei estatal de Vivienda, per impulsar el control efectiu de preus de lloguer.",
+      "pagina": 5,
+      "traduccion": "Daremos competencias a los ayuntamientos para que puedan declarar zonas tensionadas en los municipios, de acuerdo con la Ley estatal de Vivienda, para impulsar el control efectivo de precios del alquiler.",
+      "aproximada": false
+    },
+    {
+      "afirmacion": "san-1",
+      "postura": null,
+      "cita": "Reforçarem l’atenció primària, la salut comunitària i la prevenció, fixant per llei bàsica un finançament mínim així com unes ràtios poblacionals i llistes d’espera màxims, tot millorant la continuïtat assistencial.",
+      "pagina": 9,
+      "traduccion": "Reforzaremos la atención primaria, la salud comunitaria y la prevención, fijando por ley básica una financiación mínima así como unas ratios poblacionales y listas de espera máximas, mejorando la continuidad asistencial."
+    },
+    {
+      "afirmacion": "san-2",
+      "postura": -1,
+      "cita": "Blindarem la gestió pública de la sanitat i impedirem la mercantilització de l’atenció sanitària i la privatització de la gestió dels serveis públics a través de la derogació de la Llei 15/1997.",
+      "pagina": 9,
+      "traduccion": "Blindaremos la gestión pública de la sanidad e impediremos la mercantilización de la atención sanitaria y la privatización de la gestión de los servicios públicos mediante la derogación de la Ley 15/1997.",
+      "aproximada": true
+    },
+    {
+      "afirmacion": "emp-1",
+      "postura": 1,
+      "cita": "Garantirem per llei que l’SMI arribe al 60% del salari mitjà, sense que l’augment puga absorbir els complements retributius, i impulsarem mesures per a augmentar el salari mitjà.",
+      "pagina": 7,
+      "traduccion": "Garantizaremos por ley que el SMI llegue al 60% del salario medio, sin que el aumento pueda absorber los complementos retributivos, e impulsaremos medidas para aumentar el salario medio.",
+      "aproximada": false
+    },
+    {
+      "afirmacion": "emp-2",
+      "postura": 1,
+      "cita": "Reduirem la jornada laboral a quatre dies (trenta-dues hores) setmanals, sense disminució del sou.",
+      "pagina": 7,
+      "traduccion": "Reduciremos la jornada laboral a cuatro días (treinta y dos horas) semanales, sin disminución del sueldo.",
+      "aproximada": false
+    },
+    {
+      "afirmacion": "imp-1",
+      "postura": null,
+      "cita": "Deflactarem l’IRPF en les rendes inferiors a 30.000€ per tal d’ajustar-lo a la inflació.",
+      "pagina": 17,
+      "traduccion": "Deflactaremos el IRPF en las rentas inferiores a 30.000 € para ajustarlo a la inflación."
+    },
+    {
+      "afirmacion": "imp-2",
+      "postura": 1,
+      "cita": "Mantindrem i ampliarem l’Impost a les Grans Fortunes per a aproximar-la a propostes internacionals de tributació progressiva al patrimoni com la taxa Zucman.",
+      "pagina": 17,
+      "traduccion": "Mantendremos y ampliaremos el Impuesto a las Grandes Fortunas para aproximarlo a propuestas internacionales de tributación progresiva sobre el patrimonio como la tasa Zucman.",
+      "aproximada": false
+    },
+    {
+      "afirmacion": "pen-1",
+      "postura": 1,
+      "cita": "Assegurarem el manteniment del poder adquisitiu de les pensions, garantint constitucionalment la seua revaloració conforme al cost de la vida.",
+      "pagina": 8,
+      "traduccion": "Aseguraremos el mantenimiento del poder adquisitivo de las pensiones, garantizando constitucionalmente su revalorización conforme al coste de la vida.",
+      "aproximada": false
+    },
+    {
+      "afirmacion": "pen-2",
+      "postura": -1,
+      "cita": "Retornarem l'edat de jubilació als 65 anys.",
+      "pagina": 8,
+      "traduccion": "Devolveremos la edad de jubilación a los 65 años.",
+      "aproximada": false
+    },
+    {
+      "afirmacion": "edu-1",
+      "postura": 1,
+      "cita": "Defensarem el finançament estatal i els acords amb les administracions responsables per a ampliar una xarxa pública en l’educació de 0 a 3 anys i avançar cap a la seua gratuïtat amb condicions laborals dignes del professorat.",
+      "pagina": 10,
+      "traduccion": "Defenderemos la financiación estatal y los acuerdos con las administraciones responsables para ampliar una red pública en la educación de 0 a 3 años y avanzar hacia su gratuidad con condiciones laborales dignas del profesorado.",
+      "aproximada": true
+    },
+    {
+      "afirmacion": "edu-2",
+      "postura": -1,
+      "cita": "Modificarem la normativa bàsica de concerts educatius perquè la xarxa concertada siga realment subsidiària de la pública.",
+      "pagina": 10,
+      "traduccion": "Modificaremos la normativa básica de conciertos educativos para que la red concertada sea realmente subsidiaria de la pública.",
+      "aproximada": true
+    },
+    {
+      "afirmacion": "med-1",
+      "postura": -1,
+      "cita": "Mantindrem el calendari de tancament de les centrals nuclears i no acceptarem cap nova pròrroga, alhora que impulsarem un pla de reindustrialització verda per a la comarca que garantisca els llocs de treball.",
+      "pagina": 27,
+      "traduccion": "Mantendremos el calendario de cierre de las centrales nucleares y no aceptaremos ninguna nueva prórroga, a la vez que impulsaremos un plan de reindustrialización verde para la comarca que garantice los puestos de trabajo.",
+      "aproximada": false
+    },
+    {
+      "afirmacion": "med-2",
+      "postura": 1,
+      "cita": "Condicionarem les ajudes estatals al transport al fet que les zones de baixes emissions funcionen de veritat, i crearem un fons perquè les rendes baixes puguen canviar de vehicle o passar al transport públic.",
+      "pagina": 31,
+      "traduccion": "Condicionaremos las ayudas estatales al transporte a que las zonas de bajas emisiones funcionen de verdad, y crearemos un fondo para que las rentas bajas puedan cambiar de vehículo o pasarse al transporte público.",
+      "aproximada": false
+    },
+    {
+      "afirmacion": "inm-1",
+      "postura": 1,
+      "cita": "Regularitzarem i donarem drets per als qui viuen ací. Impulsarem vies de regularització i reformes que faciliten la documentació i autorització de treball, amb procediments clars i garanties.",
+      "pagina": 56,
+      "traduccion": "Regularizaremos y daremos derechos a quienes viven aquí. Impulsaremos vías de regularización y reformas que faciliten la documentación y la autorización de trabajo, con procedimientos claros y garantías.",
+      "aproximada": false
+    },
+    {
+      "afirmacion": "inm-2",
+      "postura": -1,
+      "cita": "Exigirem l’eliminació dels CIES.",
+      "pagina": 56,
+      "traduccion": "Exigiremos la eliminación de los CIE.",
+      "aproximada": true
+    },
+    {
+      "afirmacion": "ter-1",
+      "postura": 1,
+      "cita": "Avançarem en el desplegament de l’autogovern i en el traspàs a la Generalitat Valenciana de les competències que permeten gestionar millor els serveis i les infraestructures que afecten directament al territori.",
+      "pagina": 52,
+      "traduccion": "Avanzaremos en el despliegue del autogobierno y en el traspaso a la Generalitat Valenciana de las competencias que permitan gestionar mejor los servicios y las infraestructuras que afectan directamente al territorio.",
+      "aproximada": false
+    },
+    {
+      "afirmacion": "ter-2",
+      "postura": null,
+      "cita": "Avançarem cap a un model d’Estat plurinacional que reconega la diversitat nacional, cultural i lingüística.",
+      "pagina": 52,
+      "traduccion": "Avanzaremos hacia un modelo de Estado plurinacional que reconozca la diversidad nacional, cultural y lingüística."
+    },
+    {
+      "afirmacion": "igu-1",
+      "postura": 1,
+      "cita": "Reforçarem les unitats policials especialitzades, els jutjats de violència sobre la dona, els serveis forenses i l’assistència jurídica gratuïta.",
+      "pagina": 47,
+      "traduccion": "Reforzaremos las unidades policiales especializadas, los juzgados de violencia sobre la mujer, los servicios forenses y la asistencia jurídica gratuita.",
+      "aproximada": false
+    },
+    {
+      "afirmacion": "igu-2",
+      "postura": null,
+      "cita": "",
+      "pagina": null,
+      "traduccion": null
+    }
+  ],
+  "temas_programa": {
+    "vivienda": [
+      {
+        "tipo": "apartado",
+        "titulo": "HABITATGE",
+        "desde": 5,
+        "hasta": 6
+      },
+      {
+        "tipo": "menciones",
+        "titulo": null,
+        "desde": 42,
+        "hasta": 43
+      }
+    ],
+    "sanidad": [
+      {
+        "tipo": "apartado",
+        "titulo": "SANITAT",
+        "desde": 9,
+        "hasta": 9
+      },
+      {
+        "tipo": "apartado",
+        "titulo": "SALUT PÚBLICA",
+        "desde": 10,
+        "hasta": 10
+      },
+      {
+        "tipo": "menciones",
+        "titulo": null,
+        "desde": 45,
+        "hasta": 46
+      }
+    ],
+    "empleo": [
+      {
+        "tipo": "apartado",
+        "titulo": "SALARIS I CONDICIONS LABORALS",
+        "desde": 7,
+        "hasta": 7
+      },
+      {
+        "tipo": "apartado",
+        "titulo": "PERSONES AUTÒNOMES",
+        "desde": 8,
+        "hasta": 8
+      },
+      {
+        "tipo": "menciones",
+        "titulo": null,
+        "desde": 42,
+        "hasta": 42
+      }
+    ],
+    "impuestos": [
+      {
+        "tipo": "apartado",
+        "titulo": "FISCALITAT",
+        "desde": 17,
+        "hasta": 18
+      },
+      {
+        "tipo": "menciones",
+        "titulo": null,
+        "desde": 6,
+        "hasta": 6
+      }
+    ],
+    "pensiones": [
+      {
+        "tipo": "apartado",
+        "titulo": "PENSIONS",
+        "desde": 8,
+        "hasta": 9
+      },
+      {
+        "tipo": "menciones",
+        "titulo": null,
+        "desde": 46,
+        "hasta": 46
+      }
+    ],
+    "educacion": [
+      {
+        "tipo": "apartado",
+        "titulo": "EDUCACIÓ",
+        "desde": 10,
+        "hasta": 11
+      },
+      {
+        "tipo": "apartado",
+        "titulo": "UNIVERSITATS",
+        "desde": 16,
+        "hasta": 17
+      }
+    ],
+    "medio-ambiente": [
+      {
+        "tipo": "apartado",
+        "titulo": "MEDI AMBIENT I BIODIVERSITAT",
+        "desde": 25,
+        "hasta": 26
+      },
+      {
+        "tipo": "apartado",
+        "titulo": "ENERGIA",
+        "desde": 26,
+        "hasta": 28
+      },
+      {
+        "tipo": "apartado",
+        "titulo": "AIGUA",
+        "desde": 28,
+        "hasta": 28
+      }
+    ],
+    "inmigracion": [
+      {
+        "tipo": "apartado",
+        "titulo": "SOLIDARITAT GLOBAL I MIGRACIÓ",
+        "desde": 56,
+        "hasta": 56
+      },
+      {
+        "tipo": "menciones",
+        "titulo": null,
+        "desde": 45,
+        "hasta": 45
+      }
+    ],
+    "territorio": [
+      {
+        "tipo": "apartado",
+        "titulo": "MODEL D’ESTAT",
+        "desde": 52,
+        "hasta": 53
+      },
+      {
+        "tipo": "apartado",
+        "titulo": "MODEL DE FINANÇAMENT AUTONÒMIC I INVERSIONS",
+        "desde": 50,
+        "hasta": 52
+      }
+    ],
+    "igualdad": [
+      {
+        "tipo": "apartado",
+        "titulo": "FEMINISME",
+        "desde": 45,
+        "hasta": 47
+      },
+      {
+        "tipo": "apartado",
+        "titulo": "LLUITA CONTRA LES VIOLÈNCIES MASCLISTES",
+        "desde": 47,
+        "hasta": 48
+      },
+      {
+        "tipo": "apartado",
+        "titulo": "DRETS LGTBIQ+",
+        "desde": 48,
+        "hasta": 50
+      }
+    ]
+  }
 }

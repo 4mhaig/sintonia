@@ -4,9 +4,10 @@
   "siglas": "PODEMOS",
   "color": "#7B3F8C",
   "ficticio": false,
-  "programa_url": null,
-  "programa_publicado": null,
-  "programa_anadido": null,
+  "programa_url": "https://pazcasaytrabajo.es/programa-electoral/programa-electoral-paz-casa-y-trabajo.pdf",
+  "programa_publicado": "2026-11-17",
+  "programa_anadido": "2026-11-21",
+  "programa_titulo": "Así de básico: paz, casa y trabajo",
   "nombre_en_papeleta": "PODEMOS (PODEMOS)",
   "nombres_por_provincia": {
     "ceuta": "PODEMOS (PAZ,CASA Y TRABAJO)",
@@ -55,5 +56,267 @@
     "zamora",
     "zaragoza"
   ],
-  "posturas": []
+  "posturas": [
+    {
+      "afirmacion": "viv-1",
+      "postura": 1,
+      "cita": "Ampliaremos significativamente el parque público de vivienda mediante el ejercicio del derecho de tanteo y retracto por parte de las administraciones públicas, que podrán adquirir de forma preferente las viviendas que sus propietarios pongan en venta, especialmente en las zonas con mayores dificultades de acceso.",
+      "pagina": 10,
+      "traduccion": null,
+      "aproximada": true
+    },
+    {
+      "afirmacion": "viv-2",
+      "postura": 1,
+      "cita": "Aprobaremos una reducción extraordinaria del 40 % de los precios del alquiler, aplicable a los contratos vigentes, sus renovaciones y prórrogas, así como a los nuevos contratos para acabar con los alquileres abusivos y garantizar el derecho a la vivienda.",
+      "pagina": 8,
+      "traduccion": null,
+      "aproximada": false
+    },
+    {
+      "afirmacion": "san-1",
+      "postura": null,
+      "cita": "Incrementaremos progresivamente la financiación del Sistema Nacional de Salud hasta alcanzar una dotación mínima de 2.900 euros por habitante y año, frente a los 2.247 euros actuales, para converger con los países de nuestro entorno (en torno al 8% del PIB).",
+      "pagina": 89,
+      "traduccion": null
+    },
+    {
+      "afirmacion": "san-2",
+      "postura": -1,
+      "cita": "Prohibiremos la externalización y privatización de centros y servicios sanitarios, tanto existentes como de nueva creación, así como las concesiones de obras y servicios destinadas a la construcción o explotación integral de establecimientos sanitarios públicos.",
+      "pagina": 88,
+      "traduccion": null,
+      "aproximada": true
+    },
+    {
+      "afirmacion": "emp-1",
+      "postura": 1,
+      "cita": "Aumentaremos el SMI hasta los 1.800 euros al mes en una legislatura para garantizar salarios dignos y acercar el poder adquisitivo de las personas trabajadoras al de los países de nuestro entorno. Estableceremos por ley que nunca pueda ser inferior al 75% del salario mediano.",
+      "pagina": 41,
+      "traduccion": null,
+      "aproximada": false
+    },
+    {
+      "afirmacion": "emp-2",
+      "postura": 1,
+      "cita": "Reduciremos la jornada laboral a 30 horas semanales durante la legislatura, comenzando con una bajada a 35 horas, con la posibilidad de reducir la semana laboral a cuatro días en función del trabajo concreto, de los tiempos de desplazamiento y de la voluntad del trabajador o trabajadora.",
+      "pagina": 41,
+      "traduccion": null,
+      "aproximada": false
+    },
+    {
+      "afirmacion": "imp-1",
+      "postura": null,
+      "cita": "Reformaremos la escala estatal del IRPF sobre la base imponible general para reforzar la progresividad fiscal, reduciremos el tipo mínimo del 9,5 % actual al 9 %, y elevaremos los tipos a las bases imponibles de más de 60.000 euros anuales",
+      "pagina": 21,
+      "traduccion": null
+    },
+    {
+      "afirmacion": "imp-2",
+      "postura": 1,
+      "cita": "Ampliaremos el impuesto a las grandes fortunas a todos los obligados tributarios del Impuesto del Patrimonio, para evitar que las Comunidades Autónomas lo eliminen. Para ello reformaremos el Impuesto Temporal de Solidaridad de las Grandes Fortunas para configurarlo como un impuesto estatal permanente con idénticas características que el Impuesto del Patrimonio.",
+      "pagina": 17,
+      "traduccion": null,
+      "aproximada": false
+    },
+    {
+      "afirmacion": "pen-1",
+      "postura": null,
+      "cita": "Garantizaremos que la pensión mínima contributiva se equipare al SMI, y la pensión no contributiva al 80% del SMI.",
+      "pagina": 44,
+      "traduccion": null
+    },
+    {
+      "afirmacion": "pen-2",
+      "postura": -1,
+      "cita": "Reformaremos el sistema de pensiones para adelantar la edad ordinaria de jubilación a los 63 años garantizando la sostenibilidad y suficiencia de las pensiones mediante su financiación a través de los Presupuestos Generales del Estado.",
+      "pagina": 41,
+      "traduccion": null,
+      "aproximada": false
+    },
+    {
+      "afirmacion": "edu-1",
+      "postura": 1,
+      "cita": "En Educación Infantil de 0 a 3 años, construiremos en un plazo máximo de cuatro años todas las plazas públicas necesarias para garantizar una cobertura universal, gratuita y de gestión pública directa.",
+      "pagina": 80,
+      "traduccion": null,
+      "aproximada": false
+    },
+    {
+      "afirmacion": "edu-2",
+      "postura": -1,
+      "cita": "Avanzaremos hacia una única red educativa de gestión pública directa, poniendo fin progresivamente a la privatización de la enseñanza y a la utilización de fondos públicos para financiar negocios privados. Estableceremos una moratoria indefinida a la concesión de nuevos conciertos y a la apertura de nuevos centros privados en todas las etapas educativas",
+      "pagina": 79,
+      "traduccion": null,
+      "aproximada": true
+    },
+    {
+      "afirmacion": "med-1",
+      "postura": -1,
+      "cita": "Defenderemos el cumplimiento del calendario de cierre de las centrales nucleares, comenzando por Almaraz, de acuerdo con la planificación energética vigente y las condiciones de seguridad del sistema eléctrico.",
+      "pagina": 103,
+      "traduccion": null,
+      "aproximada": false
+    },
+    {
+      "afirmacion": "med-2",
+      "postura": 1,
+      "cita": "Implantar de forma acelerada las Zonas de Bajas Emisiones previstas en la Ley de Cambio Climático.",
+      "pagina": 95,
+      "traduccion": null,
+      "aproximada": false
+    },
+    {
+      "afirmacion": "inm-1",
+      "postura": 1,
+      "cita": "Mediante la nueva norma estatal de igualdad de trato superaremos un modelo criminalizador con las personas migrantes y el sistema de regularización reconocerá el arraigo social, familiar y comunitario, sin hacer depender el derecho a residir legalmente en España exclusivamente de disponer de un contrato de trabajo.",
+      "pagina": 67,
+      "traduccion": null,
+      "aproximada": false
+    },
+    {
+      "afirmacion": "inm-2",
+      "postura": -1,
+      "cita": "Acabar con la Ley Orgánica 4/2000 y aprobar una nueva Ley Integral que sitúe los derechos humanos, la igualdad de trato y la inclusión en el centro de la política pública. Con ello se pondrá fin a las disposiciones adicionales que permiten las devoluciones en caliente de migrantes en nuestras fronteras.",
+      "pagina": 65,
+      "traduccion": null,
+      "aproximada": true
+    },
+    {
+      "afirmacion": "ter-1",
+      "postura": null,
+      "cita": "Nuestro horizonte político es la acumulación de fuerzas para romper el candado del Régimen del 78 y plantear una tercera república como forma de Estado y la democracia social y participativa como su expresión política: no un simple cambio de jefatura, sino la apertura de un proceso que profundice la democracia, reconozca la plurinacionalidad y ponga los derechos sociales de los trabajadores y trabajadoras en el centro.",
+      "pagina": 128,
+      "traduccion": null
+    },
+    {
+      "afirmacion": "ter-2",
+      "postura": null,
+      "cita": "Esta reforma constitucional permitirá, por primera vez, que la ciudadanía decida de forma separada y directa entre monarquía y república, la cuestión que se negó en la “transición”, recuperando el referéndum como instrumento democrático básico para que sea el soberano quien decida.",
+      "pagina": 128,
+      "traduccion": null
+    },
+    {
+      "afirmacion": "igu-1",
+      "postura": 1,
+      "cita": "Creación de un fondo de contingencia de mil millones de euros para las políticas contra todas las formas de violencia machista que garantice la financiación estable y a largo plazo de las mismas mediante la reforma de la Ley General Presupuestaria.",
+      "pagina": 51,
+      "traduccion": null,
+      "aproximada": false
+    },
+    {
+      "afirmacion": "igu-2",
+      "postura": 1,
+      "cita": "Garantizaremos el ejercicio efectivo del derecho a una muerte digna. Reforzaremos los recursos humanos y materiales de las Comisiones de Garantía y Evaluación y de los equipos sanitarios para agilizar los procedimientos",
+      "pagina": 94,
+      "traduccion": null,
+      "aproximada": false
+    }
+  ],
+  "temas_programa": {
+    "vivienda": [
+      {
+        "tipo": "apartado",
+        "titulo": "LAS CASAS SON PARA VIVIR",
+        "desde": 7,
+        "hasta": 14
+      },
+      {
+        "tipo": "apartado",
+        "titulo": "LOS PRECIOS TIENEN QUE BAJAR",
+        "desde": 22,
+        "hasta": 22
+      }
+    ],
+    "sanidad": [
+      {
+        "tipo": "apartado",
+        "titulo": "SERVICIOS PÚBLICOS PARA GARANTIZAR VIDAS DIGNAS",
+        "desde": 88,
+        "hasta": 94
+      }
+    ],
+    "empleo": [
+      {
+        "tipo": "apartado",
+        "titulo": "TRABAJAR MENOS PARA VIVIR MEJOR",
+        "desde": 40,
+        "hasta": 48
+      }
+    ],
+    "impuestos": [
+      {
+        "tipo": "apartado",
+        "titulo": "LOS PRECIOS TIENEN QUE BAJAR",
+        "desde": 17,
+        "hasta": 23
+      }
+    ],
+    "pensiones": [
+      {
+        "tipo": "apartado",
+        "titulo": "TRABAJAR MENOS PARA VIVIR MEJOR",
+        "desde": 41,
+        "hasta": 41
+      },
+      {
+        "tipo": "apartado",
+        "titulo": "TRABAJAR MENOS PARA VIVIR MEJOR",
+        "desde": 44,
+        "hasta": 45
+      }
+    ],
+    "educacion": [
+      {
+        "tipo": "apartado",
+        "titulo": "SERVICIOS PÚBLICOS PARA GARANTIZAR VIDAS DIGNAS",
+        "desde": 78,
+        "hasta": 87
+      }
+    ],
+    "medio-ambiente": [
+      {
+        "tipo": "apartado",
+        "titulo": "PLANETA SOLO HAY UNO",
+        "desde": 94,
+        "hasta": 124
+      },
+      {
+        "tipo": "apartado",
+        "titulo": "LOS PRECIOS TIENEN QUE BAJAR",
+        "desde": 18,
+        "hasta": 20
+      }
+    ],
+    "inmigracion": [
+      {
+        "tipo": "apartado",
+        "titulo": "VIDAS QUE MEREZCAN LA PENA SER VIVIDAS",
+        "desde": 65,
+        "hasta": 70
+      },
+      {
+        "tipo": "menciones",
+        "titulo": null,
+        "desde": 32,
+        "hasta": 33
+      }
+    ],
+    "territorio": [
+      {
+        "tipo": "menciones",
+        "titulo": null,
+        "desde": 128,
+        "hasta": 129
+      }
+    ],
+    "igualdad": [
+      {
+        "tipo": "apartado",
+        "titulo": "VIDAS QUE MEREZCAN LA PENA SER VIVIDAS",
+        "desde": 51,
+        "hasta": 59
+      }
+    ]
+  }
 }
