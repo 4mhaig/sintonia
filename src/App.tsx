@@ -48,7 +48,7 @@ export function App() {
           <strong>Versión de prueba.</strong> Los partidos que ves (Alfa, Beta…) son inventados. Los reales llegarán cuando se publiquen los programas.
         </p>
       )}
-      <main style={{ paddingTop: '1rem' }}>
+      <main style={{ paddingTop: '1rem', paddingBottom: ruta === 'test' ? '4rem' : 0 }}>
         {ruta === 'inicio' && <Inicio />}
         {ruta === 'test' && (
           <Test
