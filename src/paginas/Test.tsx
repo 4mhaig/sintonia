@@ -4,7 +4,7 @@ import { AFIRMACIONES, TEMAS, partidosEn, temaPorId, tienePrograma } from '../da
 import { Onda } from '../componentes/Onda'
 import { SelectorProvincia } from '../componentes/SelectorProvincia'
 import { Ventana } from '../componentes/Ventana'
-import { Metodologia } from './Metodologia'
+import { ExplicacionTest } from '../componentes/ExplicacionTest'
 
 interface Props {
   provincia: string
@@ -119,7 +119,7 @@ export function Test({ provincia, alElegirProvincia, alTerminar }: Props) {
             </button>
           </div>
           <Ventana abierta={verComo} titulo="En qué consiste el test" alCerrar={() => setVerComo(false)}>
-            <Metodologia conTitulo={false} />
+            <ExplicacionTest alCerrar={() => setVerComo(false)} />
           </Ventana>
         </section>
       ) : !enTemas ? (

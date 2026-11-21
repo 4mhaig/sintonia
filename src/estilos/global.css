@@ -229,3 +229,9 @@ select {
   font: inherit; font-weight: 700; color: var(--acento);
   text-decoration: underline; text-underline-offset: 3px;
 }
+
+.explicacion-test { gap: 0.75rem; }
+.explicacion-test h3 { font-size: 1.1rem; margin: 0.75rem 0 0; }
+.explicacion-test h3:first-child { margin-top: 0; }
+.explicacion-test ol { margin: 0; padding-left: 1.3rem; display: grid; gap: 0.4rem; }
+.explicacion-test p { margin: 0; }
