@@ -64,7 +64,8 @@ export function App() {
         {ruta === 'provincia' && <Provincia provincia={provincia} alElegirProvincia={setProvincia} />}
         {ruta === 'metodologia' && <Metodologia />}
       </main>
-      <Pie completo={ruta === 'inicio'} />
+      {/* En el test el enlace está arriba, junto al botón de empezar */}
+      {ruta !== 'test' && <Pie completo={ruta === 'inicio'} />}
     </div>
   )
 }

@@ -109,8 +109,8 @@ export function Test({ provincia, alElegirProvincia, alTerminar }: Props) {
             </p>
           )}
           <p style={{ margin: 0 }}>
-            <button type="button" className="boton fantasma enlace-ventana" onClick={() => setVerComo(true)}>
-              Cómo funciona
+            <button type="button" className="enlace-ventana" onClick={() => setVerComo(true)}>
+              En qué consiste el test <span aria-hidden="true">→</span>
             </button>
           </p>
           <div className="acciones-inicio">
@@ -118,7 +118,7 @@ export function Test({ provincia, alElegirProvincia, alTerminar }: Props) {
               Empezar el test
             </button>
           </div>
-          <Ventana abierta={verComo} titulo="Cómo funciona" alCerrar={() => setVerComo(false)}>
+          <Ventana abierta={verComo} titulo="En qué consiste el test" alCerrar={() => setVerComo(false)}>
             <Metodologia conTitulo={false} />
           </Ventana>
         </section>
