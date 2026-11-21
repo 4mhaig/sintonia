@@ -3,6 +3,8 @@ import type { Postura, Respuestas } from '../logica/tipos'
 import { AFIRMACIONES, TEMAS, partidosEn, temaPorId, tienePrograma } from '../datos'
 import { Onda } from '../componentes/Onda'
 import { SelectorProvincia } from '../componentes/SelectorProvincia'
+import { Ventana } from '../componentes/Ventana'
+import { Metodologia } from './Metodologia'
 
 interface Props {
   provincia: string
@@ -37,6 +39,7 @@ export function Test({ provincia, alElegirProvincia, alTerminar }: Props) {
   const [respuestas, setRespuestas] = useState<Respuestas>({})
   const [importantes, setImportantes] = useState<string[]>([])
   const [verExplicacion, setVerExplicacion] = useState(false)
+  const [verComo, setVerComo] = useState(false)
 
   const total = AFIRMACIONES.length
   const enTemas = paso >= total
@@ -105,14 +108,19 @@ export function Test({ provincia, alElegirProvincia, alTerminar }: Props) {
               {sinProgramaAun > 1 && ` Otros ${sinProgramaAun} aún no han publicado su programa.`}
             </p>
           )}
-          <p className="nota-frases">
-            Verás 20 frases que hemos escrito nosotros a partir de los programas, para poder comparar a todos los partidos con la misma vara. Los programas no siempre lo dicen con esas mismas palabras: en tu resultado verás la cita exacta de cada partido para que lo compruebes.
+          <p style={{ margin: 0 }}>
+            <button type="button" className="boton fantasma enlace-ventana" onClick={() => setVerComo(true)}>
+              Cómo funciona
+            </button>
           </p>
           <div className="acciones-inicio">
             <button className="boton principal" disabled={!eleccion} onClick={() => empezar(eleccion)}>
               Empezar el test
             </button>
           </div>
+          <Ventana abierta={verComo} titulo="Cómo funciona" alCerrar={() => setVerComo(false)}>
+            <Metodologia conTitulo={false} />
+          </Ventana>
         </section>
       ) : !enTemas ? (
         <section key={paso} className="pila">

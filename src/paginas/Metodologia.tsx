@@ -32,10 +32,10 @@ function EstadoProgramas() {
   )
 }
 
-export function Metodologia() {
+export function Metodologia({ conTitulo = true }: { conTitulo?: boolean }) {
   return (
     <article className="texto pila">
-      <h1>Cómo funciona</h1>
+      {conTitulo && <h1>Cómo funciona</h1>}
 
       <h2>Para qué sirve</h2>
       <p>Sintonía es una ayuda para decidir tu voto si aún no lo tienes claro. No es una encuesta: no preguntamos a quién vas a votar, no contamos votos y no hacemos predicciones. Tampoco es una recomendación: te enseña qué programas se parecen más a lo que piensas y la decisión es tuya.</p>

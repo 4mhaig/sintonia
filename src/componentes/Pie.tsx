@@ -20,20 +20,14 @@ function Lista() {
 }
 
 /**
- * Pie común. En la portada se explica entero qué es y qué no es Sintonía;
- * en el resto de páginas queda plegado para no cargar la pantalla.
+ * Pie común. Solo la portada explica qué es y qué no es Sintonía;
+ * en el resto de páginas queda únicamente el enlace a «Cómo funciona».
  */
 export function Pie({ completo }: { completo: boolean }) {
   if (!completo) {
     return (
-      <footer className="pie que-es">
-        <details className="que-es-plegado">
-          <summary>¿Qué es Sintonía y qué no?</summary>
-          <Lista />
-        </details>
-        <p style={{ margin: '1rem 0 0' }}>
-          <a href="#/metodologia" style={{ fontWeight: 700 }}>Cómo funciona <span aria-hidden="true">→</span></a>
-        </p>
+      <footer className="pie">
+        <a href="#/metodologia" style={{ fontWeight: 700 }}>Cómo funciona <span aria-hidden="true">→</span></a>
       </footer>
     )
   }
