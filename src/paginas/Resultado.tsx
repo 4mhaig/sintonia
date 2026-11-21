@@ -68,7 +68,7 @@ export function Resultado({ respuestas, importantes, provincia, alElegirProvinci
               })()}
             </h1>
             <p className="secundario">
-              Coincides en un {mejor.porcentaje}% de las frases.
+              Coincides en un {mejor.porcentaje}% de las frases. Es muy difícil estar de acuerdo al 100% con un partido: lo normal es coincidir en unas cosas y no en otras.
               {importantes.length > 0 && ' Los temas que marcaste como importantes cuentan el doble.'} Esto no es una recomendación de voto: solo compara tus respuestas con lo que dicen los programas. La decisión es tuya.
             </p>
           </section>

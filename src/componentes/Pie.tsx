@@ -1,5 +1,6 @@
 const QUE_ES = [
   { es: true, titulo: 'Es una ayuda para decidir.', texto: 'Compara lo que tú piensas con lo que dicen los programas de los partidos.' },
+  { es: true, titulo: 'Se basa en los programas.', texto: 'Solo usamos lo que cada partido ha publicado en su programa para estas elecciones. Los partidos no siempre cumplen lo que prometen, pero así sabes qué te han propuesto y podrás pedirles cuentas.' },
   { es: true, titulo: 'Es privada.', texto: 'Sin registro y sin guardar tus respuestas: todo se calcula en tu móvil u ordenador.' },
   { es: false, titulo: 'No es una encuesta.', texto: 'No te preguntamos a quién vas a votar, no contamos votos y no hacemos predicciones.' },
   { es: false, titulo: 'No es una recomendación.', texto: 'Te enseña parecidos y diferencias. La decisión es siempre tuya.' },
