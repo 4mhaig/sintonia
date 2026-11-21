@@ -30,9 +30,9 @@ export function Inicio() {
 
       <section className="rejilla" aria-label="Por dónde empezar">
         <a href="#/test" className="tarjeta tarjeta-enlace destacada">
-          <span className="chip" style={{ background: 'var(--acento-suave)', color: 'var(--acento)', alignSelf: 'flex-start' }}>Unos 5 minutos</span>
-          <h2 style={{ marginTop: '0.75rem' }}>Hacer el test</h2>
+          <h2>Hacer el test</h2>
           <p className="secundario">Di si estás de acuerdo o no con 20 frases sobre temas como la vivienda o las pensiones, y mira con qué partidos coincides más.</p>
+          <span className="chip" style={{ background: 'var(--acento-suave)', color: 'var(--acento)', alignSelf: 'flex-start', marginBottom: '1rem' }}>Unos 5 minutos</span>
           <span className="boton principal" style={{ width: '100%' }}>Empezar</span>
         </a>
         <a href="#/temas" className="tarjeta tarjeta-enlace">
