@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useId, useState } from 'react'
 import { PROVINCIAS, provinciaPorId } from '../datos'
 import { provinciaActual, type ErrorUbicacion } from '../logica/ubicacion'
 
@@ -24,6 +24,7 @@ type Estado = { tipo: 'quieto' } | { tipo: 'buscando' } | { tipo: 'hecho'; id: s
 /** Desplegable de provincias, el mismo en todas las pantallas */
 export function SelectorProvincia({ valor, alCambiar, etiqueta = '¿Dónde votas?', vacio = 'Elige tu provincia', conUbicacion = false }: Props) {
   const [estado, setEstado] = useState<Estado>({ tipo: 'quieto' })
+  const id = useId()
 
   const ubicar = async () => {
     setEstado({ tipo: 'buscando' })
@@ -36,23 +37,26 @@ export function SelectorProvincia({ valor, alCambiar, etiqueta = '¿Dónde votas
     }
   }
 
+  const botonUbicacion = conUbicacion && estado.tipo !== 'hecho' && (
+    <button type="button" className="boton fantasma ubicacion-boton" disabled={estado.tipo === 'buscando'} onClick={ubicar}>
+      <span aria-hidden="true">◎</span> <span className="ubicacion-texto">{estado.tipo === 'buscando' ? 'Buscando tu provincia…' : 'Usar mi ubicación'}</span>
+    </button>
+  )
+
   return (
     <div className="pila">
-      <label className="pila" style={{ display: 'block' }}>
-        <span style={{ fontWeight: 700 }}>{etiqueta}</span>
-        <select value={valor} onChange={(e) => { alCambiar(e.target.value); setEstado({ tipo: 'quieto' }) }}>
-          <option value="">{vacio}</option>
-          {PROVINCIAS.map((p) => <option key={p.id} value={p.id}>{p.nombre}</option>)}
-        </select>
-      </label>
+      {/* La etiqueta y «Usar mi ubicación» van juntas, antes de la lista */}
+      <div className="selector-cabecera">
+        <label htmlFor={id} style={{ fontWeight: 700 }}>{etiqueta}</label>
+        {botonUbicacion}
+      </div>
+      <select id={id} value={valor} onChange={(e) => { alCambiar(e.target.value); setEstado({ tipo: 'quieto' }) }}>
+        <option value="">{vacio}</option>
+        {PROVINCIAS.map((p) => <option key={p.id} value={p.id}>{p.nombre}</option>)}
+      </select>
 
       {conUbicacion && (
         <div aria-live="polite">
-          {estado.tipo !== 'hecho' && (
-            <button type="button" className="boton fantasma ubicacion-boton" disabled={estado.tipo === 'buscando'} onClick={ubicar}>
-              <span aria-hidden="true">◎</span> <span className="ubicacion-texto">{estado.tipo === 'buscando' ? 'Buscando tu provincia…' : 'Usar mi ubicación'}</span>
-            </button>
-          )}
           {estado.tipo === 'hecho' && valor === estado.id && (
             <p className="secundario" style={{ margin: 0, fontSize: '0.95rem' }}>
               Estás en {provinciaPorId(estado.id)?.nombre}. Si estás censado en otra provincia, cámbiala en la lista.
