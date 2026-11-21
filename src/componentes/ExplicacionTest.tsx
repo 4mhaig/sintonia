@@ -4,7 +4,6 @@ export function ExplicacionTest({ alCerrar }: { alCerrar: () => void }) {
     <div className="texto pila explicacion-test">
       <h3>Qué vas a hacer</h3>
       <ol>
-        <li><strong>Eliges tu provincia</strong>, para compararte solo con los partidos que vas a encontrar en tu papeleta.</li>
         <li><strong>Lees 20 frases</strong> sobre vivienda, sanidad, empleo, impuestos, pensiones, educación, medio ambiente, inmigración, territorio e igualdad.</li>
         <li><strong>Dices si estás de acuerdo, neutral o en desacuerdo</strong> con cada una. Si no lo tienes claro, puedes saltarla.</li>
         <li><strong>Marcas hasta 3 temas</strong> que te importen más. Cuentan el doble.</li>
