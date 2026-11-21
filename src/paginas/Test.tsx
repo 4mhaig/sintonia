@@ -105,6 +105,9 @@ export function Test({ provincia, alElegirProvincia, alTerminar }: Props) {
               {sinProgramaAun > 1 && ` Otros ${sinProgramaAun} aún no han publicado su programa.`}
             </p>
           )}
+          <p className="nota-frases">
+            Verás 20 frases que hemos escrito nosotros a partir de los programas, para poder comparar a todos los partidos con la misma vara. Los programas no siempre lo dicen con esas mismas palabras: en tu resultado verás la cita exacta de cada partido para que lo compruebes.
+          </p>
           <div className="acciones-inicio">
             <button className="boton principal" disabled={!eleccion} onClick={() => empezar(eleccion)}>
               Empezar el test
@@ -137,10 +140,6 @@ export function Test({ provincia, alElegirProvincia, alTerminar }: Props) {
             <button className="boton fantasma" onClick={() => responder(null)}>Saltar esta frase</button>
           </div>
 
-          <details className="nota-frases">
-            <summary>¿Quién ha escrito estas frases?</summary>
-            <p>Las frases las hemos escrito nosotros para poder comparar. Los programas no siempre lo dicen con estas palabras, pero cada partido se acerca más o menos a ellas. En tu resultado verás la cita de cada uno para que lo compruebes.</p>
-          </details>
         </section>
       ) : (
         <section className="pila">
