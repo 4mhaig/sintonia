@@ -36,7 +36,7 @@ export function Pie({ completo }: { completo: boolean }) {
       <h2 id="que-es" className="mono secundario">Qué es Sintonía y qué no</h2>
       <Lista />
       <p style={{ margin: '1.25rem 0 0' }}>
-        <a href="#/metodologia" style={{ fontWeight: 700 }}>Cómo funciona <span aria-hidden="true">→</span></a>
+        <a href="#/metodologia" style={{ fontWeight: 700 }}>Saber más <span aria-hidden="true">→</span></a>
       </p>
     </footer>
   )
