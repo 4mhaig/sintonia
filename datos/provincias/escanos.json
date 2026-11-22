@@ -1,6 +1,6 @@
 {
-  "fuente": "Real Decreto 806/2026, de 5 de octubre (BOE 6/10/2026). Igual que 2023 salvo Madrid (37→38) y Cádiz (9→8), según prensa. PENDIENTE: cotejar con el anexo del BOE.",
-  "verificado": false,
+  "fuente": "Real Decreto 806/2026, de 5 de octubre, anexo (BOE núm. 248, 6-oct-2026, BOE-A-2026-20742). Cotejado provincia a provincia el 22-nov-2026: coincide en las 52 circunscripciones (350 diputados).",
+  "verificado": true,
   "umbral": 0.03,
   "provincias": [
     {
