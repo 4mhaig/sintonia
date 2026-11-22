@@ -48,7 +48,7 @@ export function App() {
           <strong>Versión de prueba.</strong> Los partidos que ves (Alfa, Beta…) son inventados. Los reales llegarán cuando se publiquen los programas.
         </p>
       )}
-      <main style={{ paddingTop: '1rem', paddingBottom: ruta === 'test' ? '4rem' : 0 }}>
+      <main style={{ paddingTop: '1rem', paddingBottom: ruta === 'test' || ruta === 'provincia' ? '4rem' : 0 }}>
         {ruta === 'inicio' && <Inicio />}
         {ruta === 'test' && (
           <Test
@@ -64,8 +64,8 @@ export function App() {
         {ruta === 'provincia' && <Provincia provincia={provincia} alElegirProvincia={setProvincia} />}
         {ruta === 'metodologia' && <Metodologia />}
       </main>
-      {/* En el test el enlace está arriba, junto al botón de empezar */}
-      {ruta !== 'test' && <Pie completo={ruta === 'inicio'} />}
+      {/* En el test el enlace está arriba, junto al botón de empezar; en Mi provincia no hace falta */}
+      {ruta !== 'test' && ruta !== 'provincia' && <Pie completo={ruta === 'inicio'} />}
     </div>
   )
 }

@@ -42,8 +42,8 @@ export function Inicio() {
         </a>
         <a href="#/provincia" className="tarjeta tarjeta-enlace">
           <h2>Mi provincia</h2>
-          <p className="secundario">Cada provincia elige un número distinto de diputados. Mira cuántos se eligen en la tuya y cómo se reparten entre los partidos según los votos, con un ejemplo inventado.</p>
-          <span className="tarjeta-accion">Ver cómo se reparten <span aria-hidden="true">→</span></span>
+          <p className="secundario">Cada provincia elige un número distinto de diputados. Mira cuántos se eligen en la tuya y cómo se reparten entre los partidos según los votos.</p>
+          <span className="tarjeta-accion">Saber más <span aria-hidden="true">→</span></span>
         </a>
       </section>
     </div>
