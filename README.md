@@ -2,6 +2,8 @@
 
 Herramienta web, gratuita y sin registro, para **ayudarte a decidir tu voto si aún no lo tienes claro** en las elecciones generales del 29 de noviembre de 2026. Compara lo que piensas con los programas electorales de cada partido.
 
+**Ver la web:** https://sintonia-elecciones.vercel.app (también en https://4mhaig.github.io/sintonia/)
+
 **No es una encuesta:** no pregunta a quién vas a votar, no cuenta votos y no hace predicciones. **Tampoco es una recomendación:** enseña parecidos y diferencias con los programas, y la decisión es de cada persona.
 
 - **Test:** responde frases sobre los temas que te importan. La onda pasa de ruido a señal limpia mientras respondes.
@@ -50,7 +52,7 @@ npm test         # comprueba los cálculos
 npm run build    # genera la versión publicable en dist/
 ```
 
-Se publica automáticamente en GitHub Pages con cada cambio en `main`.
+Se publica automáticamente en Vercel y en GitHub Pages con cada cambio en `main`.
 
 ## Calendario
 
